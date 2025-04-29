@@ -1,7 +1,7 @@
 # Summoner Platform
 
 <p align="center">
-  <img src="https://summoner.to/images/logos/summoner-logo.png" alt="Summoner Logo" width="200"/>
+  <img src="https://summoner.to/images/logos/summoner-logo.png" alt="Summoner Logo" width="150"/>
 </p>
 
 <p align="center">
