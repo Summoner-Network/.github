@@ -98,7 +98,7 @@ You can also explore sample agents and deployments in the [examples/](./examples
 
 ## 🤝 Contributing
 
-We welcome contributors who share the vision of verifiable, distributed AI systems. Please check the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines.
+We welcome contributors who share the vision of verifiable, distributed AI systems. Please check the [Developer Guide](https://github.com/Summoner-Network/agent-sdk/blob/main/docs/doc_development.md) file for guidelines.
 
 
 
