@@ -31,7 +31,7 @@
 ## Core Components
 
 <p align="center">
-  <img src="../img/summary.png" alt="Summoner Architecture Diagram" width="390"/>
+  <img src="../img/summary.png" alt="Summoner Architecture Diagram" width="300"/>
 </p>
 
 ### 🔧 [Agent SDK](https://github.com/Summoner-Network/agent-sdk)
@@ -69,7 +69,7 @@
 ## Roadmap
 
 <p align="center">
-  <img src="../img/roadmap.png" alt="Summoner Architecture Diagram" width="390"/>
+  <img src="../img/roadmap.png" alt="Summoner Architecture Diagram" width="250"/>
 </p>
 
 ## 📚 Documentation
