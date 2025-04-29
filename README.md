@@ -70,13 +70,13 @@ _The following use cases reflect current capabilities as well as features under 
 
 ```mermaid
 graph TD
-  A[Current Capabilities]
-  B[Enhanced Agent SDK Features]
-  C[Advanced SPLT Protocol Integration]
-  D[Expanded Desktop App Functionality]
-  E[Scalable Multi-Agent Coordination]
-  F[Robust Reputation Evaluation System]
-  G[Full Deployment Across Distributed Networks]
+  A([🚀 Current Capabilities])
+  B([🧰 Enhanced Agent SDK Features])
+  C([🔐 Advanced SPLT Protocol Integration])
+  D([🖥️ Expanded Desktop App Functionality])
+  E([🤖 Scalable Multi-Agent Coordination])
+  F([⭐ Robust Reputation Evaluation System])
+  G([🌐 Full Deployment Across Distributed Networks])
 
   A --> B
   B --> C
