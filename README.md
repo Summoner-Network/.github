@@ -15,168 +15,92 @@
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
 
----
 
-## About Summoner
 
-Summoner is a pioneering platform designed to power the monetization of autonomous AI agents through decentralized principles and performance-based tokenomics. We transform AI agents into autonomous entities, emphasizing decentralization to promote unbiased decisions free from central control, leading to more resilient, transparent AI aligned with user interests.
+## Overview
 
-Our InvokeOS framework enables AI developers to receive compensation through CAST tokens based on their agents' actual performance, fostering a meritocratic ecosystem that rewards quality rather than arbitrary usage metrics or subscription models.
+**Summoner** is a modular platform for building, deploying, and coordinating autonomous AI agents across distributed networks. It provides programmable agent workflows and a composable protocol architecture, enabling the creation of self-organizing agent economies with verifiable performance.
 
-## Key Features
+## Who Is This For?
 
-- **Framework-Agnostic Integration**: Bring your AI agents built with any framework to the Summoner Protocol
-- **Performance-Based Rewards**: Earn CAST tokens based on verified agent performance metrics
-- **Decentralized Governance**: Community-driven management of AI agents and platform direction
-- **Embedded Wallet Abstraction**: Built-in capabilities for on-chain transactions
-- **Transparent Performance Metrics**: Verifiable evaluation of agent capabilities and results
+- Developers building distributed AI systems
+- Researchers experimenting with autonomous agents
+- Teams prototyping decentralized coordination or incentive mechanisms
 
-## Getting Started
 
-### Prerequisites
+## Core Components
 
-- Node.js (v16.0 or higher)
-- npm or yarn
-- Basic knowledge of blockchain and cryptocurrency concepts
-- An AI agent built with any framework
+<p align="center">
+  <img src="img/summary.png" alt="Summoner Architecture Diagram" width="390"/>
+</p>
 
-### Installation
+### 🔧 [Agent SDK](https://github.com/Summoner-Network/agent-sdk)
 
-```bash
-# Install the Summoner SDK
-npm install @summoner/sdk
+- **Purpose**: A toolkit for building, deploying, and coordinating autonomous agents.
+- **Implemented Features**:
+  - **Asynchronous Messaging**: JSON and plain-text communication between agents and servers.
+  - **Flexible Execution Model**: Supports asynchronous, rate-limited workflows in complex multi-agent architectures.
+  - **Python/Rust Backend**: Python-based client SDK with an optimized Rust server implementation.
 
-# Or with yarn
-yarn add @summoner/sdk
-```
 
-### Quick Start
+### 🖥️ [Summoner Desktop](https://github.com/Summoner-Network/summoner-desktop)
 
-1. **Register your agent**
-
-```javascript
-import { Summoner } from '@summoner/sdk';
-
-// Initialize Summoner client
-const summoner = new Summoner({
-  apiKey: 'YOUR_API_KEY',
-  environment: 'testnet' // or 'mainnet'
-});
-
-// Register your agent
-const agentId = await summoner.registerAgent({
-  name: 'My AI Agent',
-  description: 'A powerful AI agent that performs data analysis',
-  capabilities: ['dataAnalysis', 'prediction', 'recommendation'],
-  performanceMetrics: {
-    accuracy: 'percentage',
-    responseTime: 'milliseconds',
-    userSatisfaction: 'rating'
-  }
-});
-
-console.log(`Agent registered with ID: ${agentId}`);
-```
-
-2. **Track performance metrics**
-
-```javascript
-// Record performance metrics after agent execution
-await summoner.recordMetrics(agentId, {
-  accuracy: 92.5,
-  responseTime: 150,
-  userSatisfaction: 4.8,
-  // Custom metrics
-  dataPointsProcessed: 15000
-});
-```
-
-3. **Enable CAST rewards**
-
-```javascript
-// Set up CAST token rewards for your agent
-await summoner.enableRewards(agentId, {
-  wallet: 'YOUR_WALLET_ADDRESS',
-  performanceThresholds: {
-    accuracy: 90,
-    responseTime: 200,
-    userSatisfaction: 4.5
-  }
-});
-```
-
-## Project Structure
-
-```
-summoner-platform/
-├── packages/
-│   ├── core/             # Core functionality and shared utilities
-│   ├── sdk/              # Client SDK for integration
-│   ├── invokeOS/         # InvokeOS framework
-│   ├── tokenomics/       # CAST token and reward mechanisms
-│   └── analytics/        # Performance metrics and analytics
-├── examples/             # Example implementations
-├── docs/                 # Documentation
-└── scripts/              # Development and deployment scripts
-```
+- **Purpose**: A desktop app for managing agents, servers, and network connections through a visual interface.
+- **Implemented Features**:
+  - **Login and Session Management**: Clean, extensible login flow.
+  - **Modular Landing Page**: Automatically generates navigation from available feature folders.
+  - **Grid-Based Layout**: Organizes modules using a coordinate-driven interface.
+  - **Server and Router Management**: Provides tools for managing local servers and WAN connection setup.
+  - **Minimalist UI**: Streamlined design with light gradients and a focus on usability.
 
 ## Use Cases
 
-Summoner is designed to support a wide range of AI agent applications:
+_The following use cases reflect current capabilities as well as features under active development._
 
-- **Orchestrator-Agent Value Distribution**: Track performance across multiple specialized agents in a workflow with CAST token-based reward distribution based on verified contributions
-  
-- **Marketing Campaign Agents**: Deploy customer-facing agents that get paid based on interaction and conversion rates
+- **Multi-Agent Coordination**: Build, deploy, and coordinate multiple autonomous agents with programmable automations and flexible rate-limited execution.
+- **Self-Driving Automations**: Implement workflows using Tickers (for periodic transactions) and Embeds (for event-triggered actions).
+- **SPLT Server Architecture**: Use a flexible server architecture that supports both Rust and Python backends, with Python ideal for testing and Rust optimized for performance.
+- **SPLT Protocol (in progress)**: A protocol built on a finite state machine model, designed for predictable agent behavior, extensible APIs, and economic service incentives.
+- **Reputation Evaluation (planned)**: A system where rewards are determined by individual agents' Quality of Execution (QoE) and collective outcome quality (COQ).
+- **Asynchronous Agent Orchestration (planned)**: Support for many-to-many agent communication, where each agent follows its own SPLT protocol while participating in collective orchestration.
 
-- **Multi-Channel Interactive Agents**: Deploy agents across platforms (Discord, X, Instagram) with channel-specific performance tracking
 
-- **Simulation and Research Agents**: Monetize agents that return valuable data based on polling and survey results
-
-## Developer Resources
-
-- [SDK Documentation](https://docs.summoner.network/sdk)
-- [API Reference](https://docs.summoner.network/api)
-- [Integration Guides](https://docs.summoner.network/guides)
-- [Performance Metrics Best Practices](https://docs.summoner.network/metrics)
-- [Tokenomics Overview](https://docs.summoner.network/tokenomics)
-
-## Contributing
-
-We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
-
-### Development Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/summoner-network/summoner-platform.git
-cd summoner-platform
-
-# Install dependencies
-yarn install
-
-# Build all packages
-yarn build
-
-# Run tests
-yarn test
-```
 
 ## Roadmap
 
-Our development roadmap is focused on building a comprehensive platform for autonomous agent monetization:
+```mermaid
+graph TD
+  A[Current Capabilities]
+  B[Enhanced Agent SDK Features]
+  C[Advanced SPLT Protocol Integration]
+  D[Expanded Desktop App Functionality]
+  E[Scalable Multi-Agent Coordination]
+  F[Robust Reputation Evaluation System]
+  G[Full Deployment Across Distributed Networks]
 
-- **Q2-Q3 2025**: Launch InvokeOS framework and initial CAST token-based compensation system
-- **Q3-Q4 2025**: Expand trust evaluation mechanisms with community participation
-- **Q1-Q2 2026**: Introduce cross-chain interoperability for agent compensation
-- **Q3-Q4 2026**: Launch fully decentralized autonomous organization governance
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  F --> G
+```
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 
-## Security
+## 📚 Documentation
 
-If you discover a security vulnerability, please follow our [Security Policy](SECURITY.md).
+Explore full documentation and tutorials at [docs.summoner.network](https://docs.summoner.network)
+
+You can also explore sample agents and deployments in the [examples/](./examples) folder.
+
+
+
+## 🤝 Contributing
+
+We welcome contributors who share the vision of verifiable, distributed AI systems. Please check the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines.
+
+
 
 ## Contact
 
@@ -186,8 +110,8 @@ For questions, support, or discussions:
 - [Twitter](https://twitter.com/SummonerNetwork)
 - Email: info@summoner.to
 
----
 
+<!-- 
 <p align="center">
   <strong>Summoner: Perform. Verify. Earn.</strong>
-</p>
+</p> -->
