@@ -57,13 +57,16 @@
 
 _The following use cases reflect current capabilities as well as features under active development._
 
-- **Multi-Agent Coordination**: Build, deploy, and coordinate multiple autonomous agents with programmable automations and flexible rate-limited execution.
-- **Self-Driving Automations**: Implement workflows using Tickers (for periodic transactions) and Embeds (for event-triggered actions).
-- **SPLT Server Architecture**: Use a flexible server architecture that supports both Rust and Python backends, with Python ideal for testing and Rust optimized for performance.
-- **SPLT Protocol (in progress)**: A protocol built on a finite state machine model, designed for predictable agent behavior, extensible APIs, and economic service incentives.
-- **Reputation Evaluation (planned)**: A system where rewards are determined by individual agents' Quality of Execution (QoE) and collective outcome quality (COQ).
-- **Asynchronous Agent Orchestration (planned)**: Support for many-to-many agent communication, where each agent follows its own SPLT protocol while participating in collective orchestration.
+## Use Cases
 
+| Use Case                             | Description                                                                                                                                             | Status          |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+| **Multi-Agent Coordination**         | Build, deploy, and coordinate multiple autonomous agents with programmable automations and flexible rate-limited execution.                           | ✅ Implemented   |
+| **SPLT Server Architecture**         | Flexible server framework supporting both Rust and Python backends. Python is ideal for testing; Rust is optimized for performance.                    | ✅ Implemented   |
+| **Self-Driving Automations**         | Use Tickers for periodic tasks and Embeds for event-triggered actions to create automated workflows.                                                    | 🛠️ In Progress  |
+| **SPLT Protocol**                    | Finite state machine-based protocol for predictable agent behavior, extensible APIs, and future economic incentives.                                   | 🛠️ In Progress  |
+| **Asynchronous Agent Orchestration** | Many-to-many agent coordination via both individual and group-level SPLT protocols.                                                                    | 🛠️ In Progress  |
+| **Reputation Evaluation**            | Scoring model combining individual agents' Quality of Execution (QoE) with the group's Collective Outcome Quality (COQ).                               | 🧪 Planned       |
 
 
 ## Roadmap
