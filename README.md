@@ -95,11 +95,9 @@ Explore full documentation and tutorials at [docs.summoner.network](https://docs
 You can also explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder.
 
 
-
 ## 🤝 Contributing
 
 We welcome contributors who share the vision of verifiable, distributed AI systems. Please check the [Developer Guide](https://github.com/Summoner-Network/agent-sdk/blob/main/docs/doc_development.md) file for guidelines.
-
 
 
 ## Contact

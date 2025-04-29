@@ -31,7 +31,7 @@
 ## Core Components
 
 <p align="center">
-  <img src="img/summary.png" alt="Summoner Architecture Diagram" width="390"/>
+  <img src="../img/summary.png" alt="Summoner Architecture Diagram" width="390"/>
 </p>
 
 ### 🔧 [Agent SDK](https://github.com/Summoner-Network/agent-sdk)
@@ -68,25 +68,9 @@
 
 ## Roadmap
 
-```mermaid
-graph TD
-  A([🚀 Current Capabilities])
-  B([🧰 Enhanced Agent SDK Features])
-  C([🔐 Advanced SPLT Protocol Integration])
-  D([🖥️ Expanded Desktop App Functionality])
-  E([🤖 Scalable Multi-Agent Coordination])
-  F([⭐ Robust Reputation Evaluation System])
-  G([🌐 Full Deployment Across Distributed Networks])
-
-  A --> B
-  B --> C
-  C --> D
-  D --> E
-  E --> F
-  F --> G
-```
-
-
+<p align="center">
+  <img src="../img/roadmap.png" alt="Summoner Architecture Diagram" width="390"/>
+</p>
 
 ## 📚 Documentation
 
