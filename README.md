@@ -55,9 +55,6 @@
 
 ## Use Cases
 
-_The following use cases reflect current capabilities as well as features under active development._
-
-## Use Cases
 
 | Use Case                             | Description                                                                                                                                             | Status          |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
@@ -66,7 +63,7 @@ _The following use cases reflect current capabilities as well as features under 
 | **Self-Driving Automations**         | Use Tickers for periodic tasks and Embeds for event-triggered actions to create automated workflows.                                                    | 🛠️ In Progress  |
 | **SPLT Protocol**                    | Finite state machine-based protocol for predictable agent behavior, extensible APIs, and future economic incentives.                                   | 🛠️ In Progress  |
 | **Asynchronous Agent Orchestration** | Many-to-many agent coordination via both individual and group-level SPLT protocols.                                                                    | 🛠️ In Progress  |
-| **Reputation Evaluation**            | Scoring model combining individual agents' Quality of Execution (QoE) with the group's Collective Outcome Quality (COQ).                               | 🧪 Planned       |
+| **Reputation Evaluation**            | Scoring model combining individual agents' Quality of Execution (QoE) with the group's Collective Outcome Quality (COQ).                               | 🛠️ In Progress   |
 
 
 ## Roadmap
