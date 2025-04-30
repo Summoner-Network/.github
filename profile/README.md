@@ -69,7 +69,7 @@
 ## Roadmap
 
 <p align="center">
-  <img src="../img/roadmap.png" alt="Summoner Architecture Diagram" width="250"/>
+  <img src="../img/roadmap_2.png" alt="Summoner Architecture Diagram" width="250"/>
 </p>
 
 ## 📚 Documentation
