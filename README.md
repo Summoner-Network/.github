@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://summoner.to">Website</a> •
-  <a href="https://docs.summoner.network">Documentation</a> •
+  <!-- <a href="https://docs.summoner.network">Documentation</a> • -->
   <a href="https://discord.gg/summoner">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
@@ -90,10 +90,11 @@ graph TD
 
 ## 📚 Documentation
 
-Explore full documentation and tutorials at [docs.summoner.network](https://docs.summoner.network)
+<!-- Explore full documentation and tutorials at [docs.summoner.network](https://docs.summoner.network) -->
 
-You can also explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder.
+<!-- You can also explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder. -->
 
+You can currently explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder.
 
 ## 🤝 Contributing
 
