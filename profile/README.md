@@ -74,9 +74,11 @@
 
 ## 📚 Documentation
 
-Explore full documentation and tutorials at [docs.summoner.network](https://docs.summoner.network)
+<!-- Explore full documentation and tutorials at [docs.summoner.network](https://docs.summoner.network) -->
 
-You can also explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder.
+<!-- You can also explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder. -->
+
+You can currently explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder.
 
 
 
