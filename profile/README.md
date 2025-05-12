@@ -34,7 +34,7 @@
   <img src="../img/summary.png" alt="Summoner Architecture Diagram" width="300"/>
 </p>
 
-### 🔧 [Agent SDK](https://github.com/Summoner-Network/agent-sdk)
+### 🔧 [Summoner Core](https://github.com/Summoner-Network/summoner-core)
 
 - **Purpose**: A toolkit for building, deploying, and coordinating autonomous agents.
 - **Implemented Features**:
