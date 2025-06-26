@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://summoner.to">Website</a> •
   <!-- <a href="https://docs.summoner.network">Documentation</a> • -->
-  <a href="https://discord.gg/kExRQ9S5">Discord</a> •
+  <a href="https://discord.gg/AAYuyThmsw">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
 
@@ -92,7 +92,7 @@ We welcome contributors who share the vision of verifiable, distributed AI syste
 
 For questions, support, or discussions:
 
-- [Discord](https://discord.gg/kExRQ9S5)
+- [Discord](https://discord.gg/AAYuyThmsw)
 - [Twitter](https://twitter.com/SummonerNetwork)
 - Email: info@summoner.to
 
