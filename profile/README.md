@@ -1,7 +1,7 @@
 # Summoner Platform
 
 <p align="center">
-  <img src="https://summoner.to/images/logos/summoner-logo.png" alt="Summoner Logo" width="150"/>
+  <img src="https://summoner.org/static/images/summoner-logo.png" alt="Summoner Logo" width="150"/>
 </p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://summoner.to">Website</a> •
+  <a href="https://summoner.org">Website</a> •
   <!-- <a href="https://docs.summoner.network">Documentation</a> • -->
   <a href="https://discord.gg/AAYuyThmsw">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
