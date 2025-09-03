@@ -94,7 +94,7 @@ For questions, support, or discussions:
 
 - [Discord](https://discord.gg/AAYuyThmsw)
 - [Twitter](https://twitter.com/SummonerNetwork)
-- Email: info@summoner.to
+- Email: info@summoner.org
 
 
 <!-- 
