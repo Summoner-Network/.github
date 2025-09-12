@@ -216,4 +216,4 @@ cd summoner-desktop
 
 * Discord: [Join the server](https://discord.gg/kExRQ9S5)
 * Twitter: [@SummonerNetwork](https://twitter.com/SummonerNetwork)
-* Email: [info@summoner.to](mailto:info@summoner.to)
+* Email: [info@summoner.org](mailto:info@summoner.org)
