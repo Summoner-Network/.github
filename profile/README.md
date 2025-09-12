@@ -1,103 +1,199 @@
 # Summoner Platform
 
 <p align="center">
-  <img src="https://summoner.org/static/images/summoner-logo.png" alt="Summoner Logo" width="150"/>
+  <a href="https://summoner.to">
+    <img src="https://summoner.org/static/images/summoner-logo.png" alt="Summoner Logo" width="160"/>
+  </a>
 </p>
 
 <p align="center">
-  <strong>Transform AI Agents into Autonomous Entities with Performance-Based Rewards</strong>
+  <strong>Build, run, and coordinate autonomous agents over a WAN</strong>
 </p>
 
 <p align="center">
-  <a href="https://summoner.org">Website</a> •
-  <!-- <a href="https://docs.summoner.network">Documentation</a> • -->
-  <a href="https://discord.gg/AAYuyThmsw">Discord</a> •
+  <a href="https://summoner.to">Website</a> •
+  <a href="https://discord.gg/kExRQ9S5">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
 
+> **What is Summoner?**
+> A modular runtime and SDK for networked AI agents. It lets you compose, run, and coordinate agents across machines. The Python client SDK pairs with a Rust server, and an optional desktop app provides a visual interface. Start with examples, then assemble your own SDK from modules.
 
 
-## Overview
+## Table of contents
 
-**Summoner** is a modular platform for building, deploying, and coordinating autonomous AI agents across distributed networks. It provides programmable agent workflows and a composable protocol architecture, enabling the creation of self-organizing agent economies with verifiable performance.
+* [Start here](#start-here)
+* [One‑minute tryout](#one-minute-tryout-examples-path)
+* [Build an SDK from modules](#build-an-sdk-from-modules-recipes-path)
+* [Desktop UI](#desktop-ui-optional)
+* [Repository index](#repository-index)
+* [Concepts in one page](#concepts-in-one-page)
+* [Troubleshooting](#troubleshooting)
+* [Contributing](#contributing)
+* [Contact](#contact)
 
-## Who Is This For?
+## Start here
 
-- Developers building distributed AI systems
-- Researchers experimenting with autonomous agents
-- Teams prototyping decentralized coordination or incentive mechanisms
-
-
-## Core Components
 
 <p align="center">
-  <img src="../img/summary.png" alt="Summoner Architecture Diagram" width="300"/>
+  <a href="https://summoner.to">
+    <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
+  </a>
 </p>
 
-### 🔧 [Summoner Core](https://github.com/Summoner-Network/summoner-core)
+Choose the path that matches your goal. Each link points to a dedicated repo with its own README.
 
-- **Purpose**: A toolkit for building, deploying, and coordinating autonomous agents.
-- **Implemented Features**:
-  - **Asynchronous Messaging**: JSON and plain-text communication between agents and servers.
-  - **Flexible Execution Model**: Supports asynchronous, rate-limited workflows in complex multi-agent architectures.
-  - **Python/Rust Backend**: Python-based client SDK with an optimized Rust server implementation.
+1. **Try examples quickly**
 
+   * Repo: **[summoner-agents](https://github.com/Summoner-Network/summoner-agents)**
+   * What you get: runnable agents that demonstrate the SDK patterns and messaging.
 
-### 🖥️ [Summoner Desktop](https://github.com/Summoner-Network/summoner-desktop)
+2. **Read the docs**
 
-- **Purpose**: A desktop app for managing agents, servers, and network connections through a visual interface.
-- **Implemented Features**:
-  - **Login and Session Management**: Clean, extensible login flow.
-  - **Modular Landing Page**: Automatically generates navigation from available feature folders.
-  - **Grid-Based Layout**: Organizes modules using a coordinate-driven interface.
-  - **Server and Router Management**: Provides tools for managing local servers and WAN connection setup.
-  - **Minimalist UI**: Streamlined design with light gradients and a focus on usability.
+   * Repo: **[summoner-docs](https://github.com/Summoner-Network/summoner-docs)**
+   * What you get: concepts, protocol sketches, and design notes.
 
-## Use Cases
+3. **Build your own SDK from modules**
 
+   * Repo: **[summoner-sdk](https://github.com/Summoner-Network/summoner-sdk)**
+   * What you get: a template you customize via `build.txt` to assemble an SDK with the modules you choose.
 
-| Use Case                             | Description                                                                                                                                             | Status          |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| **Multi-Agent Coordination**         | Build, deploy, and coordinate multiple autonomous agents with programmable automations and flexible rate-limited execution.                           | ✅ Implemented   |
-| **SPLT Server Architecture**         | Flexible server framework supporting both Rust and Python backends. Python is ideal for testing; Rust is optimized for performance.                    | ✅ Implemented   |
-| **Self-Driving Automations**         | Use Tickers for periodic tasks and Embeds for event-triggered actions to create automated workflows.                                                    | 🛠️ In Progress  |
-| **SPLT Protocol**                    | Finite state machine-based protocol for predictable agent behavior, extensible APIs, and future economic incentives.                                   | 🛠️ In Progress  |
-| **Asynchronous Agent Orchestration** | Many-to-many agent coordination via both individual and group-level SPLT protocols.                                                                    | 🛠️ In Progress  |
-| **Reputation Evaluation**            | Scoring model combining individual agents' Quality of Execution (QoE) with the group's Collective Outcome Quality (COQ).                               | 🛠️ In Progress   |
+4. **Use a desktop UI**
+
+   * Repo: **[summoner-desktop](https://github.com/Summoner-Network/summoner-desktop)**
+   * What you get: a visual interface for running agents and servers locally.
+
+5. **Contribute a module**
+
+   * Repo: **[starter-template](https://github.com/Summoner-Network/starter-template)**
+   * What you get: a minimal module template you can publish and later include from `summoner-sdk` recipes.
 
 
-## Roadmap
+## One‑minute tryout (examples path)
 
-<p align="center">
-  <img src="../img/roadmap_2.png" alt="Summoner Architecture Diagram" width="250"/>
-</p>
+**Prereqs**
 
-## 📚 Documentation
+* Python 3.11 or newer
+* `git`
+* macOS or Linux. Windows users can use WSL2 or git bash via VScode.
 
-<!-- Explore full documentation and tutorials at [docs.summoner.network](https://docs.summoner.network) -->
+**Steps**
 
-<!-- You can also explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder. -->
+```bash
+# 1) Get examples
+git clone https://github.com/Summoner-Network/summoner-agents
+cd summoner-agents
 
-You can currently explore sample agents and deployments in the [examples](https://github.com/Summoner-Network/agent-sdk/tree/main/examples) folder.
+# 2) Set up the SDK and venv
+source build_sdk.sh setup
+
+# 3) Activate the venv
+source venv/bin/activate
+
+# 4) Install agent requirements
+# If you want a single agent's deps:
+pip install -r agents/agent_EchoAgent_0/requirements.txt
+# Or install all agents' deps via the provided script if present:
+bash install_requirements.sh
+
+# 5) Run an agent
+python agents/agent_EchoAgent_0/agent.py
+```
+
+If you opened a new terminal later, activate the venv again:
+
+```bash
+source venv/bin/activate
+```
+
+> Note: Some agents have their own extra instructions in their README. Follow those when present.
 
 
+## Build an SDK from modules (recipes path)
 
-## 🤝 Contributing
+Use **summoner-sdk** to assemble your own SDK from a list of modules.
 
-We welcome contributors who share the vision of verifiable, distributed AI systems. Please check the [Developer Guide](https://github.com/Summoner-Network/agent-sdk/blob/main/docs/doc_development.md) file for guidelines.
+```bash
+# 1) Get the template
+git clone https://github.com/Summoner-Network/summoner-sdk
+cd summoner-sdk
 
+# 2) Edit the recipe in build.txt
+# Add one module name per line. Example:
+#   summoner-agentclass
+#   my-org/my-private-module@v0.2.1
+
+# 3) Build and set up
+source build_sdk.sh setup
+
+# 4) Activate the venv
+source venv/bin/activate
+
+# 5) Start a sample server or client if provided by your module set
+python user_space/myserver.py  # example entry point
+```
+
+**Developer branch options**
+If you need the `dev` branch of `summoner-core` during setup, the script supports:
+
+```bash
+source build_sdk.sh dev_setup   # install using dev branch
+source build_sdk.sh dev_reset   # reset then set up from dev branch
+```
+
+
+## Desktop UI (optional)
+
+If you prefer a visual interface, use **summoner-desktop**:
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-desktop
+cd summoner-desktop
+# See repo README for Node.js requirements and run commands
+```
+
+
+## Repository index
+
+| Repo                                                                         | Purpose                                                                                                      |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **[summoner-core](https://github.com/Summoner-Network/summoner-core)**       | Core runtime components used by agents and servers. Python client SDK, Rust server implementation.           |
+| **[summoner-agents](https://github.com/Summoner-Network/summoner-agents)**   | Example agents that exercise the SDK patterns such as `@receive` and `@send(multi=True)` and relay behavior. |
+| **[summoner-docs](https://github.com/Summoner-Network/summoner-docs)**       | Conceptual documentation, design notes, and protocol outlines.                                               |
+| **[summoner-sdk](https://github.com/Summoner-Network/summoner-sdk)**         | Template repo that assembles an SDK from modules listed in `build.txt`.                                      |
+| **[summoner-desktop](https://github.com/Summoner-Network/summoner-desktop)** | Desktop application for running and inspecting agents and servers.                                           |
+| **[starter-template](https://github.com/Summoner-Network/starter-template)** | Minimal template for authoring a new module that others can consume via `summoner-sdk`.                      |
+
+**Summoner native modules (public)**
+
+* **[summoner-agentclass](https://github.com/Summoner-Network/summoner-agentclass)**
+  Adds security and orchestration features to `SummonerClient`. Includes cryptographic envelopes, DID support, and access helpers for the Summoner API.
+
+
+## Concepts in one page
+
+* **Agents** interact over TCP using a decorator‑based SDK. Typical patterns use `@receive` for inbound messages and `@send(multi=True)` to fan out to peers.
+* **Servers** are available in Python for iteration and in Rust for performance. The Rust server mirrors Python behavior.
+* **Orchestration** can involve local groups or WAN relays. Connector agents bridge external ecosystems.
+* **Security** follows a staged design: self‑issued identities, cryptographic envelopes for integrity and confidentiality, and replay protection using nonces and timestamps.
+
+
+## Troubleshooting
+
+* If an agent fails to import a module, ensure the venv is active and the agent’s `requirements.txt` is installed.
+* If a script is not executable, run `chmod +x build_sdk.sh` or `chmod +x install_requirements.sh` as needed.
+* On Windows, use WSL2 to avoid socket and path issues.
+
+
+## Contributing
+
+* Use **starter-template** to bootstrap a module.
+* Follow repository‑specific CONTRIBUTING or `docs/doc_development.md` when present.
+* Open an issue on one of our public Github repos for design proposals or protocol questions.
 
 
 ## Contact
 
-For questions, support, or discussions:
-
-- [Discord](https://discord.gg/AAYuyThmsw)
-- [Twitter](https://twitter.com/SummonerNetwork)
-- Email: info@summoner.org
-
-
-<!-- 
-<p align="center">
-  <strong>Summoner: Perform. Verify. Earn.</strong>
-</p> -->
+* Discord: [Join the server](https://discord.gg/kExRQ9S5)
+* Twitter: [@SummonerNetwork](https://twitter.com/SummonerNetwork)
+* Email: [info@summoner.to](mailto:info@summoner.to)
