@@ -81,7 +81,7 @@ Choose the path that matches your goal. Each link points to a dedicated repo wit
 
 * Python 3.11 or newer
 * `git`
-* macOS or Linux. Windows users can use WSL2 or git bash via VScode.
+* macOS or Linux. Windows users can use WSL2 or git bash via VS code.
 
 **Steps**
 
