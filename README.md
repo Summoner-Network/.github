@@ -1,7 +1,7 @@
 # Summoner Platform
 
 <p align="center">
-  <a href="https://summoner.to">
+  <a href="https://summoner.org">
     <img src="https://summoner.org/static/images/summoner-logo.png" alt="Summoner Logo" width="160"/>
   </a>
 </p>
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://summoner.to">Website</a> •
+  <a href="https://summoner.org">Website</a> •
   <a href="https://discord.gg/kExRQ9S5">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
@@ -36,8 +36,8 @@
 
 
 <p align="center">
-  <a href="https://summoner.to">
-    <img src="img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
+  <a href="https://summoner.org">
+    <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
   </a>
 </p>
 
@@ -70,6 +70,12 @@ Choose the path that matches your goal. Each link points to a dedicated repo wit
 
 
 ## One‑minute tryout (examples path)
+
+<details>
+<summary>
+<b>(Click to expand)</b> Pre-requisities and installation steps:
+</summary>
+<br>
 
 **Prereqs**
 
@@ -106,12 +112,20 @@ If you opened a new terminal later, activate the venv again:
 source venv/bin/activate
 ```
 
-> Note: Some agents have their own extra instructions in their README. Follow those when present.
+> 📝 **Note:** 
+> Some agents have their own extra instructions in their README. Follow those when present.
 
+</details>
 
 ## Build an SDK from modules (recipes path)
 
-Use **summoner-sdk** to assemble your own SDK from a list of modules.
+<details>
+<summary>
+<b>(Click to expand)</b> Use <b>summoner-sdk</b> to assemble your own SDK from a list of modules:
+</summary>
+<br>
+
+
 
 ```bash
 # 1) Get the template
@@ -141,10 +155,15 @@ source build_sdk.sh dev_setup   # install using dev branch
 source build_sdk.sh dev_reset   # reset then set up from dev branch
 ```
 
+</details>
 
 ## Desktop UI (optional)
 
-If you prefer a visual interface, use **summoner-desktop**:
+<details>
+<summary>
+<b>(Click to expand)</b> If you prefer a visual interface, use <b>summoner-desktop</b>:
+</summary>
+<br>
 
 ```bash
 git clone https://github.com/Summoner-Network/summoner-desktop
@@ -152,6 +171,7 @@ cd summoner-desktop
 # See repo README for Node.js requirements and run commands
 ```
 
+</details>
 
 ## Repository index
 
@@ -196,4 +216,4 @@ cd summoner-desktop
 
 * Discord: [Join the server](https://discord.gg/kExRQ9S5)
 * Twitter: [@SummonerNetwork](https://twitter.com/SummonerNetwork)
-* Email: [info@summoner.to](mailto:info@summoner.to)
+* Email: [info@summoner.org](mailto:info@summoner.org)
