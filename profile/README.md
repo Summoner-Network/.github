@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://summoner.org">Website</a> •
-  <a href="https://discord.gg/kExRQ9S5">Discord</a> •
+  <a href="https://discord.gg/9HMeXnMycE">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
 
@@ -37,7 +37,7 @@
 
 <p align="center">
   <a href="https://summoner.org">
-    <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
+    <img src="img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
   </a>
 </p>
 
@@ -208,12 +208,13 @@ cd summoner-desktop
 ## Contributing
 
 * Use **starter-template** to bootstrap a module.
-* Follow repository‑specific CONTRIBUTING or `docs/doc_development.md` when present.
+* Follow repository-specific **CONTRIBUTIONS** when available, or see our guidelines in [`summoner-docs > How to contribute`](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md).
 * Open an issue on one of our public Github repos for design proposals or protocol questions.
 
 
 ## Contact
 
-* Discord: [Join the server](https://discord.gg/kExRQ9S5)
+* Discord: [Join the server](https://discord.gg/9HMeXnMycE)
 * Twitter: [@SummonerNetwork](https://twitter.com/SummonerNetwork)
 * Email: [info@summoner.org](mailto:info@summoner.org)
+
