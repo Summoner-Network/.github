@@ -208,7 +208,7 @@ cd summoner-desktop
 ## Contributing
 
 * Use **starter-template** to bootstrap a module.
-* Follow repository-specific **CONTRIBUTIONS** when available, or see our guidelines in [`summoner-docs > How to contribute`](development/contribution/index.md).
+* Follow repository-specific **CONTRIBUTIONS** when available, or see our guidelines in [`summoner-docs > How to contribute`](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md).
 * Open an issue on one of our public Github repos for design proposals or protocol questions.
 
 
