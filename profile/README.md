@@ -37,7 +37,8 @@
 
 <p align="center">
   <a href="https://summoner.org">
-    <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
+    <!-- <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/> -->
+    <img src="https://github.com/Summoner-Network/.github/blob/main/img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
   </a>
 </p>
 
