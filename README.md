@@ -37,7 +37,8 @@
 
 <p align="center">
   <a href="https://summoner.org">
-    <img src="img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
+    <!-- <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/> -->
+    <img src="https://github.com/Summoner-Network/.github/blob/main/img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
   </a>
 </p>
 
@@ -208,7 +209,7 @@ cd summoner-desktop
 ## Contributing
 
 * Use **starter-template** to bootstrap a module.
-* Follow repository-specific **CONTRIBUTIONS** when available, or see our guidelines in [`summoner-docs > How to contribute`](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md).
+* Follow the repository-specific **CONTRIBUTING.md** or **Contributions** section if available, or see our [How to contribute](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md) guidelines in `summoner-docs`.
 * Open an issue on one of our public Github repos for design proposals or protocol questions.
 
 
