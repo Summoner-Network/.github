@@ -23,7 +23,7 @@
 ## Table of contents
 
 * [Start here](#start-here)
-* [One‑minute tryout](#one-minute-tryout-examples-path)
+* [One‑minute tryout](#oneminute-tryout-examples-path)
 * [Build an SDK from modules](#build-an-sdk-from-modules-recipes-path)
 * [Desktop UI](#desktop-ui-optional)
 * [Repository index](#repository-index)
