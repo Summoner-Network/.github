@@ -20,20 +20,7 @@
 > A modular runtime and SDK for networked AI agents. It lets you compose, run, and coordinate agents across machines. The Python client SDK pairs with a Rust server, and an optional desktop app provides a visual interface. Start with examples, then assemble your own SDK from modules.
 
 
-## Table of contents
-
-* [Start here](#start-here)
-* [One‑minute tryout](#oneminute-tryout-examples-path)
-* [Build an SDK from modules](#build-an-sdk-from-modules-recipes-path)
-* [Desktop UI](#desktop-ui-optional)
-* [Repository index](#repository-index)
-* [Concepts in one page](#concepts-in-one-page)
-* [Troubleshooting](#troubleshooting)
-* [Contributing](#contributing)
-* [Contact](#contact)
-
-## Start here
-
+## Click your way through Summoner
 
 <p align="center">
   <a href="https://summoner.org">
@@ -41,6 +28,449 @@
     <img src="https://github.com/Summoner-Network/.github/blob/main/img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
   </a>
 </p>
+
+The items below are **clickable**. Pick the goal that matches what you want to do.
+
+<div>
+
+├── <a href="#install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs — install Python, Rust, git, build tools" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Start here!</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-start-my-own-project-with-the-sdk" title="Use the SDK: create a venv and fetch core modules"><img alt="② Use the SDK — create venv and fetch core modules" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>If you want to test the SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-directly-test-the-agent-examples-with-the-sdk" title="Run example agents quickly"><img alt="③ Run Agents — launch example agents quickly" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Launch example agents in seconds</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#start-a-new-project-fresh" title="Scaffold a new project from the SDK template"><img alt="③ Start New Project — scaffold from SDK template" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Scaffold your own app with the SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-develop-a-module" title="Author a reusable SDK module"><img alt="② Develop a Module — author a reusable extension" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>If you want to author an SDK extension</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK — include your module in the SDK build" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>How to include your module in an SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#desktop-ui-optional" title="Optional: desktop GUI (requires npm)"><img alt="② Desktop UI — optional GUI (npm required)" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Try the GUI to launch a local server and your agents</em></b></sup>
+
+</div>
+
+
+### <img alt="Prereqs" src="https://img.shields.io/badge/Prereqs-6f42c1"> Install Essential Dependencies
+
+Before you build or run anything, make sure these tools are in place.
+The commands below are safe to run more than once. If a tool is already installed, the installer will say so and exit.
+
+---
+
+<details>
+<summary><img alt="All platforms icon" width="16" src="https://cdn.simpleicons.org/gnometerminal/6f42c1">
+ <b>All platforms: What you need and why</b></summary>
+<br>
+
+* **Python 3.9 or newer**. Runs SDK tools and agents.
+* **Git**. Clones the repositories.
+* **Rust toolchain**. Needed only for the high-performance server on macOS, Linux, or WSL2. Not used on native Windows.
+* **Node.js 18+ with npm**. Needed only if you plan to use the Desktop UI.
+
+Use the platform sections below to check versions and install missing items.
+
+</details>
+
+---
+
+<details>
+<summary><img alt="Apple logo" width="16" src="https://cdn.simpleicons.org/apple/6f42c1"> <b>Install on macOS</b></summary>
+<br>
+
+**First, check what is already installed.**
+Running these checks does not change your system.
+
+```bash
+python3 --version || echo "Python not found"
+git --version || echo "Git not found"
+rustc --version && cargo --version || echo "Rust toolchain not found"
+node --version && npm --version || echo "Node not found (Desktop UI only)"
+```
+
+**Next, install missing tools.**
+These commands install Python, Git, rustup, and Node. The `-y` on rustup accepts defaults.
+
+```bash
+brew install python git
+brew install rustup
+rustup-init -y
+brew install node   # only if you want the Desktop UI
+```
+
+**Finally, verify the installation.**
+If a command prints a version, you are good to go.
+
+```bash
+python3 --version
+git --version
+rustc --version && cargo --version
+node --version && npm --version   # only if you installed Node
+```
+
+**If you run this again later**
+Homebrew is safe to re-run. It will report already installed packages.
+Use `rustup update` to upgrade Rust when you need it.
+
+</details>
+
+---
+<a id="ubuntu-debian-prereqs"></a>
+<details>
+<summary><img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/6f42c1">
+<img alt="Debian logo" width="16" src="https://cdn.simpleicons.org/debian/6f42c1">
+<b>Install on Ubuntu or Debian</b></summary>
+<br>
+
+**First, check what is already installed.**
+These checks are safe to run any time.
+
+```bash
+python3 --version || echo "Python not found"
+git --version || echo "Git not found"
+rustc --version && cargo --version || echo "Rust toolchain not found"
+node --version && npm --version || echo "Node not found (Desktop UI only)"
+```
+
+**Next, install missing tools.**
+This installs Python, venv, pip, Git, and build tools. It also installs Rust with rustup. Node is optional.
+
+```bash
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip git build-essential pkg-config libssl-dev
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+sudo apt install -y nodejs npm   # only if you want the Desktop UI
+```
+
+**Finally, verify the installation.**
+
+```bash
+python3 --version
+git --version
+rustc --version && cargo --version
+node --version && npm --version   # only if you installed Node
+```
+
+**If you run this again later**
+`apt install` is safe to re-run. It will confirm what is already installed.
+Use `rustup update` to upgrade Rust when you need it.
+
+</details>
+
+---
+
+<details>
+<summary>
+<img alt="Windows logo" width="16"
+     src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' role='img' viewBox='0 0 24 24'><title>Windows</title><path fill='%236f42c1' d='M1.5 3.1 11.5 2v9H1.5V3.1zm11 0L22.5 2v10h-10V3.1zM1.5 12h10v9L1.5 20V12zm11 0h10v9l-10-1.1V12z'/></svg>">
+ <b>Install on Windows (native)</b></summary>
+<br>
+
+On native Windows the stack uses the Python server. The Rust server is not used here.
+You can still install Node if you want the Desktop UI.
+
+**First, check what is already installed.**
+Run these in PowerShell.
+
+```powershell
+python --version   # or: py -3 --version
+git --version
+node --version; npm --version   # only if you want the Desktop UI
+```
+
+**Next, install missing tools.**
+Download and install from these pages. During Python setup, select “Add python.exe to PATH.”
+
+* Python: [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
+* Git for Windows: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+* Node.js (optional): [https://nodejs.org/](https://nodejs.org/)
+
+**Finally, verify the installation.**
+Run the same checks again in PowerShell. If a command prints a version, you are done.
+
+**If you run this again later**
+Installers usually detect existing versions and do not replace them without asking.
+
+</details>
+
+---
+
+<details><summary>
+<img alt="Windows logo" width="16"
+     src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' role='img' viewBox='0 0 24 24'><title>Windows</title><path fill='%236f42c1' d='M1.5 3.1 11.5 2v9H1.5V3.1zm11 0L22.5 2v10h-10V3.1zM1.5 12h10v9L1.5 20V12zm11 0h10v9l-10-1.1V12z'/></svg>">
+<img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/6f42c1">
+ <b>Windows with WSL2 for Rust server support</b></summary>
+<br>
+
+If you want the Rust server on Windows, use WSL2 with Ubuntu.
+
+**First, enable WSL2 and install Ubuntu.**
+Run this in PowerShell.
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+**Next, open the Ubuntu terminal.**
+Follow the [**Ubuntu or Debian**](#ubuntu-debian-prereqs) section above inside WSL. Install Python, Git, Rust, and Node if you want the Desktop UI.
+
+**Finally, verify the installation.**
+Use the version checks from the Ubuntu section.
+Localhost usually works across Windows and WSL. If needed, run `hostname -I` in Ubuntu and bind to that address.
+
+**If you run this again later**
+Use the same checks and installers inside WSL.
+Use `rustup update` in WSL when you want to upgrade Rust.
+
+</details>
+
+---
+
+
+
+
+
+
+
+
+### <img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"> Create your SDK and install it
+
+You can start from the **template** (clean SDK) or from **summoner-agents** (SDK + examples). Both were created from the same template. The installer will create a virtual environment and compose the SDK for you. It is safe to run more than once.
+
+<details><summary><b>Why two starting points?</b></summary>
+<br>
+
+* **Template** is clean and minimal. You decide modules in `build.txt`. Installer commands and source/execute behavior are spelled out in the template README. ([GitHub][1])
+* **summoner-agents** already includes example agents and uses the same installer scripts. Its README shows the same initial setup. ([GitHub][2])
+
+[1]: https://github.com/Summoner-Network/summoner-sdk "GitHub - Summoner-Network/summoner-sdk: Official builder for the Summoner SDK (multi-repo merge + pip install)"
+[2]: https://github.com/Summoner-Network/summoner-agents "GitHub - Summoner-Network/summoner-agents: A collection of Summoner clients and agents featuring example implementations and reusable templates"
+
+</details>
+<br>
+
+---
+
+<details>
+<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A - Use the SDK template</b></summary>
+<br>
+
+**What this does**
+Creates your own repository from the template [`summoner-sdk`][1], then installs the SDK in a local virtual environment.
+
+**1) Create your own repo from the [SDK template][1].**
+Click on **Use this template → Create a new repository**, then clone it locally.
+
+```bash
+git clone https://github.com/<your-account>/<your-sdk-repo>.git
+cd <your-sdk-repo>
+```
+
+**2) Install the SDK using the right script.**
+Go to the platform block below and run the installer for your OS.
+
+> 📝 **Note:**
+> The template includes `build_sdk.sh` (POSIX) and `build_sdk_on_windows.ps1` (Windows)
+
+
+</details>
+
+---
+
+<details>
+<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Use the examples repo (summoner-agents)</b></summary>
+<br>
+
+**What this does**
+Clones `summoner-agents` (built from the same template) and installs the SDK. You’ll add agent dependencies later in the examples branch.
+
+**Clone and install**
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-agents.git
+cd summoner-agents
+```
+
+Now run the platform installer from the blocks below (POSIX or Windows).
+The repo’s README shows this exact flow. ([GitHub][2])
+
+</details>
+
+---
+
+<details>
+<summary><img alt="Apple logo" width="16" src="https://cdn.simpleicons.org/apple/0b5ed7"> <b>Install on macOS</b></summary>
+<br>
+
+**What this does**
+Runs the POSIX installer. It composes the SDK, creates `venv/`, and activates it if sourced.
+
+**Run the installer**
+
+```bash
+# From your project root (template or summoner-agents)
+source build_sdk.sh setup
+```
+
+If you prefer to execute instead of source:
+
+```bash
+bash build_sdk.sh setup
+source venv/bin/activate
+```
+
+> The script names and behavior (source vs execute; venv activation) are documented in the SDK template README. ([GitHub][1])
+
+**Verify the environment**
+
+```bash
+python -c "import summoner, sys; print('summoner OK', sys.executable)"
+```
+
+If you later update modules or the core, you can reset cleanly:
+
+```bash
+bash build_sdk.sh reset
+```
+
+(Resets and reinstalls; also in the template README.) ([GitHub][1])
+
+</details>
+
+---
+
+<details>
+<summary><img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/0b5ed7"> <img alt="Debian logo" width="16" src="https://cdn.simpleicons.org/debian/0b5ed7"> <b>Install on Ubuntu or Debian</b></summary>
+<br>
+
+**What this does**
+Same POSIX installer as macOS. It composes the SDK and sets up `venv/`.
+
+**Run the installer**
+
+```bash
+# From your project root (template or summoner-agents)
+source build_sdk.sh setup
+```
+
+If you run it without `source`:
+
+```bash
+bash build_sdk.sh setup
+source venv/bin/activate
+```
+
+**Verify the environment**
+
+```bash
+python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
+```
+
+**Reset later if needed**
+
+```bash
+bash build_sdk.sh reset
+```
+
+(Commands and behavior per [template README][1].) ()
+
+</details>
+
+---
+
+<details>
+<summary>
+<img alt="Windows logo" width="16"
+     src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' role='img' viewBox='0 0 24 24'><title>Windows</title><path fill='%230b5ed7' d='M1.5 3.1 11.5 2v9H1.5V3.1zm11 0L22.5 2v10h-10V3.1zM1.5 12h10v9L1.5 20V12zm11 0h10v9l-10-1.1V12z'/></svg>">
+ <b>Install on Windows (native)</b></summary>
+<br>
+
+**What this does**
+Runs the PowerShell installer. On native Windows the Python server is used. The Rust server is not used here.
+
+**Run the installer in PowerShell**
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\build_sdk_on_windows.ps1 setup
+```
+
+**Activate the environment**
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+**Verify the environment**
+
+```powershell
+python -c "import summoner, sys; print('summoner OK', sys.executable)"
+```
+
+> The Windows installer name and usage are provided in the template repo. ([GitHub][1])
+
+**Reset later if needed**
+
+```powershell
+.\build_sdk_on_windows.ps1 reset
+```
+
+</details>
+
+---
+
+<details>
+<summary>
+<img alt="Windows logo" width="16"
+     src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' role='img' viewBox='0 0 24 24'><title>Windows</title><path fill='%230b5ed7' d='M1.5 3.1 11.5 2v9H1.5V3.1zm11 0L22.5 2v10h-10V3.1zM1.5 12h10v9L1.5 20V12zm11 0h10v9l-10-1.1V12z'/></svg>">
+<img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/0b5ed7">
+ <b>Windows with WSL2 (for Rust server)</b></summary>
+<br>
+
+**What this does**
+Lets you use the POSIX installer inside Ubuntu on WSL2, which gives you the Rust server parity with Linux/macOS.
+
+**Enable WSL2 and install Ubuntu**
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+**Open Ubuntu, then run the POSIX installer**
+
+```bash
+# From your project root (template or summoner-agents)
+source build_sdk.sh setup
+```
+
+If you executed the script:
+
+```bash
+bash build_sdk.sh setup
+source venv/bin/activate
+```
+
+**Verify the environment**
+
+```bash
+python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
+```
+
+(Windows native vs WSL2 behavior is reflected across the repos; the POSIX steps match the template README.) ([GitHub][1])
+
+</details>
+
+---
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+## Start here
+
+
 
 Choose the path that matches your goal. Each link points to a dedicated repo with its own README.
 
@@ -70,7 +500,7 @@ Choose the path that matches your goal. Each link points to a dedicated repo wit
    * What you get: a minimal module template you can publish and later include from `summoner-sdk` recipes.
 
 
-## One‑minute tryout (examples path)
+## Prerequisites
 
 <details>
 <summary>
