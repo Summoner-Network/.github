@@ -187,6 +187,9 @@ Installers usually detect existing versions and do not replace them without aski
 </details>
 
 ---
+<img alt="Windows logo" width="16" src="./assets/windows.svg">
+<img alt="Windows logo" width="16" src="https://cdn.simpleicons.org/windows/6f42c1">
+
 
 <details><summary>
 <img alt="Windows logo" width="16"
