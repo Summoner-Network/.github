@@ -188,11 +188,15 @@ Installers usually detect existing versions and do not replace them without aski
 
 ---
 
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 544" width="16" height="16">
+  <path fill="#6f42c1" d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"/>
+</svg>
 
 <img alt="Windows logo" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg">
 
 <img alt="Windows logo" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="16" height="16"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--> <path fill="#6f42c1" d="M96 157.7L279.6 132.4L279.6 309.8L96 309.8L96 157.7zM96 482.3L279.6 507.6L279.6 332.4L96 332.4L96 482.3zM299.8 510.3L544 544L544 332.4L299.8 332.4L299.8 510.3zM299.8 129.7L299.8 309.8L544 309.8L544 96L299.8 129.7z"/></svg>
 
 
 <details><summary>
