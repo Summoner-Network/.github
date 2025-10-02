@@ -189,7 +189,7 @@ Installers usually detect existing versions and do not replace them without aski
 ---
 <img alt="Windows logo" width="16" src="./assets/windows.svg">
 <img alt="Windows logo" width="16" src="https://cdn.simpleicons.org/windows/6f42c1">
-
+<img alt="Windows logo" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg">
 
 <details><summary>
 <img alt="Windows logo" width="16"
