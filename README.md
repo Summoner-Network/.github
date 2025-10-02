@@ -191,6 +191,12 @@ Installers usually detect existing versions and do not replace them without aski
 <img alt="Windows logo" width="16" src="https://cdn.simpleicons.org/windows/6f42c1">
 <img alt="Windows logo" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg">
 
+<img alt="Windows logo" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg">
+<img alt="Windows logo" width="16" src="assets/windows-purple.png">
+<i class="fa fa-windows"></i>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class="fa fa-windows"></i>
+
 <details><summary>
 <img alt="Windows logo" width="16"
      src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' role='img' viewBox='0 0 24 24'><title>Windows</title><path fill='%236f42c1' d='M1.5 3.1 11.5 2v9H1.5V3.1zm11 0L22.5 2v10h-10V3.1zM1.5 12h10v9L1.5 20V12zm11 0h10v9l-10-1.1V12z'/></svg>">
