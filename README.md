@@ -41,14 +41,14 @@ The items below are **clickable**. Pick the goal that matches what you want to d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK - include your module in the SDK build" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a> <sup><b>&emsp; ☜ &emsp;<em>How to include your module in an SDK</em></b></sup><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#desktop-ui-optional" title="Optional: desktop GUI (requires npm)"><img alt="② Desktop UI - optional GUI (npm required)" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a> <sup><b>&emsp;  ☜ &emsp;<em>Try the GUI to launch a local server and your agents</em></b></sup>
 </div>
-<hr>
+
+---
 
 ### <img alt="Prereqs" src="https://img.shields.io/badge/Prereqs-6f42c1"> Install Essential Dependencies
 
 Before you build or run anything, make sure these tools are in place.
 The commands below are safe to run more than once. If a tool is already installed, the installer will say so and exit.
 
----
 
 <details>
 <summary><img alt="All platforms icon" width="16" src="https://cdn.simpleicons.org/gnometerminal/6f42c1">
@@ -208,13 +208,11 @@ Use `rustup update` in WSL when you want to upgrade Rust.
 
 </details>
 
+
+
+
+
 ---
-
-
-
-
-
-
 
 
 
@@ -226,7 +224,6 @@ You can start from the **SDK template** (clean SDK) or from **summoner-agents** 
 > [!NOTE]
 > **About the server.** On native Windows you use the **Python server**. The Rust server is not available on Windows. To try Rust on Windows, use **WSL2**.
 
----
 
 <details>
 <summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A - Use the SDK template</b></summary>
