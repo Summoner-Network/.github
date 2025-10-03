@@ -1,8 +1,15 @@
 # Summoner Platform
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://summoner.org">
     <img src="https://summoner.org/static/images/summoner-logo.png" alt="Summoner Logo" width="160"/>
+  </a>
+</p> -->
+
+<p align="center">
+  <a href="https://summoner.org">
+    <!-- <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/> -->
+    <img src="https://github.com/Summoner-Network/.github/blob/main/img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
   </a>
 </p>
 
@@ -21,13 +28,6 @@
 
 
 ## Click your way through Summoner
-
-<p align="center">
-  <a href="https://summoner.org">
-    <!-- <img src="../img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/> -->
-    <img src="https://github.com/Summoner-Network/.github/blob/main/img/summoner_intro_rounded.png" alt="Summoner Logo" width="250"/>
-  </a>
-</p>
 
 **Start with Prereqs and follow your branch.** Each path covers platform-specific requirements and installs (click the badges in order).
 
@@ -664,9 +664,9 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 ### <img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"> Start with runnable agent examples
 
 You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your focus is simple: 
-- [✓] **install the agent's requirements**, 
-- [✓] **start the server**, 
-- [✓] **then run the agent**.
+- [ ] **install the agent's requirements**, 
+- [ ] **start the server**, 
+- [ ] **then run the agent**.
 
 Think of it as three small switches you flip on, in order.
 
