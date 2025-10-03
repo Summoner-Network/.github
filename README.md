@@ -34,7 +34,7 @@
 <div>
 ├── <a href="#install-essential-dependencies" title="Start here - install required tools"><img alt="① Prereqs - install Python, Rust, git, build tools" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a> <sup><b>&emsp; ☜ &emsp;<em>Start here!</em></b></sup><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-start-my-own-project-with-the-sdk" title="Use the SDK: create a venv and fetch core modules"><img alt="② Use the SDK - create venv and fetch core modules" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a> <sup><b>&emsp; ☜ &emsp;<em>If you want to test the SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#install-your-summoner-sdk" title="Use the SDK: create a venv and fetch core modules"><img alt="② Use the SDK - create venv and fetch core modules" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a> <sup><b>&emsp; ☜ &emsp;<em>If you want to test the SDK</em></b></sup><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── <a href="#i-want-to-directly-test-the-agent-examples-with-the-sdk" title="Run example agents quickly"><img alt="③ Run Agents - launch example agents quickly" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a> <sup><b>&emsp; ☜ &emsp;<em>Launch example agents in seconds</em></b></sup><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │<br>
@@ -222,7 +222,7 @@ Use `rustup update` in WSL when you want to upgrade Rust.
 
 
 
-### <img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"> Create your SDK and install it
+### <img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"> Install your Summoner SDK
 
 You can start from the **SDK template** (clean SDK) or from **summoner-agents** (SDK + examples). Both come from the same template. The installer creates a virtual environment and composes the SDK. You can re-run it safely.
 
