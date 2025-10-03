@@ -29,7 +29,7 @@
   </a>
 </p>
 
-**Begin with Prereqs, then follow your branch step by step.** Click the badges in order to reach your goal.
+**Start with Prereqs and follow your branch.** Each path covers platform-specific requirements and installs (click the badges in order).
 
 <div>
 ├── <a href="#install-essential-dependencies" title="Start here - install required tools"><img alt="① Prereqs - install Python, Rust, git, build tools" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a> <sup><b>&emsp; ☜ &emsp;<em>Start here!</em></b></sup><br>
