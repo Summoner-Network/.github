@@ -64,7 +64,6 @@ Use the platform sections below to check versions and install missing items.
 
 </details>
 
----
 
 <details>
 <summary><img alt="Apple logo" width="16" src="https://cdn.simpleicons.org/apple/6f42c1"> <b>Install on macOS</b></summary>
@@ -103,10 +102,7 @@ node --version && npm --version   # only if you installed Node
 **If you run this again later**
 Homebrew is safe to re-run. It will report already installed packages.
 Use `rustup update` to upgrade Rust when you need it.
-
 </details>
-
----
 <a id="ubuntu-debian-prereqs"></a>
 <details>
 <summary><img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/6f42c1">
@@ -149,7 +145,6 @@ Use `rustup update` to upgrade Rust when you need it.
 
 </details>
 
----
 
 <details>
 <summary>
@@ -184,7 +179,6 @@ Installers usually detect existing versions and do not replace them without aski
 
 </details>
 
----
 
 <details><summary>
 <img alt="Windows logo" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=6f42c1">
@@ -251,7 +245,6 @@ cd <your-sdk-repo>
 
 </details>
 
----
 
 <details>
 <summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Use an SDK with agent examples</b></summary>
@@ -268,7 +261,6 @@ cd summoner-agents
 
 </details>
 
----
 
 <details>
 <summary><img alt="Apple logo" width="16" src="https://cdn.simpleicons.org/apple/0b5ed7"> <b>Install on macOS</b></summary>
@@ -306,7 +298,6 @@ Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-do
 
 </details>
 
----
 
 <details>
 <summary><img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/0b5ed7"> <img alt="Debian logo" width="16" src="https://cdn.simpleicons.org/debian/0b5ed7"> <b>Install on Ubuntu or Debian</b></summary>
@@ -344,7 +335,6 @@ Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-do
 
 </details>
 
----
 
 <details>
 <summary>
@@ -388,7 +378,6 @@ Read more: [Windows install notes](https://github.com/Summoner-Network/summoner-
 
 </details>
 
----
 
 <details>
 <summary>
