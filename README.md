@@ -33,13 +33,13 @@ The items below are **clickable**. Pick the goal that matches what you want to d
 
 <hr>
 <div>
-├── <a href="#install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs — install Python, Rust, git, build tools" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Start here!</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-start-my-own-project-with-the-sdk" title="Use the SDK: create a venv and fetch core modules"><img alt="② Use the SDK — create venv and fetch core modules" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>If you want to test the SDK</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── <a href="#i-want-to-directly-test-the-agent-examples-with-the-sdk" title="Run example agents quickly"><img alt="③ Run Agents — launch example agents quickly" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Launch example agents in seconds</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#start-a-new-project-fresh" title="Scaffold a new project from the SDK template"><img alt="③ Start New Project — scaffold from SDK template" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Scaffold your own app with the SDK</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-develop-a-module" title="Author a reusable SDK module"><img alt="② Develop a Module — author a reusable extension" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>If you want to author an SDK extension</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK — include your module in the SDK build" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>How to include your module in an SDK</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#desktop-ui-optional" title="Optional: desktop GUI (requires npm)"><img alt="② Desktop UI — optional GUI (npm required)" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a> <sup><b>&emsp;&emsp; &emsp;&emsp; ☜ &emsp;<em>Try the GUI to launch a local server and your agents</em></b></sup>
+├── <a href="#install-essential-dependencies" title="Start here - install required tools"><img alt="① Prereqs - install Python, Rust, git, build tools" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a> <sup><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; ☜ &emsp;<em>Start here!</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-start-my-own-project-with-the-sdk" title="Use the SDK: create a venv and fetch core modules"><img alt="② Use the SDK - create venv and fetch core modules" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a> <sup><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ☜ &emsp;<em>If you want to test the SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── <a href="#i-want-to-directly-test-the-agent-examples-with-the-sdk" title="Run example agents quickly"><img alt="③ Run Agents - launch example agents quickly" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a> <sup><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ☜ &emsp;<em>Launch example agents in seconds</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#start-a-new-project-fresh" title="Scaffold a new project from the SDK template"><img alt="③ Start New Project - scaffold from SDK template" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a> <sup><b>&emsp;&emsp;&emsp;&ensp; ☜ &emsp;<em>Scaffold your own app with the SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-develop-a-module" title="Author a reusable SDK module"><img alt="② Develop a Module - author a reusable extension" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a> <sup><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;  ☜ &emsp;<em>If you want to author an SDK extension</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK - include your module in the SDK build" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a> <sup><b>&emsp;&emsp;&emsp;&emsp;&nbsp; ☜ &emsp;<em>How to include your module in an SDK</em></b></sup><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#desktop-ui-optional" title="Optional: desktop GUI (requires npm)"><img alt="② Desktop UI - optional GUI (npm required)" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a> <sup><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;  ☜ &emsp;<em>Try the GUI to launch a local server and your agents</em></b></sup>
 </div>
 <hr>
 
@@ -189,7 +189,7 @@ Installers usually detect existing versions and do not replace them without aski
 <details><summary>
 <img alt="Windows logo" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=6f42c1">
 <img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/6f42c1">
- <b>Windows with WSL2 for Rust server support</b></summary>
+ <b>Install on Windows with WSL2 (Rust server support)</b></summary>
 <br>
 
 If you want the Rust server on Windows, use WSL2 with Ubuntu.
@@ -223,21 +223,14 @@ Use `rustup update` in WSL when you want to upgrade Rust.
 
 
 
+
+
 ### <img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"> Create your SDK and install it
 
-You can start from the **template** (clean SDK) or from **summoner-agents** (SDK + examples). Both were created from the same template. The installer will create a virtual environment and compose the SDK for you. It is safe to run more than once.
+You can start from the **SDK template** (clean SDK) or from **summoner-agents** (SDK + examples). Both come from the same template. The installer creates a virtual environment and composes the SDK. You can re-run it safely.
 
-<details><summary><b>Why two starting points?</b></summary>
-<br>
-
-* **Template** is clean and minimal. You decide modules in `build.txt`. Installer commands and source/execute behavior are spelled out in the template README. ([GitHub][1])
-* **summoner-agents** already includes example agents and uses the same installer scripts. Its README shows the same initial setup. ([GitHub][2])
-
-[1]: https://github.com/Summoner-Network/summoner-sdk "GitHub - Summoner-Network/summoner-sdk: Official builder for the Summoner SDK (multi-repo merge + pip install)"
-[2]: https://github.com/Summoner-Network/summoner-agents "GitHub - Summoner-Network/summoner-agents: A collection of Summoner clients and agents featuring example implementations and reusable templates"
-
-</details>
-<br>
+> [!NOTE]
+> **About the server.** On native Windows you use the **Python server**. The Rust server is not available on Windows. To try Rust on Windows, use **WSL2**.
 
 ---
 
@@ -245,44 +238,33 @@ You can start from the **template** (clean SDK) or from **summoner-agents** (SDK
 <summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A - Use the SDK template</b></summary>
 <br>
 
-**What this does**
-Creates your own repository from the template [`summoner-sdk`][1], then installs the SDK in a local virtual environment.
-
-**1) Create your own repo from the [SDK template][1].**
-Click on **Use this template → Create a new repository**, then clone it locally.
+**Create your own SDK repo from the template.** Click **Use this template → Create a new repository** on the [**SDK template**](https://github.com/Summoner-Network/summoner-sdk#getting-started), then clone it and enter the folder.
 
 ```bash
 git clone https://github.com/<your-account>/<your-sdk-repo>.git
 cd <your-sdk-repo>
 ```
 
-**2) Install the SDK using the right script.**
-Go to the platform block below and run the installer for your OS.
+**Choose features in `build.txt`.** List the modules you want your SDK to include. This step is optional and you can keep the default `build.txt` as-is. For custom builds, see the [**`build.txt` format**](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format) in the template README.
 
-> 📝 **Note:**
-> The template includes `build_sdk.sh` (POSIX) and `build_sdk_on_windows.ps1` (Windows)
-
+**Use the installation procedure for your platform.** See the sections below for platform-specific commands.
 
 </details>
 
 ---
 
 <details>
-<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Use the examples repo (summoner-agents)</b></summary>
+<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Use an SDK with agent examples</b></summary>
 <br>
 
-**What this does**
-Clones `summoner-agents` (built from the same template) and installs the SDK. You’ll add agent dependencies later in the examples branch.
-
-**Clone and install**
+**Download the SDK with agent examples.** Clone the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repository and enter the folder.
 
 ```bash
 git clone https://github.com/Summoner-Network/summoner-agents.git
 cd summoner-agents
 ```
 
-Now run the platform installer from the blocks below (POSIX or Windows).
-The repo’s README shows this exact flow. ([GitHub][2])
+**Use the installation procedure for your platform.** See the sections below for platform-specific commands.
 
 </details>
 
@@ -292,38 +274,35 @@ The repo’s README shows this exact flow. ([GitHub][2])
 <summary><img alt="Apple logo" width="16" src="https://cdn.simpleicons.org/apple/0b5ed7"> <b>Install on macOS</b></summary>
 <br>
 
-**What this does**
-Runs the POSIX installer. It composes the SDK, creates `venv/`, and activates it if sourced.
+**Run the installer.** Choose **either** approach, both perform the same setup.
 
-**Run the installer**
+* **Either** run in the current shell so `venv/` auto-activates:
 
-```bash
-# From your project root (template or summoner-agents)
-source build_sdk.sh setup
-```
+  ```bash
+  # From your project root (template or summoner-agents)
+  source build_sdk.sh setup
+  ```
 
-If you prefer to execute instead of source:
+* **Or** run as a separate process, then activate manually:
 
-```bash
-bash build_sdk.sh setup
-source venv/bin/activate
-```
+  ```bash
+  bash build_sdk.sh setup
+  source venv/bin/activate
+  ```
 
-> The script names and behavior (source vs execute; venv activation) are documented in the SDK template README. ([GitHub][1])
-
-**Verify the environment**
+**Verify the installation.** Confirm that Python sees the SDK and view the interpreter path.
 
 ```bash
-python -c "import summoner, sys; print('summoner OK', sys.executable)"
+python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
 ```
 
-If you later update modules or the core, you can reset cleanly:
+**Reset when needed.** Return to a clean state, then re-run setup.
 
 ```bash
 bash build_sdk.sh reset
 ```
 
-(Resets and reinstalls; also in the template README.) ([GitHub][1])
+Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)
 
 </details>
 
@@ -333,36 +312,35 @@ bash build_sdk.sh reset
 <summary><img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/0b5ed7"> <img alt="Debian logo" width="16" src="https://cdn.simpleicons.org/debian/0b5ed7"> <b>Install on Ubuntu or Debian</b></summary>
 <br>
 
-**What this does**
-Same POSIX installer as macOS. It composes the SDK and sets up `venv/`.
+**Run the installer.** Choose **either** approach, both perform the same setup.
 
-**Run the installer**
+* **Either** run in the current shell so `venv/` auto-activates:
 
-```bash
-# From your project root (template or summoner-agents)
-source build_sdk.sh setup
-```
+  ```bash
+  # From your project root (template or summoner-agents)
+  source build_sdk.sh setup
+  ```
 
-If you run it without `source`:
+* **Or** run as a separate process, then activate manually:
 
-```bash
-bash build_sdk.sh setup
-source venv/bin/activate
-```
+  ```bash
+  bash build_sdk.sh setup
+  source venv/bin/activate
+  ```
 
-**Verify the environment**
+**Verify the installation.** Confirm that Python sees the SDK and view the interpreter path.
 
 ```bash
 python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
 ```
 
-**Reset later if needed**
+**Reset when needed.** Return to a clean state, then re-run setup.
 
 ```bash
 bash build_sdk.sh reset
 ```
 
-(Commands and behavior per [template README][1].) ()
+Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)
 
 </details>
 
@@ -374,35 +352,39 @@ bash build_sdk.sh reset
  <b>Install on Windows (native)</b></summary>
 <br>
 
-**What this does**
-Runs the PowerShell installer. On native Windows the Python server is used. The Rust server is not used here.
+**Open a PowerShell terminal.** You can use Windows Terminal, PowerShell 7+, or VS Code’s integrated terminal (PowerShell profile).
 
-**Run the installer in PowerShell**
+**Allow scripts for this session only.** This temporarily lets you run the installer. Close the terminal after use to revert.
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+**Run the installer.** This composes your SDK, creates `venv\`, and installs dependencies from `build.txt`.
+
+```powershell
 .\build_sdk_on_windows.ps1 setup
 ```
 
-**Activate the environment**
+**Activate the environment.** Your prompt should show `(venv)`.
 
 ```powershell
 .\venv\Scripts\Activate.ps1
 ```
 
-**Verify the environment**
+**Verify the installation.** Confirm that Python sees the SDK and view the interpreter path.
 
 ```powershell
 python -c "import summoner, sys; print('summoner OK', sys.executable)"
 ```
 
-> The Windows installer name and usage are provided in the template repo. ([GitHub][1])
-
-**Reset later if needed**
+**Reset when needed.** Return to a clean state, then re-run setup.
 
 ```powershell
 .\build_sdk_on_windows.ps1 reset
 ```
+
+Read more: [Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md) • [SDK template](https://github.com/Summoner-Network/summoner-sdk) • [`build.txt` format](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format)
 
 </details>
 
@@ -412,43 +394,50 @@ python -c "import summoner, sys; print('summoner OK', sys.executable)"
 <summary>
 <img alt="Windows logo" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=0b5ed7">
 <img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/0b5ed7">
- <b>Windows with WSL2 (for Rust server)</b></summary>
+ <b>Install on Windows with WSL2 (Rust server support)</b></summary>
 <br>
 
-**What this does**
-Lets you use the POSIX installer inside Ubuntu on WSL2, which gives you the Rust server parity with Linux/macOS.
-
-**Enable WSL2 and install Ubuntu**
+**Enable WSL2 and install Ubuntu.**
 
 ```powershell
 wsl --install -d Ubuntu
 ```
 
-**Open Ubuntu, then run the POSIX installer**
+**Open the Ubuntu terminal.** Go to your SDK project folder.
 
-```bash
-# From your project root (template or summoner-agents)
-source build_sdk.sh setup
-```
+**Run the installer.** Choose **either** approach.
 
-If you executed the script:
+* **Either** run in the current shell so `venv/` auto-activates:
 
-```bash
-bash build_sdk.sh setup
-source venv/bin/activate
-```
+  ```bash
+  source build_sdk.sh setup
+  ```
 
-**Verify the environment**
+* **Or** run as a separate process, then activate manually:
+
+  ```bash
+  bash build_sdk.sh setup
+  source venv/bin/activate
+  ```
+
+**Verify the installation.** Confirm that Python sees the SDK and view the interpreter path.
 
 ```bash
 python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
 ```
 
-(Windows native vs WSL2 behavior is reflected across the repos; the POSIX steps match the template README.) ([GitHub][1])
+**Networking tip.** `localhost` usually works across Windows and WSL2. If it does not, you can use the WSL IP:
+
+```bash
+hostname -I
+```
+
+Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)
 
 </details>
 
 ---
+
 
 
 <br>
@@ -626,7 +615,7 @@ cd summoner-desktop
 
 ## Troubleshooting
 
-* If an agent fails to import a module, ensure the venv is active and the agent’s `requirements.txt` is installed.
+* If an agent fails to import a module, ensure the venv is active and the agent's `requirements.txt` is installed.
 * If a script is not executable, run `chmod +x build_sdk.sh` or `chmod +x install_requirements.sh` as needed.
 * On Windows, use WSL2 to avoid socket and path issues.
 
