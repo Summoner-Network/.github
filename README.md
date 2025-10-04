@@ -27,24 +27,23 @@
 > A modular runtime and SDK for networked AI agents. It lets you compose, run, and coordinate agents across machines. The Python client SDK pairs with a Rust server, and an optional desktop app provides a visual interface. Start with examples, then assemble your own SDK from modules.
 
 
-## Click your way through Summoner
+## Pick your route: run now or learn first
 
-**Start with Prereqs and follow your branch.** Each path covers platform-specific requirements and installs (click the badges in order).
+Whether you want a quick demo or a production-ready setup, start where it fits.  
+Each row is a complete route; follow the badges in order. Docs are one click away if you want background first.
 
 
-├── <a href="#install-essential-dependencies" title="Start here - install required tools"><img alt="① Prereqs - install Python, Rust, git, build tools" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a> <sup><b>&emsp; ☜ &emsp;<em>Start here!</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#install-your-summoner-sdk" title="Use the SDK: create a venv and fetch core modules"><img alt="② Use the SDK - create venv and fetch core modules" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a> <sup><b>&emsp; ☜ &emsp;<em>If you want to create agents with the SDK</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#start-a-new-project-fresh" title="Scaffold a new project from the SDK template"><img alt="③ Start New Project - scaffold from SDK template" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a> <sup><b>&emsp; ☜ &emsp;<em>Scaffold your own workflow with the SDK</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#i-want-to-directly-test-the-agent-examples-with-the-sdk" title="Run example agents quickly"><img alt="③ Run Agents - launch example agents quickly" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a> <sup><b>&emsp; ☜ &emsp;<em>Launch example agents in seconds</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <a href="#i-want-to-develop-a-module" title="Author a reusable SDK module"><img alt="② Develop a Module - author a reusable extension" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a> <sup><b>&emsp;  ☜ &emsp;<em>If you want to author an SDK extension</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <a href="#merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK - include your module in the SDK build" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a> <sup><b>&emsp; ☜ &emsp;<em>How to include your module in an SDK</em></b></sup><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── <a href="#desktop-ui-optional" title="Optional: desktop GUI (requires npm)"><img alt="② Desktop UI - optional GUI (npm required)" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a> <sup><b>&emsp;  ☜ &emsp;<em>Try the GUI to launch a local server and your agents</em></b></sup>
+
+| Path | What you’ll do |
+|---|---|
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies "Start here — install required tools") | Install Python, Rust, git, and build tools. |
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk "Create a venv and fetch core modules") | Set up a venv and fetch core modules for the SDK. |
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk) <sup>&nbsp;➜&nbsp;</sup> [![③ Start New Project](https://img.shields.io/badge/③-Start%20New%20Project-4f9bff)](#start-a-new-project-fresh "Scaffold from SDK template") | Scaffold a fresh project from the SDK template. |
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk) <sup>&nbsp;➜&nbsp;</sup> [![③ Run Agents](https://img.shields.io/badge/③-Run%20Agents-4f9bff)](#start-with-runnable-agent-examples "Launch example agents") | Run example agents immediately. |
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Develop a Module](https://img.shields.io/badge/②-Develop%20a%20Module-008f99)](#i-want-to-develop-a-module "Author an SDK extension") | Author a reusable SDK module. |
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Develop a Module](https://img.shields.io/badge/②-Develop%20a%20Module-008f99)](#i-want-to-develop-a-module) <sup>&nbsp;➜&nbsp;</sup> [![③ Merge into SDK](https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4)](#merge-module-into-sdk "Include your module in an SDK recipe") | Merge your module into an SDK build/recipe. |
+| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Desktop UI](https://img.shields.io/badge/②-Desktop%20UI-ff69b4)](#desktop-ui-optional "Optional GUI") | Optional desktop GUI to launch a local server and agents. |
+| [![① Read SDK Docs](https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f)](#summoner-docs "Documentation") | Read the docs and learn about Summoner. |
 
 
 ---
@@ -247,7 +246,7 @@ git clone https://github.com/<your-account>/<your-sdk-repo>.git
 cd <your-sdk-repo>
 ```
 
-**Choose features in `build.txt`.** List the modules you want your SDK to include. This step is optional and you can keep the default `build.txt` as-is. For custom builds, see the [**`build.txt` format**](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format) in the template README.
+**Choose modules and packages in `build.txt`.** List the modules you want your SDK to include. This step is optional and you can keep the default `build.txt` as-is. For custom builds, see the [**`build.txt` format**](#start-a-new-project-built-text) instructions in **Start a new project (fresh)** below.
 
 **Use the installation procedure for your platform.** See the sections below for platform-specific commands.
 
@@ -305,7 +304,7 @@ python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
 bash build_sdk.sh reset
 ```
 
-Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)
+Read more: **[POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)**
 
 </details>
 
@@ -348,7 +347,7 @@ python -c "import summoner, sys; print('summoner OK', sys.executable)"
 .\build_sdk_on_windows.ps1 reset
 ```
 
-Read more: [Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md) • [SDK template](https://github.com/Summoner-Network/summoner-sdk) • [`build.txt` format](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format)
+Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** • **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
 
 </details>
 
@@ -395,7 +394,7 @@ python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
 hostname -I
 ```
 
-Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)
+Read more: **[POSIX install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/installation.md)**
 
 </details>
 
@@ -417,16 +416,14 @@ Read more: [POSIX install notes](https://github.com/Summoner-Network/summoner-do
 
 ### <img alt="Start New Project" src="https://img.shields.io/badge/Start%20New%20Project-4f9bff"> Start a new project (fresh)
 
-<a id="start-a-new-project-fresh"></a>
 
-Create a clean SDK you own and extend. First define a **composition recipe** in `build.txt`, then install for your platform, and set up self-contained agent folders so they stay compatible with the Desktop app.
-
-
+You can create a clean SDK that you extend as you explore. First define a **composition recipe** in `build.txt`, then install for your platform, and set up self-contained agent folders so they stay compatible with the Desktop app.
+<a id="start-a-new-project-built-text"></a>
 <details>
 <summary><img alt="List icon" width="16" src="https://cdn.simpleicons.org/textpattern/4f9bff"> <b>Define your SDK recipe</b> <code>build.txt</code> (and optional <code>test_build.txt</code>)</summary>
 <br>
 
-**To build your Summoner SDK**, you need to tell the installer which packages to include from each Summoner module. Modules are GitHub repositories created from the template repository [starter-template](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
+**To build your Summoner SDK**, you need to tell the installer which packages to include from each Summoner module. Modules are GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
 
 <!-- **Tell the installer what to include.** You list which packages to pull from Summoner modules (repos built from the template). Each module contributes one or more packages under its `tooling/` directory. During install, those packages are merged under `summoner/…` so you import them uniformly. -->
 
@@ -464,8 +461,7 @@ from summoner.your_package import hello_summoner
 from summoner.aurora import SummonerAgent
 ```
 
-Read more: **[`build.txt` format](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format)** • **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
-
+Read more: **[SDK template (`build.txt` format)](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format)**
 </details>
 
 
@@ -541,7 +537,7 @@ python -c "import summoner, sys; print('summoner OK', sys.executable)"
 .\build_sdk_on_windows.ps1 reset
 ```
 
-Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** • **[SDK template](https://github.com/Summoner-Network/summoner-sdk)** • **[`build.txt` format](https://github.com/Summoner-Network/summoner-sdk#buildtxt--test_buildtxt-format)**
+Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** • **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
 
 </details>
 
@@ -664,9 +660,9 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 ### <img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"> Start with runnable agent examples
 
 You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your focus is simple: 
-- [ ] **install the agent's requirements**, 
-- [ ] **start the server**, 
-- [ ] **then run the agent**.
+- [ ] **install the agent's requirements**
+- [ ] **start the server**
+- [ ] **then run the agent**
 
 Think of it as three small switches you flip on, in order.
 
@@ -821,15 +817,34 @@ Keeping this structure makes your agent easy to import, run locally, and share w
 </details>
 
 
-
 ---
 
 
+- correct script for starter-template with core/.venv
+- show this and ask to complete
+- ask Aadyant to test it
+
+
+
+
+---
+
+Docs
+- server (beginner, quick, fundamentals, advanced)
+- client
+- receive/send
+- routes and states
+- hooks
+- travel
+- events
 
 
 
 
 
+
+
+---
 
 
 
