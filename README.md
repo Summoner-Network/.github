@@ -34,7 +34,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
 
 
 <div style="display: flex; justify-content: center;">
-  <table style="border-collapse:collapse; width:auto; min-width:720px;">
+<table style="border-collapse: collapse; width: 95%; text-align: left;">
     <thead>
       <tr>
         <th style="text-align:left; white-space:nowrap;">Path</th>
