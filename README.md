@@ -58,9 +58,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
     <tbody>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies title="Start here — install required tools">
-            <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
-          </a>
+          <a href=#-install-essential-dependencies title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
         </td>
         <td>Install Python, Rust, git, and build tools.</td>
       </tr>
@@ -69,8 +67,8 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <a href=#-install-essential-dependencies>
             <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
           </a>
-          ➜
-          <a href="#user-content-install-your-summoner-sdk" title="Create a venv and fetch core modules">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules">
             <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7">
           </a>
         </td>
@@ -81,12 +79,12 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <a href=#-install-essential-dependencies>
             <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
           </a>
-          ➜
-          <a href="#user-content-install-your-summoner-sdk" title="Scaffold from SDK template">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-install-your-summoner-sdk" title="Scaffold from SDK template">
             <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7">
           </a>
-          ➜
-          <a href="#user-content-start-a-new-project-fresh" title="Scaffold from SDK template">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-start-a-new-project-fresh" title="Scaffold from SDK template">
             <img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff">
           </a>
         </td>
@@ -97,12 +95,12 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <a href=#-install-essential-dependencies>
             <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
           </a>
-          ➜
-          <a href="#user-content-install-your-summoner-sdk" title="Launch example agents">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-install-your-summoner-sdk" title="Launch example agents">
             <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7">
           </a>
-          ➜
-          <a href="#user-content-start-with-runnable-agent-examples" title="Launch example agents">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-start-with-runnable-agent-examples" title="Launch example agents">
             <img alt="③ Run Agents" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff">
           </a>
         </td>
@@ -113,8 +111,8 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <a href=#-install-essential-dependencies>
             <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
           </a>
-          ➜
-          <a href="#user-content-i-want-to-develop-a-module" title="Author an SDK extension">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-i-want-to-develop-a-module" title="Author an SDK extension">
             <img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99">
           </a>
         </td>
@@ -125,12 +123,12 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <a href=#-install-essential-dependencies>
             <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
           </a>
-          ➜
-          <a href="#user-content-i-want-to-develop-a-module">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-i-want-to-develop-a-module">
             <img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99">
           </a>
-          ➜
-          <a href="#user-content-merge-module-into-sdk" title="Include your module in an SDK recipe">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-merge-module-into-sdk" title="Include your module in an SDK recipe">
             <img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4">
           </a>
         </td>
@@ -141,8 +139,8 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <a href=#-install-essential-dependencies>
             <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
           </a>
-          ➜
-          <a href="#user-content-desktop-ui-optional" title="Optional GUI">
+          <sup>&nbsp;➜&nbsp;</sup>
+          <a href="#-desktop-ui-optional" title="Optional GUI">
             <img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4">
           </a>
         </td>
@@ -150,7 +148,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
       </tr>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href="#user-content-summoner-docs" title="Documentation">
+          <a href="#-summoner-docs" title="Documentation">
             <img alt="① Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f">
           </a>
         </td>
