@@ -36,7 +36,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
 <div style="display:flex;justify-content:center;">
   <div style="width:95%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
     <table style="border-collapse:collapse;width:auto;min-width:860px;table-layout:auto;text-align:left;">
-      <thead><tr><th style="text-align:left;white-space:nowrap;">Path</th><th style="text-align:left;">What you’ll do</th></tr><thead>
+      <thead><tr><th style="text-align:left;white-space:nowrap;">Path</th><th style="text-align:left;">What you'll do</th></tr><thead>
       <tbody>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
@@ -58,7 +58,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
           <sup>&nbsp;➜&nbsp;</sup>
           <a href="#-install-your-summoner-sdk" title="Scaffold from SDK template"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-start-a-new-project-fresh" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a>
+          <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a>
         </td>
         <td>Scaffold a fresh project from the SDK template.</td>
       </tr>
@@ -76,7 +76,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-i-want-to-develop-a-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
+          <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
         </td>
         <td>Author a reusable SDK module.</td>
       </tr>
@@ -84,7 +84,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-i-want-to-develop-a-module"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
+          <a href="#-contribute-your-own-sdk-module"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
           <sup>&nbsp;➜&nbsp;</sup>
           <a href="#-merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a>
         </td>
@@ -94,7 +94,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-desktop-ui-optional" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
+          <a href="#-desktop-ui" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
         </td>
         <td>Optional desktop GUI to launch a local server and agents.</td>
       </tr>
@@ -111,7 +111,7 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
 
 
 <!-- 
-| Path | What you’ll do |
+| Path | What you'll do |
 |---|---|
 | [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies "Start here — install required tools") | Install Python, Rust, git, and build tools. |
 | [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk "Create a venv and fetch core modules") | Set up a venv and fetch core modules for the SDK. |
@@ -506,7 +506,7 @@ You can create a clean SDK that you extend as you explore. First define a **comp
 
 <!-- **Tell the installer what to include.** You list which packages to pull from Summoner modules (repos built from the template). Each module contributes one or more packages under its `tooling/` directory. During install, those packages are merged under `summoner/…` so you import them uniformly. -->
 
-**Include an entire repository (all packages).** If you want to include every package under that repository’s `tooling/` directory, put the repository URL on its own line in `build.txt`.
+**Include an entire repository (all packages).** If you want to include every package under that repository's `tooling/` directory, put the repository URL on its own line in `build.txt`.
 
 <!-- **Include an entire module (all packages).** Put the repo URL on its own line. The installer will copy every package under that repo's `tooling/`. -->
 
@@ -738,12 +738,7 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 
 ### <img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"> Start with runnable agent examples
 
-You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your focus is simple: 
-- [ ] install the agent's requirements
-- [ ] start the server
-- [ ] then run the agent.
-
-Think of it as three small switches you flip on, in order.
+You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your workflow is straightforward: install the agent requirements, start the server, then run the agent.
 
 
 
@@ -1133,6 +1128,7 @@ If this passes, you are ready to iterate on your module and later merge it into 
 
 
 
+
 ### <img alt="Merge into SDK" src="https://img.shields.io/badge/Merge%20into%20SDK-00bcd4"> Merge module into SDK
 
 This section explains how to structure your module so that it merges accurately into an SDK build. The installer behavior is covered earlier. Here we focus on conventions, layout, imports, and dependency planning.
@@ -1179,7 +1175,7 @@ tooling/
   your_package/
     __init__.py
     subpkg/
-      __init__.py
+      __init__.py        # required so pip installs the subpackage
       feature.py
 requirements.txt
 ```
@@ -1207,17 +1203,11 @@ from tooling.your_package import Agent
 from tooling.your_package.utils import helper
 ```
 
-Core SDK imports should always use the public namespace:
-
-```python
-from summoner.client import SummonerClient
-```
-
-This separation is intentional. It lets your module run in isolation while still using the public APIs of the core SDK.
+Core SDK imports should always use the public namespace `summoner.*`. These remain unchanged across the merge.
 
 **What changes at merge time**
 
-When you compose an SDK, the builder copies `tooling/your_package/` to `summoner/your_package/` and rewrites internal imports so your package becomes a peer of native SDK packages.
+When you compose an SDK, the builder copies `tooling/your_package/` to `summoner/your_package/` and **rewrites only** your `tooling.*` imports to the public namespace.
 
 * Imports that referenced your package:
 
@@ -1226,20 +1216,12 @@ When you compose an SDK, the builder copies `tooling/your_package/` to `summoner
   from tooling.your_package import Agent
 
   # after merge (inside the SDK source tree)
-  from your_package import Agent
-  ```
-
-* Imports that referenced the core SDK from within your module:
-
-  ```python
-  # before merge (in module repo)
-  from summoner.client import SummonerClient
-
-  # after merge (inside the SDK source tree)
-  from client import SummonerClient
+  from summoner.your_package import Agent
   ```
 
 The rewrite is mechanical. It expects clean, absolute imports. Avoid deep relative imports like `from . import something` across distant folders. Keep intra-package imports either absolute within your package or local, for example `from .utils import helper`.
+
+> **Naming collisions to watch for.** Because `tooling/<pkg>` becomes `summoner.<pkg>` after merging, a `<pkg>` that already exists in the SDK (native or from another module) will collide. Pick unique, descriptive names up front.
 
 **How consumers import after installation**
 
@@ -1250,31 +1232,6 @@ from summoner.your_package import Agent
 from summoner.your_package.utils import helper
 from summoner.client import SummonerClient
 ```
-
-If you expose a minimal public surface in `__init__.py` (using `__all__`), consumers get a simpler experience:
-
-```python
-# tooling/your_package/__init__.py
-from .agent import Agent
-__all__ = ["Agent"]
-```
-
-This keeps imports stable even if your internal files change.
-
-**Optional local shim**
-
-If a file might later live under `summoner/` but you run it from the module repo during development, you can add a small path shim so `tooling.*` imports resolve locally:
-
-```python
-# place near the top of files that import from tooling.*
-import os, sys
-root = os.path.dirname(os.path.abspath(__file__))
-repo_root = os.path.abspath(os.path.join(root, "..", ".."))
-if repo_root not in sys.path:
-    sys.path.insert(0, repo_root)
-```
-
-Use the shim only in entry points or dev scripts. Avoid sprinkling it across library code.
 
 </details>
 
@@ -1299,7 +1256,7 @@ If you ship optional extras for local experiments, document them separately, for
 
 **Agent-specific dependencies**
 
-If your repo also ships runnable agents, keep their extra dependencies in the agent folders’ own `requirements.txt`. The SDK composition uses the repo-root `requirements.txt` only. Agents can install their own extras at run time.
+If your repo also ships runnable agents, keep their extra dependencies in the agent folders' own `requirements.txt`. The SDK composition uses the repo-root `requirements.txt` only. Agents can install their own extras at run time.
 
 **Non-code assets**
 
@@ -1328,30 +1285,17 @@ python -c "from summoner.client import SummonerClient; print('OK')"
 **Name collision check**
 
 * Verify that each folder directly under `tooling/` has a unique, descriptive name.
-* If you plan to include multiple modules in the same SDK, list their package names and check for overlaps.
+* If you plan to include multiple modules in the same SDK, list their package names and check for overlaps (remember: `tooling/<pkg>` becomes `summoner.<pkg>`).
 
 **Public surface check**
 
 * Inspect `tooling/your_package/__init__.py`. Export only the symbols you want users to see. Keep internal helpers unexported.
+* For any subfolder you want installed as a subpackage, ensure it has its own `__init__.py`.
 
 If these pass, your module is ready to be composed into an SDK.
 
 </details>
 
-<details>
-<summary><img alt="Magnifier" width="16" src="https://api.iconify.design/tabler/alert-triangle.svg?color=%2300bcd4&width=16"> <b>Common pitfalls</b></summary>
-<br>
-
-* Placing `requirements.txt` under `tooling/`. Keep it at the repo root or the builder will not find it.
-* Using hyphens in package folder names. Use underscores to keep imports valid.
-* Mixing relative and absolute import styles. Prefer clean absolute imports inside your package and the `summoner.*` namespace for core.
-* Side effects in `__init__.py`. Keep it light. Heavy work in `__init__.py` can surprise users when they import.
-* Hard-coded absolute paths to data files. Use package-relative reads so the same code works before and after merge.
-* Exporting everything. Expose a minimal API with `__all__` to avoid breaking downstream code when internals change.
-
-A quick sweep for these issues saves time during composition.
-
-</details>
 
 
 
