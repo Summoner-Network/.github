@@ -27,10 +27,10 @@
 > A modular runtime and SDK for networked AI agents. It lets you compose, run, and coordinate agents across machines. The Python client SDK pairs with a Rust server, and an optional desktop app provides a visual interface. Start with examples, then assemble your own SDK from modules.
 
 
-## Pick your route: run now or learn first
+## Summoner pathways
 
-Whether you want a quick demo or a production-ready setup, start where it fits.  
-Each row is a complete route; follow the badges in order. Docs are one click away if you want background first.
+Choose your entry point. Read the docs for concepts, or follow a setup route to run agents or build modules. Click each badge in order along a row; the left cell stacks steps so you can see the whole path at a glance.
+
 
 
 <div style="display:flex;justify-content:center;">
