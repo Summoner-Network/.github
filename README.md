@@ -660,9 +660,9 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 ### <img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"> Start with runnable agent examples
 
 You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your focus is simple: 
-- [ ] **install the agent's requirements**
-- [ ] **start the server**
-- [ ] **then run the agent**
+- [ ] install the agent's requirements
+- [ ] start the server
+- [ ] then run the agent.
 
 Think of it as three small switches you flip on, in order.
 
@@ -818,12 +818,6 @@ Keeping this structure makes your agent easy to import, run locally, and share w
 
 
 ---
-
-
-- correct script for starter-template with core/.venv
-- show this and ask to complete
-- ask Aadyant to test it
-
 
 
 
