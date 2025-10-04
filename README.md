@@ -236,7 +236,7 @@ You can start from the **SDK template** (clean SDK) or from **summoner-agents** 
 
 
 <details>
-<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A - Use the SDK template</b></summary>
+<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A - Start from scratch with an SDK template</b></summary>
 <br>
 
 **Create your own SDK repo from the template.** Click **Use this template → Create a new repository** on the [**SDK template**](https://github.com/Summoner-Network/summoner-sdk#getting-started), then clone it and enter the folder.
@@ -246,14 +246,14 @@ git clone https://github.com/<your-account>/<your-sdk-repo>.git
 cd <your-sdk-repo>
 ```
 
-**Choose modules and packages in `build.txt`.** List the modules you want your SDK to include. This step is optional and you can keep the default `build.txt` as-is. For custom builds, see the [**`build.txt` format**](#start-a-new-project-built-text) instructions in **Start a new project (fresh)** below.
+**Choose modules and packages in `build.txt`.** List the modules you want your SDK to include. This step is optional and you can keep the default `build.txt` as-is. For custom builds, see the [**`build.txt` format**](#start-a-new-project-built-text) instructions in **Create a clean SDK (no ready-made agents)** below.
 
 **Use the installation procedure for your platform.** See the sections below for platform-specific commands.
 
 </details>
 <a id="use-an-sdk-with-agent-examples"></a>
 <details>
-<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Use an SDK with agent examples</b></summary>
+<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Run agent examples with a ready-made SDK</b></summary>
 <br>
 
 **Download the SDK with agent examples.** Clone the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repository and enter the folder.
@@ -414,7 +414,7 @@ Read more: **[POSIX install notes](https://github.com/Summoner-Network/summoner-
 
 
 
-### <img alt="Start New Project" src="https://img.shields.io/badge/Start%20New%20Project-4f9bff"> Start a new project (fresh)
+### <img alt="Start New Project" src="https://img.shields.io/badge/Start%20New%20Project-4f9bff"> Create a clean SDK (no ready-made agents)
 
 
 You can create a clean SDK that you extend as you explore. First define a **composition recipe** in `build.txt`, then install for your platform, and set up self-contained agent folders so they stay compatible with the Desktop app.
@@ -672,7 +672,7 @@ Think of it as three small switches you flip on, in order.
 <summary><img alt="Package" width="16" src="https://cdn.simpleicons.org/pypi/4f9bff"> <b>Install agent dependencies</b></summary>
 <br>
 
-This section assumes you already installed the SDK for this repo (see **Install your Summoner SDK** above).
+This section assumes you already installed the SDK for the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo (see [**Run agent examples with a ready-made SDK**](#use-an-sdk-with-agent-examples) above).
 
 **Activate the virtual environment.** This ensures Python installs into the right place. Run this **whenever you open a new terminal**:
 
@@ -817,7 +817,464 @@ Keeping this structure makes your agent easy to import, run locally, and share w
 </details>
 
 
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+### <img alt="Develop a Module" src="https://img.shields.io/badge/Develop%20a%20Module-008f99"> Contribute your own SDK module
+
+A **module** is a repository created from the [`starter-template`](https://github.com/Summoner-Network/starter-template). Your code lives under [`tooling/`](https://github.com/Summoner-Network/starter-template/tree/main/tooling) as one or more Python packages. You develop against the core SDK, then merge your package(s) into an SDK build later.
+
+<details>
+<summary><img alt="GitHub" width="16" src="https://cdn.simpleicons.org/github/008f99"> <b>Create your module repo from the template</b></summary>
+<br>
+
+**Make your own repo.** Click **Use this template → Create a new repository** on the [`starter-template`](https://github.com/Summoner-Network/starter-template), then clone it and enter the folder.
+
+```bash
+git clone https://github.com/<your-account>/<your-module-repo>.git
+cd <your-module-repo>
+```
+
+**What the template gives you.** A bootstrap script, a virtual environment, and a smoke test that launches a small server.
+
+</details>
+
+<details>
+<summary>
+<img alt="Apple" width="16" src="https://cdn.simpleicons.org/apple/008f99">
+<img alt="Ubuntu" width="16" src="https://cdn.simpleicons.org/ubuntu/008f99">
+<img alt="Debian" width="16" src="https://cdn.simpleicons.org/debian/008f99">
+<b>Set up on macOS / Ubuntu / Debian</b></summary>
+<br>
+
+Once you have cloned your module repo, proceed as follows.
+
+**Run the installer.** Choose **either** approach. Both complete the same setup.
+
+* **Either** run in the current shell so `venv/` auto-activates:
+
+  ```bash
+  source install.sh setup
+  ```
+
+* **Or** run as a separate process, then activate manually:
+
+  ```bash
+  bash install.sh setup
+  source venv/bin/activate
+  ```
+
+**Smoke test.** Verify the installation by launching the test server. The script generates `test_server.py` you can run on localhost.
+
+```bash
+bash install.sh test_server
+```
+
+This creates `test_server.py`, `test_server_config.json`, and starts a basic server using the installed `summoner` package.
+
+**If VS Code does not resolve imports.** Select the `venv` interpreter once and reopen your files so `from summoner.server import SummonerServer` resolves.
+
+</details>
+
+<details>
+<summary>
+<img alt="Windows" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=008f99">
+<b>Set up on Windows (native)</b></summary>
+<br>
+
+Once you have cloned your module repo, proceed as follows.
+
+**Run the installer.** Allow scripts **for this session only**, then build and test by launching a test server.
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\install_on_windows.ps1 setup
+.\install_on_windows.ps1 test_server
+```
+
+**Activate the virtual environment.** The setup script activates `venv` for you. You can re-activate later with either command.
+
+```powershell
+# Using the script
+.\install_on_windows.ps1 use_venv
+# Direct command
+.\venv\Scripts\Activate.ps1
+```
+
+This mirrors the POSIX setup and launches the test server with the installed `summoner` package.
+
+</details>
+
+<!-- 
+<details>
+<summary><img alt="Package icon" width="16" src="https://cdn.simpleicons.org/pypi/008f99"> <b>Create your package under <code>tooling/</code></b></summary>
+<br>
+
+**What goes where and why**
+
+* Put your Python package folders inside `tooling/`. Each folder under `tooling/` is treated as a package during development and later becomes a peer of the native SDK packages during the merge step.
+* Put a single `requirements.txt` at the **repo root**. The SDK builder looks for it there when composing environments. Keeping it at the top level avoids duplication and makes installs predictable.
+
+**Folder shape (single package)**
+
+```txt
+tooling/
+  your_package/
+    __init__.py          # optional exports, e.g., "from .agent import Agent"
+    agent.py             # your code
+    utils.py             # optional helpers
+requirements.txt         # at repo root (used during SDK composition)
+```
+
+**Folder shape (multiple packages from one repo)**
+You may ship more than one package from the same module repo.
+
+```txt
+tooling/
+  pkg_alpha/
+    __init__.py
+    alpha.py
+  pkg_beta/
+    __init__.py
+    beta.py
+requirements.txt
+```
+
+**Naming guidelines**
+
+* Use lowercase names with underscores for package folders, for example `your_package`.
+* Avoid hyphens in package names.
+* Choose names that will not collide with other modules when merged into the SDK.
+
+**How to import during development**
+
+Write imports against `tooling.*` so your code runs **before** the merge:
+
+```python
+from tooling.your_package import Agent
+from tooling.your_package.utils import helper
+```
+
+This matches the template convention and keeps your code runnable while it is still under `tooling/`.
+
+In comparison, imports from the core SDK should use `summoner.*`:
+
+```python
+from summoner.client import SummonerClient
+```
+
+**Why the import shape changes later**
+
+During the SDK build, the builder copies `tooling/your_package/` to `summoner/your_package/` and rewrites internal imports to place your package at the same level as native ones. After the merge, **code inside the SDK** uses:
+
+```python
+from your_package import Agent
+from your_package.utils import helper
+```
+
+Likewise, imports that referenced the core SDK from within your module are rewritten to their internal, SDK-local form:
+
+```python
+from client import SummonerClient
+```
+
+Consumers of the **installed SDK** then import through the public namespace:
+
+```python
+from summoner.your_package import Agent
+from summoner.your_package.utils import helper
+from summoner.client import SummonerClient
+```
+
+**Optional shim for local development**
+
+If you reference `tooling.*` from files that may later live under `summoner/`, add a minimal path shim so the same file works both before and after the merge:
+
+```python
+# place near the top of files that import from tooling.*
+import os, sys
+root = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(root, "..", ".."))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
+```
+
+**About `requirements.txt`**
+
+* Keep it at the **repo root**. The SDK builder installs this file when composing your SDK.
+* Pin versions for repeatability when possible. Example:
+
+```txt
+# requirements.txt at repo root
+aiohttp>=3.9,<4.0
+pydantic>=2.6,<3.0
+```
+
+**Quick sanity check**
+
+With your virtual environment active:
+
+```bash
+python -c "import tooling.your_package as yp; print('OK:', yp.__name__)"
+```
+
+If this passes, you are ready to iterate on your module and later merge it into an SDK build.
+
+</details> -->
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+### <img alt="Merge into SDK" src="https://img.shields.io/badge/Merge%20into%20SDK-00bcd4"> Merge module into SDK
+
+This section explains how to structure your module so that it merges accurately into an SDK build. The installer behavior is covered earlier. Here we focus on conventions, layout, imports, and dependency planning.
+
+<details>
+<summary><img alt="Map" width="16" src="https://cdn.simpleicons.org/textpattern/00bcd4"> <b>Plan your repository layout for merging</b></summary>
+<br>
+
+**What the builder expects**
+
+* All exportable code lives under `tooling/` as package folders. Each folder becomes a top-level package in the SDK under `summoner/<pkg>/`. This is why names must be stable and conflict-free.
+* A single `requirements.txt` sits at the **repo root**. The SDK builder reads it during composition. Keeping one place for dependencies avoids duplication and surprises.
+
+**Canonical shapes**
+
+Single package:
+
+```txt
+tooling/
+  your_package/
+    __init__.py          # optional exports, e.g., "from .agent import Agent"
+    agent.py
+    utils.py
+requirements.txt         # at repo root (used during SDK composition)
+```
+
+Multiple packages from one repo:
+
+```txt
+tooling/
+  pkg_alpha/
+    __init__.py
+    alpha.py
+  pkg_beta/
+    __init__.py
+    beta.py
+requirements.txt
+```
+
+If you need subpackages, mirror the same pattern with directories:
+
+```txt
+tooling/
+  your_package/
+    __init__.py
+    subpkg/
+      __init__.py
+      feature.py
+requirements.txt
+```
+
+**Naming guidelines**
+
+* Use lowercase with underscores for package folders, for example `your_package`. This avoids import issues on case-sensitive filesystems.
+* Avoid hyphens in folder names. Dashes are not valid in Python import paths.
+* Choose names that will not collide with packages contributed by other modules. If you are unsure, prefix with a short, consistent stem, for example `acme_utils`.
+
+A few minutes spent here prevents most merge conflicts later.
+
+</details>
+
+<details>
+<summary><img alt="Arrows" width="16" src="https://cdn.simpleicons.org/python/00bcd4"> <b>Import strategy before and after merge</b></summary>
+<br>
+
+**During development in your module repo**
+
+Write imports against `tooling.*` so the code runs before the merge:
+
+```python
+from tooling.your_package import Agent
+from tooling.your_package.utils import helper
+```
+
+Core SDK imports should always use the public namespace:
+
+```python
+from summoner.client import SummonerClient
+```
+
+This separation is intentional. It lets your module run in isolation while still using the public APIs of the core SDK.
+
+**What changes at merge time**
+
+When you compose an SDK, the builder copies `tooling/your_package/` to `summoner/your_package/` and rewrites internal imports so your package becomes a peer of native SDK packages.
+
+* Imports that referenced your package:
+
+  ```python
+  # before merge (in module repo)
+  from tooling.your_package import Agent
+
+  # after merge (inside the SDK source tree)
+  from your_package import Agent
+  ```
+
+* Imports that referenced the core SDK from within your module:
+
+  ```python
+  # before merge (in module repo)
+  from summoner.client import SummonerClient
+
+  # after merge (inside the SDK source tree)
+  from client import SummonerClient
+  ```
+
+The rewrite is mechanical. It expects clean, absolute imports. Avoid deep relative imports like `from . import something` across distant folders. Keep intra-package imports either absolute within your package or local, for example `from .utils import helper`.
+
+**How consumers import after installation**
+
+Users of the installed SDK import through the `summoner` namespace:
+
+```python
+from summoner.your_package import Agent
+from summoner.your_package.utils import helper
+from summoner.client import SummonerClient
+```
+
+If you expose a minimal public surface in `__init__.py` (using `__all__`), consumers get a simpler experience:
+
+```python
+# tooling/your_package/__init__.py
+from .agent import Agent
+__all__ = ["Agent"]
+```
+
+This keeps imports stable even if your internal files change.
+
+**Optional local shim**
+
+If a file might later live under `summoner/` but you run it from the module repo during development, you can add a small path shim so `tooling.*` imports resolve locally:
+
+```python
+# place near the top of files that import from tooling.*
+import os, sys
+root = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(root, "..", ".."))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
+```
+
+Use the shim only in entry points or dev scripts. Avoid sprinkling it across library code.
+
+</details>
+
+<details>
+<summary><img alt="Checklist" width="16" src="https://cdn.simpleicons.org/pypi/00bcd4"> <b>Dependencies and versioning</b></summary>
+<br>
+
+**One file per module repo**
+
+* Put `requirements.txt` at the **repo root**. The SDK builder installs from this file during composition.
+* Prefer compatible-range pins for libraries you do not control, and exact pins for tools that must match across modules.
+
+Example:
+
+```txt
+# requirements.txt at repo root
+aiohttp>=3.9,<4.0
+pydantic>=2.6,<3.0
+```
+
+If you ship optional extras for local experiments, document them separately, for example `requirements.dev.txt`, and keep them out of the main build to avoid bloating the SDK.
+
+**Agent-specific dependencies**
+
+If your repo also ships runnable agents, keep their extra dependencies in the agent folders’ own `requirements.txt`. The SDK composition uses the repo-root `requirements.txt` only. Agents can install their own extras at run time.
+
+**Non-code assets**
+
+If your package needs data files at run time, place them inside your package and load them via package-relative paths, not absolute file paths. This keeps things working after the merge.
+
+</details>
+
+<details>
+<summary><img alt="Magnifier" width="16" src="https://cdn.simpleicons.org/checkmarx/00bcd4"> <b>Pre-merge self checks</b></summary>
+<br>
+
+Run these checks inside your module repo with the virtual environment active. They catch most issues early.
+
+**Package import check**
+
+```bash
+python -c "import tooling.your_package as yp; print('OK:', yp.__name__)"
+```
+
+**Core import check**
+
+```bash
+python -c "from summoner.client import SummonerClient; print('OK')"
+```
+
+**Name collision check**
+
+* Verify that each folder directly under `tooling/` has a unique, descriptive name.
+* If you plan to include multiple modules in the same SDK, list their package names and check for overlaps.
+
+**Public surface check**
+
+* Inspect `tooling/your_package/__init__.py`. Export only the symbols you want users to see. Keep internal helpers unexported.
+
+If these pass, your module is ready to be composed into an SDK.
+
+</details>
+
+<details>
+<summary><img alt="Magnifier" width="16" src="https://api.iconify.design/tabler/alert-triangle.svg?color=%2300bcd4&width=16"> <b>Common pitfalls</b></summary>
+<br>
+
+* Placing `requirements.txt` under `tooling/`. Keep it at the repo root or the builder will not find it.
+* Using hyphens in package folder names. Use underscores to keep imports valid.
+* Mixing relative and absolute import styles. Prefer clean absolute imports inside your package and the `summoner.*` namespace for core.
+* Side effects in `__init__.py`. Keep it light. Heavy work in `__init__.py` can surprise users when they import.
+* Hard-coded absolute paths to data files. Use package-relative reads so the same code works before and after merge.
+* Exporting everything. Expose a minimal API with `__all__` to avoid breaking downstream code when internals change.
+
+A quick sweep for these issues saves time during composition.
+
+</details>
+
+
 
 
 
