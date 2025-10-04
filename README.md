@@ -64,13 +64,9 @@ Each row is a complete route; follow the badges in order. Docs are one click awa
       </tr>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies>
-            <img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1">
-          </a>
+          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules">
-            <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7">
-          </a>
+          <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
         </td>
         <td>Set up a venv and fetch core modules for the SDK.</td>
       </tr>
