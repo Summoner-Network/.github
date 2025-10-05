@@ -32,5 +32,5 @@ def round_corners_with_border(input_path, output_path, radius=50, border_size=10
     bordered_img.save(output_path, format="PNG")
 
 # Usage
-for s in ["img/summoner_intro"]:
+for s in ["img/release_github", "img/release_project", "img/macos_install_in_app"]:
     round_corners_with_border(f"{s}.png", f"{s}_rounded.png", radius=50, border_size=4)

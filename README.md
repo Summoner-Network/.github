@@ -315,7 +315,7 @@ You can start from the **SDK template** (clean SDK) or from **summoner-agents** 
 
 
 <details>
-<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A - Start from scratch with an SDK template</b></summary>
+<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A — Start from scratch with an SDK template</b></summary>
 <br>
 
 **Create your own SDK repo from the template.** Click **Use this template → Create a new repository** on the [**SDK template**](https://github.com/Summoner-Network/summoner-sdk#getting-started), then clone it and enter the folder.
@@ -332,7 +332,7 @@ cd <your-sdk-repo>
 </details>
 <a id="use-an-sdk-with-agent-examples"></a>
 <details>
-<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B - Run agent examples with a ready-made SDK</b></summary>
+<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B — Run agent examples with a ready-made SDK</b></summary>
 <br>
 
 **Download the SDK with agent examples.** Clone the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repository and enter the folder.
@@ -992,125 +992,6 @@ This mirrors the POSIX setup and launches the test server with the installed `su
 
 </details>
 
-<!-- 
-<details>
-<summary><img alt="Package icon" width="16" src="https://cdn.simpleicons.org/pypi/008f99"> <b>Create your package under <code>tooling/</code></b></summary>
-<br>
-
-**What goes where and why**
-
-* Put your Python package folders inside `tooling/`. Each folder under `tooling/` is treated as a package during development and later becomes a peer of the native SDK packages during the merge step.
-* Put a single `requirements.txt` at the **repo root**. The SDK builder looks for it there when composing environments. Keeping it at the top level avoids duplication and makes installs predictable.
-
-**Folder shape (single package)**
-
-```txt
-tooling/
-  your_package/
-    __init__.py          # optional exports, e.g., "from .agent import Agent"
-    agent.py             # your code
-    utils.py             # optional helpers
-requirements.txt         # at repo root (used during SDK composition)
-```
-
-**Folder shape (multiple packages from one repo)**
-You may ship more than one package from the same module repo.
-
-```txt
-tooling/
-  pkg_alpha/
-    __init__.py
-    alpha.py
-  pkg_beta/
-    __init__.py
-    beta.py
-requirements.txt
-```
-
-**Naming guidelines**
-
-* Use lowercase names with underscores for package folders, for example `your_package`.
-* Avoid hyphens in package names.
-* Choose names that will not collide with other modules when merged into the SDK.
-
-**How to import during development**
-
-Write imports against `tooling.*` so your code runs **before** the merge:
-
-```python
-from tooling.your_package import Agent
-from tooling.your_package.utils import helper
-```
-
-This matches the template convention and keeps your code runnable while it is still under `tooling/`.
-
-In comparison, imports from the core SDK should use `summoner.*`:
-
-```python
-from summoner.client import SummonerClient
-```
-
-**Why the import shape changes later**
-
-During the SDK build, the builder copies `tooling/your_package/` to `summoner/your_package/` and rewrites internal imports to place your package at the same level as native ones. After the merge, **code inside the SDK** uses:
-
-```python
-from your_package import Agent
-from your_package.utils import helper
-```
-
-Likewise, imports that referenced the core SDK from within your module are rewritten to their internal, SDK-local form:
-
-```python
-from client import SummonerClient
-```
-
-Consumers of the **installed SDK** then import through the public namespace:
-
-```python
-from summoner.your_package import Agent
-from summoner.your_package.utils import helper
-from summoner.client import SummonerClient
-```
-
-**Optional shim for local development**
-
-If you reference `tooling.*` from files that may later live under `summoner/`, add a minimal path shim so the same file works both before and after the merge:
-
-```python
-# place near the top of files that import from tooling.*
-import os, sys
-root = os.path.dirname(os.path.abspath(__file__))
-repo_root = os.path.abspath(os.path.join(root, "..", ".."))
-if repo_root not in sys.path:
-    sys.path.insert(0, repo_root)
-```
-
-**About `requirements.txt`**
-
-* Keep it at the **repo root**. The SDK builder installs this file when composing your SDK.
-* Pin versions for repeatability when possible. Example:
-
-```txt
-# requirements.txt at repo root
-aiohttp>=3.9,<4.0
-pydantic>=2.6,<3.0
-```
-
-**Quick sanity check**
-
-With your virtual environment active:
-
-```bash
-python -c "import tooling.your_package as yp; print('OK:', yp.__name__)"
-```
-
-If this passes, you are ready to iterate on your module and later merge it into an SDK build.
-
-</details> -->
-
-
-
 
 
 
@@ -1301,7 +1182,238 @@ If these pass, your module is ready to be composed into an SDK.
 
 
 
+
+
 ---
+
+
+
+
+
+
+
+
+
+### <img alt="Desktop UI" src="https://img.shields.io/badge/Desktop%20UI-ff69b4"> Desktop UI
+
+The **Summoner Desktop** app is an Electron UI that helps you launch a local server and run agents. You can install a packaged build from Releases or build it yourself from source.
+
+<details>
+<summary><img alt="Download" width="16" src="https://cdn.simpleicons.org/github/ff69b4"> <b>Option A — Install from GitHub Releases</b></summary>
+<br>
+
+**1) Go to the app repository.** Open [`Summoner-Network/summoner-desktop`](https://github.com/Summoner-Network/summoner-desktop) and click **Releases** in the right sidebar.
+
+<p align="center">
+  <a href="https://github.com/Summoner-Network/summoner-desktop/releases">
+    <img src="https://github.com/Summoner-Network/.github/blob/main/img/release_github_rounded.png" width="250"/>
+  </a>
+</p>
+
+> [!TIP]
+> If you do not see assets, check the latest workflow run under **Actions**. Artifacts are uploaded to the most recent draft or pre-release.
+
+**2) Choose your platform file.** Pick the file that matches your OS and CPU architecture. Filenames look like `Summoner Desktop-<version>-<arch>.<ext>`.
+
+* **macOS**: download the `.dmg` or `.zip` (Apple Silicon is `arm64`, Intel is `x64`).
+* **Linux**: download the `.AppImage` or `.deb`.
+* **Windows**: there is no supported installer yet. See the Windows notes below.
+
+**3) Install and start.** Follow the step for your platform.
+
+* **macOS**: open the `.dmg`, drag the app to Applications, then launch it from Spotlight.
+
+<p align="center">
+  <img src="https://github.com/Summoner-Network/.github/blob/main/img/macos_install_in_app_rounded.png" width="250"/>
+</p>
+
+* **Linux (.AppImage)**: make the file executable, then run it:
+
+  ```bash
+  chmod +x "Summoner Desktop-<version>-<arch>.AppImage"
+  ./Summoner\ Desktop-<version>-<arch>.AppImage
+  ```
+* **Linux (.deb)**: install with your package manager:
+
+  ```bash
+  sudo apt install ./Summoner\ Desktop-<version>-<arch>.deb
+  ```
+
+**What you should see.** A login screen followed by the landing grid. If you see the UI but buttons do nothing on Windows, read the Windows section below.
+
+</details>
+
+<details>
+<summary><img alt="Hammer" width="16" src="https://cdn.simpleicons.org/electron/ff69b4"> <b>Option B — Build from source (local)</b></summary>
+<br>
+
+**1) Install prerequisites.** You need **Node.js 18+** and **npm**. This verifies your toolchain.
+
+```bash
+node -v
+npm -v
+```
+
+If either command is missing, install Node with your platform’s package manager or from nodejs.org.
+
+**2) Clone and install dependencies.** This downloads the source and creates a clean `node_modules/` from the lockfile.
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-desktop.git
+cd summoner-desktop
+npm ci
+```
+
+**3) Run in development.** This launches Electron and auto-injects the alert modal into all pages so you can click around.
+
+```bash
+npm start
+```
+
+**4) Build installers locally.** This packages the app and writes artifacts to **`release/`** (set in `package.json`).
+
+```bash
+# macOS (choose the right one for your machine)
+npm run dist:mac:arm64     # Apple Silicon
+npm run dist:mac:x64       # Intel
+npm run dist:mac:both      # both architectures on a host that supports it
+
+# Linux
+npm run dist:linux
+```
+
+The `release/` folder appears after your first build. All outputs are placed there.
+
+<p align="center">
+    <img src="https://github.com/Summoner-Network/.github/blob/main/img/release_project_rounded.png" width="250"/>
+</p>
+
+**What happens under the hood.** At build time, the scripts run:
+
+* `npm run inject-alert` to update `renderer/**/index.html`
+* `electron-builder` with `--publish=never` to avoid uploading
+
+**5) Install the file you produced.** Use the same steps as the Releases option for your platform.
+
+</details>
+
+<details>
+<summary><img alt="Apple" width="16" src="https://cdn.simpleicons.org/apple/ff69b4"> <b>Install on macOS</b></summary>
+<br>
+
+**Check or install Node (first time).** This ensures you can run and build the app; Homebrew is the simplest way to add Node.
+
+```bash
+node -v || brew install node
+npm -v  || true
+```
+
+**Run a development session (first time).** This gives you a live Electron window so you can confirm the UI works on your Mac.
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-desktop.git
+cd summoner-desktop
+npm ci
+npm start
+```
+
+**Produce a macOS installer.** This writes `.dmg`/`.zip` files to `release/` for your architecture.
+
+```bash
+# Apple Silicon
+npm run dist:mac:arm64
+# Intel
+npm run dist:mac:x64
+```
+
+**Handle Gatekeeper prompts.** This is normal for non-notarized builds; approve the app in **System Settings → Privacy & Security**, then open it again.
+
+</details>
+
+<details>
+<summary>
+<img alt="Ubuntu" width="16" src="https://cdn.simpleicons.org/ubuntu/ff69b4">
+<img alt="Debian" width="16" src="https://cdn.simpleicons.org/debian/ff69b4">
+ <b>Install on Ubuntu or Debian</b></summary>
+<br>
+
+**Check or install Node (first time).** This makes sure Electron can run and `electron-builder` can package.
+
+```bash
+node -v || { sudo apt update && sudo apt install -y nodejs npm; }
+npm -v  || true
+```
+
+**Run a development session (first time).** This brings up the Electron window so you can click through the UI.
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-desktop.git
+cd summoner-desktop
+npm ci
+npm start
+```
+
+**Produce Linux artifacts.** This writes `.AppImage` and/or `.deb` to `release/`.
+
+```bash
+npm run dist:linux
+```
+
+**Install or run the artifact.** This integrates the app into your desktop or runs it directly.
+
+```bash
+# Run AppImage
+chmod +x release/*AppImage
+./release/<your-file>.AppImage
+
+# Install .deb
+sudo apt install ./release/<your-file>.deb
+```
+
+</details>
+
+
+<details>
+<summary>
+<img alt="Windows" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=ff69b4">
+<b>Current state for Windows</b>
+</summary>
+<br>
+
+You can **launch the Electron UI in development** with PowerShell 7+:
+
+```powershell
+git clone https://github.com/Summoner-Network/summoner-desktop.git
+cd summoner-desktop
+npm ci
+npm start
+```
+
+However, many app features call **Bash** scripts bundled under `scripts/`. On native Windows these actions do not run yet. You will see the UI, but clicking certain buttons will not perform the expected work.
+
+**Use WSL2 for full behavior.** This provides a Linux environment where Bash-backed features work.
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+**Build and run inside WSL.** Follow the Linux steps from the Ubuntu shell for a complete experience.
+
+```bash
+cd summoner-desktop
+npm ci
+npm start
+# or package:
+npm run dist:linux
+```
+
+**Help us prioritize Windows parity.** Open an issue describing your use case; that counts as a contribution.
+
+
+</details>
+
+
+
 
 Docs
 - server (beginner, quick, fundamentals, advanced)
@@ -1313,186 +1425,6 @@ Docs
 - events
 
 
-
-
-
-
-
----
-
-
-
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-## Start here
-
-
-
-Choose the path that matches your goal. Each link points to a dedicated repo with its own README.
-
-1. **Try examples quickly**
-
-   * Repo: **[summoner-agents](https://github.com/Summoner-Network/summoner-agents)**
-   * What you get: runnable agents that demonstrate the SDK patterns and messaging.
-
-2. **Read the docs**
-
-   * Repo: **[summoner-docs](https://github.com/Summoner-Network/summoner-docs)**
-   * What you get: concepts, protocol sketches, and design notes.
-
-3. **Build your own SDK from modules**
-
-   * Repo: **[summoner-sdk](https://github.com/Summoner-Network/summoner-sdk)**
-   * What you get: a template you customize via `build.txt` to assemble an SDK with the modules you choose.
-
-4. **Use a desktop UI**
-
-   * Repo: **[summoner-desktop](https://github.com/Summoner-Network/summoner-desktop)**
-   * What you get: a visual interface for running agents and servers locally.
-
-5. **Contribute a module**
-
-   * Repo: **[starter-template](https://github.com/Summoner-Network/starter-template)**
-   * What you get: a minimal module template you can publish and later include from `summoner-sdk` recipes.
-
-
-## Prerequisites
-
-<details>
-<summary>
-<b>(Click to expand)</b> Pre-requisities and installation steps:
-</summary>
-<br>
-
-**Prereqs**
-
-* Python 3.9 or newer
-* `git`
-* macOS or Linux. Windows users can use WSL2 or git bash via VS code.
-
-**Steps**
-
-```bash
-# 1) Get examples
-git clone https://github.com/Summoner-Network/summoner-agents
-cd summoner-agents
-
-# 2) Set up the SDK and venv
-source build_sdk.sh setup
-
-# 3) Activate the venv
-source venv/bin/activate
-
-# 4) Install agent requirements
-# If you want a single agent's deps:
-pip install -r agents/agent_EchoAgent_0/requirements.txt
-# Or install all agents' deps via the provided script if present:
-bash install_requirements.sh
-
-# 5) Run an agent
-python agents/agent_EchoAgent_0/agent.py
-```
-
-If you opened a new terminal later, activate the venv again:
-
-```bash
-source venv/bin/activate
-```
-
-> 📝 **Note:** 
-> Some agents have their own extra instructions in their README. Follow those when present.
-
-</details>
-
-## Build an SDK from modules (recipes path)
-
-<details>
-<summary>
-<b>(Click to expand)</b> Use <b>summoner-sdk</b> to assemble your own SDK from a list of modules:
-</summary>
-<br>
-
-
-
-```bash
-# 1) Get the template
-git clone https://github.com/Summoner-Network/summoner-sdk
-cd summoner-sdk
-
-# 2) Edit the recipe in build.txt
-# Add one module name per line. Example:
-#   summoner-agentclass
-#   my-org/my-private-module@v0.2.1
-
-# 3) Build and set up
-source build_sdk.sh setup
-
-# 4) Activate the venv
-source venv/bin/activate
-
-# 5) Start a sample server or client if provided by your module set
-python user_space/myserver.py  # example entry point
-```
-
-**Developer branch options**
-If you need the `dev` branch of `summoner-core` during setup, the script supports:
-
-```bash
-source build_sdk.sh dev_setup   # install using dev branch
-source build_sdk.sh dev_reset   # reset then set up from dev branch
-```
-
-</details>
-
-## Desktop UI (optional)
-
-<details>
-<summary>
-<b>(Click to expand)</b> If you prefer a visual interface, use <b>summoner-desktop</b>:
-</summary>
-<br>
-
-```bash
-git clone https://github.com/Summoner-Network/summoner-desktop
-cd summoner-desktop
-# See repo README for Node.js requirements and run commands
-```
-
-</details>
-
-## Repository index
-
-| Repo                                                                         | Purpose                                                                                                      |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **[summoner-core](https://github.com/Summoner-Network/summoner-core)**       | Core runtime components used by agents and servers. Python client SDK, Rust server implementation.           |
-| **[summoner-agents](https://github.com/Summoner-Network/summoner-agents)**   | Example agents that exercise the SDK patterns such as `@receive` and `@send(multi=True)` and relay behavior. |
-| **[summoner-docs](https://github.com/Summoner-Network/summoner-docs)**       | Conceptual documentation, design notes, and protocol outlines.                                               |
-| **[summoner-sdk](https://github.com/Summoner-Network/summoner-sdk)**         | Template repo that assembles an SDK from modules listed in `build.txt`.                                      |
-| **[summoner-desktop](https://github.com/Summoner-Network/summoner-desktop)** | Desktop application for running and inspecting agents and servers.                                           |
-| **[starter-template](https://github.com/Summoner-Network/starter-template)** | Minimal template for authoring a new module that others can consume via `summoner-sdk`.                      |
-
-**Summoner native modules (public)**
-
-* **[summoner-agentclass](https://github.com/Summoner-Network/summoner-agentclass)**
-  Adds security and orchestration features to `SummonerClient`. Includes cryptographic envelopes, DID support, and access helpers for the Summoner API.
-
-
-## Concepts in one page
-
-* **Agents** interact over TCP using a decorator‑based SDK. Typical patterns use `@receive` for inbound messages and `@send(multi=True)` to fan out to peers.
-* **Servers** are available in Python for iteration and in Rust for performance. The Rust server mirrors Python behavior.
-* **Orchestration** can involve local groups or WAN relays. Connector agents bridge external ecosystems.
-* **Security** follows a staged design: self‑issued identities, cryptographic envelopes for integrity and confidentiality, and replay protection using nonces and timestamps.
 
 
 ## Troubleshooting
