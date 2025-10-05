@@ -96,13 +96,13 @@
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-launch-agents-and-the-server-through-the-desktop-app" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
+          <a href="#-launch-agents-using-the-desktop-app" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
         </td>
         <td>Optional desktop GUI to launch a local server and agents.</td>
       </tr>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href="#-read-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
+          <a href="#-read-the-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
         </td>
         <td>Read the docs and learn about Summoner.</td>
       </tr>
@@ -1429,7 +1429,7 @@ npm run dist:linux
 
 
 
-### <img alt="Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"> Read SDK Docs
+### <img alt="Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"> Read the Summoner documentation
 
 The **Summoner Docs** are a public GitHub repository. You can read them online or clone the repo and browse locally in your editor. There is no installer required.
 

@@ -1480,7 +1480,43 @@ cd summoner-docs
 
 </details>
 
+---
 
+
+
+<!-- Read SDK Docs (orange) -->
+<img alt="info" src="https://img.shields.io/badge/%E2%93%98- -d6720f?style=flat-square&labelColor=d6720f&color=d6720f" height="14">
+
+<!-- Desktop UI (pink) -->
+<img alt="info" src="https://img.shields.io/badge/%E2%93%98- -ff69b4?style=flat-square&labelColor=ff69b4&color=ff69b4" height="14">
+
+<!-- pattern -->
+<img alt="info" src="https://img.icons8.com/?size=18&id=REPLACE_WITH_ICON_ID&format=png&color=d6720f" width="16" height="16">
+
+
+<!-- Reusable info circle (Docs orange) -->
+<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+  <circle cx="12" cy="12" r="10" fill="#d6720f"/>
+  <rect x="11" y="10" width="2" height="6" fill="#ffffff"/>
+  <rect x="11" y="7"  width="2" height="2" fill="#ffffff"/>
+</svg>
+
+<!-- #6f42c1, #0b5ed7, #4f9bff, #008f99, #00bcd4, #ff69b4, #d6720f -->
+<circle cx="12" cy="12" r="10" fill="#ff69b4"/>
+
+<details>
+  <summary>
+    <!-- Pick ONE of the three options and place it before the text -->
+    <!-- A) Shields micro-badge -->
+    <img alt="info" src="https://img.shields.io/badge/%E2%93%98- -d6720f?style=flat-square&labelColor=d6720f&color=d6720f" height="14">
+    <span style="font-weight:600;">Mini index — where to learn each concept</span>
+  </summary>
+  <br>
+  <!-- content -->
+</details>
+
+
+---
 
 ## Contributing
 
