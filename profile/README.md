@@ -1429,7 +1429,7 @@ npm run dist:linux
 
 
 
-### <img alt="Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"> Read the Summoner documentation
+### <img alt="Read SDK Docs" src="https://img.shields.io/badge/Read%20SDK%20Docs-d6720f"> Read the Summoner documentation
 
 The **Summoner Docs** are a public GitHub repository. You can read them online or clone the repo and browse locally in your editor. There is no installer required.
 
