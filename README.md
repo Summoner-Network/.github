@@ -96,13 +96,13 @@
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-launch-agents-and-the-server-through-the-desktop-app" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
+          <a href="#-launch-agents-using-the-desktop-app" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
         </td>
         <td>Optional desktop GUI to launch a local server and agents.</td>
       </tr>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href="#-read-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
+          <a href="#-read-the-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
         </td>
         <td>Read the docs and learn about Summoner.</td>
       </tr>
@@ -1429,7 +1429,7 @@ npm run dist:linux
 
 
 
-### <img alt="Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"> Read SDK Docs
+### <img alt="Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"> Read the Summoner documentation
 
 The **Summoner Docs** are a public GitHub repository. You can read them online or clone the repo and browse locally in your editor. There is no installer required.
 
@@ -1461,7 +1461,8 @@ cd summoner-docs
 </details>
 
 <details>
-<summary><img alt="Index" width="16" src="https://cdn.simpleicons.org/notion/d6720f"> <b>Mini index (work in progress)</b></summary>
+<summary><img alt="Index" width="16" src="https://img.icons8.com/?size=100&id=2800&format=png&color=d6720f">
+ <b>Mini index (work in progress)</b></summary>
 <br>
 
 **Server**  
@@ -1480,43 +1481,7 @@ cd summoner-docs
 
 </details>
 
----
 
-
-
-<!-- Read SDK Docs (orange) -->
-<img alt="info" src="https://img.shields.io/badge/%E2%93%98- -d6720f?style=flat-square&labelColor=d6720f&color=d6720f" height="14">
-
-<!-- Desktop UI (pink) -->
-<img alt="info" src="https://img.shields.io/badge/%E2%93%98- -ff69b4?style=flat-square&labelColor=ff69b4&color=ff69b4" height="14">
-
-<!-- pattern -->
-<img alt="info" src="https://img.icons8.com/?size=18&id=REPLACE_WITH_ICON_ID&format=png&color=d6720f" width="16" height="16">
-
-
-<!-- Reusable info circle (Docs orange) -->
-<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
-  <circle cx="12" cy="12" r="10" fill="#d6720f"/>
-  <rect x="11" y="10" width="2" height="6" fill="#ffffff"/>
-  <rect x="11" y="7"  width="2" height="2" fill="#ffffff"/>
-</svg>
-
-<!-- #6f42c1, #0b5ed7, #4f9bff, #008f99, #00bcd4, #ff69b4, #d6720f -->
-<circle cx="12" cy="12" r="10" fill="#ff69b4"/>
-
-<details>
-  <summary>
-    <!-- Pick ONE of the three options and place it before the text -->
-    <!-- A) Shields micro-badge -->
-    <img alt="info" src="https://img.shields.io/badge/%E2%93%98- -d6720f?style=flat-square&labelColor=d6720f&color=d6720f" height="14">
-    <span style="font-weight:600;">Mini index — where to learn each concept</span>
-  </summary>
-  <br>
-  <!-- content -->
-</details>
-
-
----
 
 ## Contributing
 

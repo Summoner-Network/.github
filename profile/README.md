@@ -1461,7 +1461,8 @@ cd summoner-docs
 </details>
 
 <details>
-<summary><img alt="Index" width="16" src="https://cdn.simpleicons.org/notion/d6720f"> <b>Mini index (work in progress)</b></summary>
+<summary><img alt="Index" width="16" src="https://img.icons8.com/?size=100&id=2800&format=png&color=d6720f">
+ <b>Mini index (work in progress)</b></summary>
 <br>
 
 **Server**  
