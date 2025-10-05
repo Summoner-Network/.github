@@ -29,14 +29,16 @@
 
 ## Summoner pathways
 
-Choose your entry point. Read the docs for concepts, or follow a setup route to run agents or build modules. Click each badge in order along a row; the left cell stacks steps so you can see the whole path at a glance.
+**The table shown below serves as your map through the Summoner ecosystem.** Each row represents a complete pathway: from setting up basic tools to building, running, or contributing to agent systems.
 
+> [!NOTE]
+> The left column shows the steps involved using **clickable badges**, in the recommended order. The right column summarizes the outcome.
 
 
 <div style="display:flex;justify-content:center;">
   <div style="width:95%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
     <table style="border-collapse:collapse;width:auto;min-width:860px;table-layout:auto;text-align:left;">
-      <thead><tr><th style="text-align:left;white-space:nowrap;">Path</th><th style="text-align:left;">What you'll do</th></tr><thead>
+      <thead><tr><th style="text-align:left;white-space:nowrap;">Pathway</th><th style="text-align:left;">What you will acheive</th></tr><thead>
       <tbody>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
@@ -84,7 +86,7 @@ Choose your entry point. Read the docs for concepts, or follow a setup route to 
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-contribute-your-own-sdk-module"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
+          <a href="#-contribute-your-own-sdk-module"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Dev.%20a%20Module-008f99"></a>
           <sup>&nbsp;➜&nbsp;</sup>
           <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a>
         </td>
@@ -100,7 +102,7 @@ Choose your entry point. Read the docs for concepts, or follow a setup route to 
       </tr>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href="#-read-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"></a>
+          <a href="#-read-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
         </td>
         <td>Read the docs and learn about Summoner.</td>
       </tr>
@@ -1416,29 +1418,74 @@ npm run dist:linux
 
 
 
-Docs
-- server (beginner, quick, fundamentals, advanced)
-- client
-- receive/send
-- routes and states
-- hooks
-- travel
-- events
+
+
+
+---
 
 
 
 
-## Troubleshooting
 
-* If an agent fails to import a module, ensure the venv is active and the agent's `requirements.txt` is installed.
-* If a script is not executable, run `chmod +x build_sdk.sh` or `chmod +x install_requirements.sh` as needed.
-* On Windows, use WSL2 to avoid socket and path issues.
+
+
+### <img alt="Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"> Read SDK Docs
+
+The **Summoner Docs** are a public GitHub repository. You can read them online or clone the repo and browse locally in your editor. There is no installer required.
+
+<details>
+<summary><img alt="Book" width="16" src="https://cdn.simpleicons.org/readthedocs/d6720f"> <b>Option A — Read on GitHub (fastest)</b></summary>
+<br>
+
+**Open the documentation repository.** The docs are structured to guide you from core concepts to advanced usage. You can explore them directly on GitHub or clone the repo locally.
+
+* Repo home: [https://github.com/Summoner-Network/summoner-docs/](https://github.com/Summoner-Network/summoner-docs/)
+* SDK guides: [https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/index.md](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/index.md)
+* API reference: [https://github.com/Summoner-Network/summoner-docs/tree/main/reference/index.md](https://github.com/Summoner-Network/summoner-docs/tree/main/reference/index.md)
+
+</details>
+
+<details>
+<summary><img alt="Download" width="16" src="https://cdn.simpleicons.org/github/d6720f"> <b>Option B — Clone locally (browse in your editor)</b></summary>
+<br>
+
+**Clone the repository.** This copies the Markdown; no build step is needed.
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-docs.git
+cd summoner-docs
+```
+
+**Browse the folders.** Start at the root README, then drill into guides or reference.
+
+</details>
+
+<details>
+<summary><img alt="Index" width="16" src="https://cdn.simpleicons.org/notion/d6720f"> <b>Mini index (work in progress)</b></summary>
+<br>
+
+**Server**  
+
+**Client**  
+
+**Receive / Send**  
+
+**Routes & States** 
+
+**Hooks**  
+
+**Travel**  
+
+**Events**  
+
+</details>
+
 
 
 ## Contributing
 
-* Use **starter-template** to bootstrap a module.
-* Follow the repository-specific **CONTRIBUTING.md** or **Contributions** section if available, or see our [How to contribute](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md) guidelines in `summoner-docs`.
+* Use [`starter-template`](https://github.com/Summoner-Network/starter-template) to bootstrap a module.
+* Follow repository-specific **Contributions** sections, or see our [How to contribute](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md) guidelines in `summoner-docs`.
 * Open an issue on one of our public Github repos for design proposals or protocol questions.
 
 
