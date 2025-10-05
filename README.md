@@ -94,13 +94,13 @@ Choose your entry point. Read the docs for concepts, or follow a setup route to 
         <td style="white-space:nowrap; vertical-align:middle;">
           <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-desktop-ui" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
+          <a href="#-launch-agents-and-the-server-through-the-desktop-app" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
         </td>
         <td>Optional desktop GUI to launch a local server and agents.</td>
       </tr>
       <tr>
         <td style="white-space:nowrap; vertical-align:middle;">
-          <a href="#-summoner-docs" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"></a>
+          <a href="#-read-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f"></a>
         </td>
         <td>Read the docs and learn about Summoner.</td>
       </tr>
@@ -1010,7 +1010,7 @@ This mirrors the POSIX setup and launches the test server with the installed `su
 
 
 
-### <img alt="Merge into SDK" src="https://img.shields.io/badge/Merge%20into%20SDK-00bcd4"> Merge module into SDK
+### <img alt="Merge into SDK" src="https://img.shields.io/badge/Merge%20into%20SDK-00bcd4"> Make sure your module can merge into an SDK
 
 This section explains how to structure your module so that it merges accurately into an SDK build. The installer behavior is covered earlier. Here we focus on conventions, layout, imports, and dependency planning.
 
@@ -1194,7 +1194,7 @@ If these pass, your module is ready to be composed into an SDK.
 
 
 
-### <img alt="Desktop UI" src="https://img.shields.io/badge/Desktop%20UI-ff69b4"> Desktop UI
+### <img alt="Desktop UI" src="https://img.shields.io/badge/Desktop%20UI-ff69b4"> Launch agents using the Desktop app
 
 The **Summoner Desktop** app is an Electron UI that helps you launch a local server and run agents. You can install a packaged build from Releases or build it yourself from source.
 
@@ -1221,7 +1221,7 @@ The **Summoner Desktop** app is an Electron UI that helps you launch a local ser
 
 **3) Install and start.** Follow the step for your platform.
 
-* **macOS**: open the `.dmg`, drag the app to Applications, then launch it from Spotlight.
+* **macOS**: open the `.dmg`, drag the app to Applications, then launch it from Launchpad/Spotlight.
 
 <p align="center">
   <img src="https://github.com/Summoner-Network/.github/blob/main/img/macos_install_in_app_rounded.png" width="250"/>
@@ -1376,6 +1376,7 @@ sudo apt install ./release/<your-file>.deb
 <details>
 <summary>
 <img alt="Windows" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=ff69b4">
+<img alt="Ubuntu" width="16" src="https://cdn.simpleicons.org/ubuntu/ff69b4">
 <b>Current state for Windows</b>
 </summary>
 <br>
