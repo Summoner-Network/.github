@@ -86,7 +86,7 @@ Choose your entry point. Read the docs for concepts, or follow a setup route to 
           <sup>&nbsp;➜&nbsp;</sup>
           <a href="#-contribute-your-own-sdk-module"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
           <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-merge-module-into-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a>
+          <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a>
         </td>
         <td>Merge your module into an SDK build/recipe.</td>
       </tr>

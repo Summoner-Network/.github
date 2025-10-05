@@ -2,3 +2,5 @@ old/
 venv
 *.old
 *.new
+.DS_Store
+*.DS_Store
