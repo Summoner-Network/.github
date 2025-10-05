@@ -1301,7 +1301,7 @@ The `release/` folder appears after your first build. All outputs are placed the
 <summary><img alt="Apple" width="16" src="https://cdn.simpleicons.org/apple/ff69b4"> <b>Install on macOS</b></summary>
 <br>
 
-**Check or install Node (first time).** This ensures you can run and build the app; Homebrew is the simplest way to add Node.
+**Check or install Node (first time).** This ensures you can run and build the app. Homebrew is the simplest way to add Node.
 
 ```bash
 node -v || brew install node
@@ -1326,7 +1326,7 @@ npm run dist:mac:arm64
 npm run dist:mac:x64
 ```
 
-**Handle Gatekeeper prompts.** This is normal for non-notarized builds; approve the app in **System Settings → Privacy & Security**, then open it again.
+**Handle Gatekeeper prompts.** This is normal for non-notarized builds. Approve the app in **System Settings → Privacy & Security**, then open it again.
 
 </details>
 
@@ -1408,7 +1408,7 @@ npm start
 npm run dist:linux
 ```
 
-**Help us prioritize Windows parity.** Open an issue describing your use case; that counts as a contribution.
+**Help us prioritize Windows parity.** Open an issue describing your use case.
 
 
 </details>
