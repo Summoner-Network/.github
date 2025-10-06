@@ -28,12 +28,12 @@
 
 ## Summoner pathways
 
-**The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The **Level** badge is a suggested starting point only. Labels are short for readability: **Beg.**, **Adv.**, **Expert**, and **All**. **All** means the content is suitable for any level.
+**The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The **Level** badge is a suggested starting point only.
 
 > [!NOTE]
 > The left column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
 >
-> **Levels:** <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963"> = Beginner | <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-C98A63"> = Advanced | <img alt="Level: Expert" title="Suggested starting level: Expert (author a module)" src="https://img.shields.io/badge/Expert-C96396"> = Expert | <img alt="Level: Advanced" title="Suggested starting level: Advanced (documentation dives deeper)" src="https://img.shields.io/badge/All-6399C9"> = all levels
+> **Levels:** <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963"> = Beginner | <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-CFA438"> = Advanced | <img alt="Level: Expert" title="Suggested starting level: Expert (author a module)" src="https://img.shields.io/badge/Exp.-CF5B38"> = Expert | <img alt="Level: Advanced" title="Suggested starting level: Advanced (documentation dives deeper)" src="https://img.shields.io/badge/All-6399C9"> = All levels
 
 <!-- ## Summoner pathways
 
@@ -80,7 +80,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-C98A63">
+            <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-CFA438">
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
@@ -114,7 +114,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Expert" title="Suggested starting level: Expert (author a module)" src="https://img.shields.io/badge/Expert-C96396">
+            <img alt="Level: Expert" title="Suggested starting level: Expert (author a module)" src="https://img.shields.io/badge/Exp.-CF5B38">
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
@@ -127,7 +127,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Expert" title="Suggested starting level: Expert (merge module into SDK)" src="https://img.shields.io/badge/Expert-C96396">
+            <img alt="Level: Expert" title="Suggested starting level: Expert (merge module into SDK)" src="https://img.shields.io/badge/Exp.-CF5B38">
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
