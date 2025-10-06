@@ -31,9 +31,10 @@
 **The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The **Level** badge is a suggested starting point only.
 
 > [!NOTE]
-> The left column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
+> The left column shows a **Level** badge suggesting a starting point. The middle column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
 >
 > **Levels:** <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963"> = Beginner | <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-CFA438"> = Advanced | <img alt="Level: Expert" title="Suggested starting level: Expert (author a module)" src="https://img.shields.io/badge/Exp.-CF5B38"> = Expert | <img alt="Level: Advanced" title="Suggested starting level: Advanced (documentation dives deeper)" src="https://img.shields.io/badge/All-6399C9"> = All levels
+
 
 <!-- ## Summoner pathways
 
@@ -168,98 +169,6 @@
     </table>
   </div>
 </div>
-
-
-<!-- <div style="display:flex;justify-content:center;">
-  <div style="width:95%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
-    <table style="border-collapse:collapse;width:auto;min-width:860px;table-layout:auto;text-align:left;">
-      <thead><tr><th style="text-align:left;white-space:nowrap;">Pathway</th><th style="text-align:left;">What you will acheive</th></tr><thead>
-      <tbody>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-        </td>
-        <td>Install Python, Rust, git, and build tools.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
-        </td>
-        <td>Set up a venv and fetch core modules for the SDK.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-install-your-summoner-sdk" title="Scaffold from SDK template"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a>
-        </td>
-        <td>Scaffold a fresh project from the SDK template.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-install-your-summoner-sdk" title="Launch example agents"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-start-with-runnable-agent-examples" title="Launch example agents"><img alt="③ Run Agents" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a>
-        </td>
-        <td>Run example agents immediately.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
-        </td>
-        <td>Author a reusable SDK module.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-contribute-your-own-sdk-module"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Dev.%20a%20Module-008f99"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a>
-        </td>
-        <td>Merge your module into an SDK build/recipe.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href=#-install-essential-dependencies><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-          <sup>&nbsp;➜&nbsp;</sup>
-          <a href="#-launch-agents-using-the-desktop-app" title="Optional GUI"><img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4"></a>
-        </td>
-        <td>Optional desktop GUI to launch a local server and agents.</td>
-      </tr>
-      <tr>
-        <td style="white-space:nowrap; vertical-align:middle;">
-          <a href="#-read-the-summoner-documentation" title="Documentation"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
-        </td>
-        <td>Read the docs and learn about Summoner.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div> -->
-
-
-<!-- 
-| Path | What you'll do |
-|---|---|
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies "Start here — install required tools") | Install Python, Rust, git, and build tools. |
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk "Create a venv and fetch core modules") | Set up a venv and fetch core modules for the SDK. |
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk) <sup>&nbsp;➜&nbsp;</sup> [![③ Start New Project](https://img.shields.io/badge/③-Start%20New%20Project-4f9bff)](#start-a-new-project-fresh "Scaffold from SDK template") | Scaffold a fresh project from the SDK template. |
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Use the SDK](https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7)](#install-your-summoner-sdk) <sup>&nbsp;➜&nbsp;</sup> [![③ Run Agents](https://img.shields.io/badge/③-Run%20Agents-4f9bff)](#start-with-runnable-agent-examples "Launch example agents") | Run example agents immediately. |
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Develop a Module](https://img.shields.io/badge/②-Develop%20a%20Module-008f99)](#i-want-to-develop-a-module "Author an SDK extension") | Author a reusable SDK module. |
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Develop a Module](https://img.shields.io/badge/②-Develop%20a%20Module-008f99)](#i-want-to-develop-a-module) <sup>&nbsp;➜&nbsp;</sup> [![③ Merge into SDK](https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4)](#merge-module-into-sdk "Include your module in an SDK recipe") | Merge your module into an SDK build/recipe. |
-| [![① Prereqs](https://img.shields.io/badge/①-Prereqs-6f42c1)](#install-essential-dependencies) <sup>&nbsp;➜&nbsp;</sup> [![② Desktop UI](https://img.shields.io/badge/②-Desktop%20UI-ff69b4)](#desktop-ui-optional "Optional GUI") | Optional desktop GUI to launch a local server and agents. |
-| [![① Read SDK Docs](https://img.shields.io/badge/②-Read%20SDK%20Docs-d6720f)](#summoner-docs "Documentation") | Read the docs and learn about Summoner. | -->
-
-
 
 
 ---
