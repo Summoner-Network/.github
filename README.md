@@ -310,7 +310,7 @@ Use `rustup update` in WSL when you want to upgrade Rust.
 
 ### <img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"> Install your Summoner SDK
 
-You can start from the **SDK template** (clean SDK) or from **summoner-agents** (SDK + examples). Both come from the same template. The installer creates a virtual environment and composes the SDK. You can re-run it safely.
+You can start from the **SDK template** (clean SDK) or from **summoner-agents** (SDK + examples). Both come from the same template. The installer script creates a virtual environment and composes the SDK. You can re-run it safely.
 
 > [!NOTE]
 > **About the server.** On native Windows you use the **Python server**. The Rust server is not available on Windows. To try Rust on Windows, use **WSL2**.
@@ -506,13 +506,10 @@ You can create a clean SDK that you extend as you explore. First define a **comp
 
 This section assumes you already created and cloned a repo from the [`summoner-sdk`](https://github.com/Summoner-Network/summoner-sdk) template (see [**Start from scratch with an SDK template**](#start-from-scratch-with-sdk-template) above).
 
-**To build your Summoner SDK**, you need to tell the installer which packages to include from each Summoner module. Modules are GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
+**To build your Summoner SDK**, you need to tell the installer (e.g., `built_sdk.sh`) which packages to include from which Summoner module. Modules are typically GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
 
-<!-- **Tell the installer what to include.** You list which packages to pull from Summoner modules (repos built from the template). Each module contributes one or more packages under its `tooling/` directory. During install, those packages are merged under `summoner/…` so you import them uniformly. -->
 
 **Include an entire repository (all packages).** If you want to include every package under that repository's `tooling/` directory, put the repository URL on its own line in `build.txt`.
-
-<!-- **Include an entire module (all packages).** Put the repo URL on its own line. The installer will copy every package under that repo's `tooling/`. -->
 
 ```txt
 https://github.com/Summoner-Network/summoner-agentclass.git
@@ -520,7 +517,6 @@ https://github.com/Summoner-Network/summoner-agentclass.git
 
 **Include only specific packages.** If you want to include a subset of packages from a repository, add a colon after the repository URL, then list the package folder names from `tooling/` on the following lines.
 
-<!-- **Include specific packages only.** Add a colon after the repo URL, then list the `tooling/` subfolders you want. This keeps your SDK small and intentional. -->
 
 ```txt
 https://github.com/Summoner-Network/summoner-agentclass.git:
@@ -1026,7 +1022,7 @@ This mirrors the POSIX setup and launches the test server with the installed `su
 
 ### <img alt="Merge into SDK" src="https://img.shields.io/badge/Merge%20into%20SDK-00bcd4"> Make sure your module can merge into an SDK
 
-This section explains how to structure your module so that it merges accurately into an SDK build. The installer behavior is covered earlier. Here we focus on conventions, layout, imports, and dependency planning.
+This section explains how to structure your module so that it merges accurately into an SDK build. The installation process is covered in [**Contribute your own SDK module**](#-contribute-your-own-sdk-module). Here we focus on conventions, layout, imports, and dependency planning.
 
 <details>
 <summary><img alt="Map" width="16" src="https://cdn.simpleicons.org/textpattern/00bcd4"> <b>Plan your repository layout for merging</b></summary>
