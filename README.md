@@ -314,8 +314,7 @@ You can start from the **SDK template** (clean SDK) or from **summoner-agents** 
 
 > [!NOTE]
 > **About the server.** On native Windows you use the **Python server**. The Rust server is not available on Windows. To try Rust on Windows, use **WSL2**.
-
-
+<a id="start-from-scratch-with-sdk-template"></a>
 <details>
 <summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A — Start from scratch with an SDK template</b></summary>
 <br>
@@ -504,6 +503,9 @@ You can create a clean SDK that you extend as you explore. First define a **comp
 <summary><img alt="List icon" width="16" src="https://cdn.simpleicons.org/textpattern/4f9bff"> <b>Define your SDK recipe</b> <code>build.txt</code> (and optional <code>test_build.txt</code>)</summary>
 <br>
 
+
+This section assumes you already created and cloned a repo from the [`summoner-sdk`](https://github.com/Summoner-Network/summoner-sdk) template (see [**Start from scratch with an SDK template**](#start-from-scratch-with-sdk-template) above).
+
 **To build your Summoner SDK**, you need to tell the installer which packages to include from each Summoner module. Modules are GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
 
 <!-- **Tell the installer what to include.** You list which packages to pull from Summoner modules (repos built from the template). Each module contributes one or more packages under its `tooling/` directory. During install, those packages are merged under `summoner/…` so you import them uniformly. -->
@@ -555,6 +557,8 @@ Read more: **[SDK template (`build.txt` format)](https://github.com/Summoner-Net
 </summary>
 <br>
 
+Once you have composed your SDK recipe, proceed as follows.
+
 **Run the installer.** Choose **either** approach, both will complete the same setup.
 
 * **Either** run in the current shell so `venv/` auto-activates:
@@ -594,11 +598,14 @@ Read more: **[POSIX install notes](https://github.com/Summoner-Network/summoner-
 </summary>
 <br>
 
-On native Windows the **Python server** is used. The Rust server is not used here.
+> **Note:**
+> On native Windows the **Python server** is used. The Rust server is not used here.
+
+Once you have composed your SDK recipe, proceed as follows.
 
 **Open a PowerShell terminal.** You can use Windows Terminal, PowerShell 7+, or VS Code's integrated terminal (PowerShell profile).
 
-**Run the installer.** First allow scripts **just for this session** (reverts when you close the window), then build and activate:
+**Run the installer.** First allow scripts **just for this session** (it will revert back to default when you close the window), then build and activate:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -631,7 +638,12 @@ Read more: **[Windows install notes](https://github.com/Summoner-Network/summone
 </summary>
 <br>
 
-WSL2 with Ubuntu gives you parity with Linux/macOS, including the Rust server.
+
+
+> **Note:**
+> WSL2 with Ubuntu gives you parity with Linux/macOS, including the Rust server.
+
+Once you have composed your SDK recipe, proceed as follows.
 
 **Enable WSL2 (PowerShell).**
 
