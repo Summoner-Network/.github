@@ -80,23 +80,6 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-CFA438">
-          </td>
-          <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-install-your-summoner-sdk" title="Scaffold from SDK template">
-              <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7">
-            </a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template">
-              <img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff">
-            </a>
-          </td>
-          <td>Scaffold a fresh project from the SDK template.</td>
-        </tr>
-        <tr>
-          <td style="white-space:nowrap;vertical-align:middle;">
             <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963">
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -111,6 +94,23 @@
             </a>
           </td>
           <td>Run example agents immediately.</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap;vertical-align:middle;">
+            <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-CFA438">
+          </td>
+          <td style="white-space:nowrap;vertical-align:middle;">
+            <a href="#-install-essential-dependencies"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
+            <sup>&nbsp;➜&nbsp;</sup>
+            <a href="#-install-your-summoner-sdk" title="Scaffold from SDK template">
+              <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7">
+            </a>
+            <sup>&nbsp;➜&nbsp;</sup>
+            <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template">
+              <img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff">
+            </a>
+          </td>
+          <td>Scaffold a fresh project from the SDK template.</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -148,7 +148,7 @@
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-launch-agents-using-the-desktop-app" title="Optional GUI">
-              <img alt="② Desktop UI" src="https://img.shields.io/badge/②-Desktop%20UI-ff69b4">
+              <img alt="① Desktop UI" src="https://img.shields.io/badge/①-Desktop%20UI-ff69b4">
             </a>
           </td>
           <td>Optional desktop GUI to launch a local server and agents.</td>
