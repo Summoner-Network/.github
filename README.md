@@ -736,17 +736,17 @@ from summoner.server import SummonerServer
 # plus any composed packages you included via build.txt
 ```
 
-**Pull a ready-made example agent (optional).** You can copy a single agent from [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) into your project with the helper script `get_agent` (Bash):
+**Pull a ready-made example agent (optional).** You can copy a single agent from [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) into your project with the helper script `get_agent.sh` (Bash):
 
 ```bash
 # list available agents from the repo (default branch: main)
-bash get_agent --list
+bash get_agent.sh --list
 
 # fetch one agent into agents/ (creates agents/agent_<Name>)
-bash get_agent SendAgent_0
+bash get_agent.sh SendAgent_0
 
 # overwrite if it already exists
-bash get_agent SendAgent_0 --force
+bash get_agent.sh SendAgent_0 --force
 ```
 
 * The script downloads from [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) and supports `--branch` and `--repo` if you need a different ref or fork.
