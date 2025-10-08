@@ -725,7 +725,7 @@ from summoner.server import SummonerServer
 # plus any composed packages you included via build.txt
 ```
 
-
+<!-- 
 **Entry point expectations.** In `agent.py`, expose a `main()` that can take an optional `--config`, build a `SummonerClient`, wire handlers/hooks, and call `client.run(...)`. Favor config files over many CLI flags so environments can change without code edits.
 
 **Imports that stay stable.** Keep imports under the `summoner` namespace so they remain consistent as you evolve your SDK:
@@ -734,7 +734,7 @@ from summoner.server import SummonerServer
 from summoner.client import SummonerClient
 from summoner.server import SummonerServer
 # plus any composed packages you included via build.txt
-```
+``` -->
 
 **Pull a ready-made example agent (optional).** You can copy a single agent from [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) into your project with the helper script `get_agent.sh` (Bash):
 
