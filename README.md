@@ -33,7 +33,7 @@
 > [!NOTE]
 > The left column shows a **Level** badge suggesting a starting point. The middle column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
 >
-> **Levels:** <img alt="Level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963"> = Beginner | <img alt="Level: Advanced" src="https://img.shields.io/badge/Adv.-CFA438"> = Advanced | <img alt="Level: Expert" src="https://img.shields.io/badge/Exp.-CF5B38"> = Expert | <img alt="Level: Advanced" src="https://img.shields.io/badge/All-6399C9"> = All levels
+> **Levels:** <img alt="Level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963"> = Beginner | <img alt="Level: Advanced" src="https://img.shields.io/badge/Adv.-CFA438"> = Advanced | <img alt="Level: Expert" src="https://img.shields.io/badge/Exp.-CF5B38"> = Expert | <img alt="Level: All" src="https://img.shields.io/badge/All-6399C9"> = All levels
 
 
 <!-- ## Summoner pathways
