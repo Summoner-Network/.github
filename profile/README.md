@@ -1493,22 +1493,54 @@ cd summoner-docs
 
 <details>
 <summary><img alt="Index" width="16" src="https://img.icons8.com/?size=100&id=2800&format=png&color=d6720f">
- <b>Mini index (work in progress)</b></summary>
+ <b>Mini index (keywords and links by level)</b></summary>
 <br>
 
-**Server**  
+**Server**
 
-**Client**  
+* [Beginner] [miniSummoner perspective (gentle mockup)](introduction/mini_sdk.md)
+* [Beginner] [miniSummoner simulation (gentle mockup)](introduction/minisdk/multiparty.md)
+* [Beginner] [Basics](guide_sdk/getting_started/quickstart/basics_server.md)
+* [Initiated] [Getting started](guide_sdk/getting_started/quickstart/begin_server.md)
+* [Adept] [Server configuration](guide_sdk/fundamentals/server_relay.md)
 
-**Receive / Send**  
+**Client / Agent**
 
-**Routes & States** 
+* [Beginner] [miniSummoner perspective (gentle mockup)](introduction/mini_sdk.md)
+* [Beginner] [miniSummoner simulation (gentle mockup)](introduction/minisdk/multiparty.md)
+* [Beginner] [Basics](guide_sdk/getting_started/quickstart/basics_client.md)
+* [Initiated] [Getting started](guide_sdk/getting_started/quickstart/begin_client.md)
+* [Adept] [Client configuration](guide_sdk/fundamentals/client_agent.md)
+* [Adept] [Agent design](guide_sdk/fundamentals/design.md)
 
-**Hooks**  
+**Receive / Send**
 
-**Travel**  
+* [Beginner] [miniSummoner perspective (gentle mockup)](introduction/mini_sdk.md)
+* [Beginner] [miniSummoner simulation (gentle mockup)](introduction/minisdk/multiparty.md)
+* [Initiated] [Getting started (simple agents)](guide_sdk/getting_started/quickstart/begin_client.md#building-interactive-agents)
+* [Apprentice] [Flows for receive/send](guide_sdk/getting_started/quickstart/begin_flow.md#orchestrating-receivesend-with-flows)
+* [Adept] [Messaging primitives and idioms](guide_sdk/fundamentals/design.md#messaging-primitives-and-idioms)
 
-**Events**  
+**Routes & States**
+
+* [Beginner] [miniSummoner finite-state mockup](introduction/minisdk/mini_fsm_agents.md)
+* [Beginner] [Knowledge requirements](guide_sdk/getting_started/prerequisites.md#knowledge-requirements)
+* [Beginner] [Basics (graph logic)](guide_sdk/getting_started/quickstart/basics_client.md#graphs-of-endpoints)
+* [Initiated] [Composition in capabilities](guide_sdk/getting_started/quickstart/begin_client.md#composition-thinking-in-capabilities)
+* [Apprentice] [Advanced route shapes](guide_sdk/getting_started/quickstart/begin_flow.md#advanced-route-shapes)
+* [Adept] [State and flows (explicit automata)](guide_sdk/fundamentals/design.md#state-and-flows-explicit-automata-over-implicit-flags)
+
+**Hooks**
+
+* [Apprentice] [Hooks & priorities (pre/post processing)](guide_sdk/getting_started/quickstart/begin_flow.md#hooks--priorities-prepost-processing)
+
+**Travel**
+
+* [Adept] [Command-gating your agent](guide_sdk/fundamentals/design.md#command-gating-your-agent)
+
+**Events**
+
+* [Apprentice] [Route DSL & semantics](guide_sdk/getting_started/quickstart/begin_flow.md#route-dsl--semantics)
 
 </details>
 
