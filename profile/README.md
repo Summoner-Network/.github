@@ -1498,49 +1498,49 @@ cd summoner-docs
 
 **Server**
 
-* [Beginner] [miniSummoner perspective (gentle mockup)](introduction/mini_sdk.md)
-* [Beginner] [miniSummoner simulation (gentle mockup)](introduction/minisdk/multiparty.md)
-* [Beginner] [Basics](guide_sdk/getting_started/quickstart/basics_server.md)
-* [Initiated] [Getting started](guide_sdk/getting_started/quickstart/begin_server.md)
-* [Adept] [Server configuration](guide_sdk/fundamentals/server_relay.md)
+* [Beginner] [miniSummoner perspective (gentle mockup)](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/mini_sdk.md)
+* [Beginner] [miniSummoner simulation (gentle mockup)](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/minisdk/multiparty.md)
+* [Beginner] [Basics](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/basics_server.md)
+* [Initiated] [Getting started](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_server.md)
+* [Adept] [Server configuration](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/fundamentals/server_relay.md)
 
 **Client / Agent**
 
-* [Beginner] [miniSummoner perspective (gentle mockup)](introduction/mini_sdk.md)
-* [Beginner] [miniSummoner simulation (gentle mockup)](introduction/minisdk/multiparty.md)
-* [Beginner] [Basics](guide_sdk/getting_started/quickstart/basics_client.md)
-* [Initiated] [Getting started](guide_sdk/getting_started/quickstart/begin_client.md)
-* [Adept] [Client configuration](guide_sdk/fundamentals/client_agent.md)
-* [Adept] [Agent design](guide_sdk/fundamentals/design.md)
+* [Beginner] [miniSummoner perspective (gentle mockup)](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/mini_sdk.md)
+* [Beginner] [miniSummoner simulation (gentle mockup)](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/minisdk/multiparty.md)
+* [Beginner] [Basics](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/basics_client.md)
+* [Initiated] [Getting started](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_client.md)
+* [Adept] [Client configuration](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/fundamentals/client_agent.md)
+* [Adept] [Agent design](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/fundamentals/design.md)
 
 **Receive / Send**
 
-* [Beginner] [miniSummoner perspective (gentle mockup)](introduction/mini_sdk.md)
-* [Beginner] [miniSummoner simulation (gentle mockup)](introduction/minisdk/multiparty.md)
-* [Initiated] [Getting started (simple agents)](guide_sdk/getting_started/quickstart/begin_client.md#building-interactive-agents)
-* [Apprentice] [Flows for receive/send](guide_sdk/getting_started/quickstart/begin_flow.md#orchestrating-receivesend-with-flows)
-* [Adept] [Messaging primitives and idioms](guide_sdk/fundamentals/design.md#messaging-primitives-and-idioms)
+* [Beginner] [miniSummoner perspective (gentle mockup)](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/mini_sdk.md)
+* [Beginner] [miniSummoner simulation (gentle mockup)](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/minisdk/multiparty.md)
+* [Initiated] [Getting started (simple agents)](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_client.md#building-interactive-agents)
+* [Apprentice] [Flows for receive/send](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_flow.md#orchestrating-receivesend-with-flows)
+* [Adept] [Messaging primitives and idioms](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/fundamentals/design.md#messaging-primitives-and-idioms)
 
 **Routes & States**
 
-* [Beginner] [miniSummoner finite-state mockup](introduction/minisdk/mini_fsm_agents.md)
-* [Beginner] [Knowledge requirements](guide_sdk/getting_started/prerequisites.md#knowledge-requirements)
-* [Beginner] [Basics (graph logic)](guide_sdk/getting_started/quickstart/basics_client.md#graphs-of-endpoints)
-* [Initiated] [Composition in capabilities](guide_sdk/getting_started/quickstart/begin_client.md#composition-thinking-in-capabilities)
-* [Apprentice] [Advanced route shapes](guide_sdk/getting_started/quickstart/begin_flow.md#advanced-route-shapes)
-* [Adept] [State and flows (explicit automata)](guide_sdk/fundamentals/design.md#state-and-flows-explicit-automata-over-implicit-flags)
+* [Beginner] [miniSummoner finite-state mockup](https://github.com/Summoner-Network/summoner-docs/tree/main/introduction/minisdk/mini_fsm_agents.md)
+* [Beginner] [Knowledge requirements](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/prerequisites.md#knowledge-requirements)
+* [Beginner] [Basics (graph logic)](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/basics_client.md#graphs-of-endpoints)
+* [Initiated] [Composition in capabilities](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_client.md#composition-thinking-in-capabilities)
+* [Apprentice] [Advanced route shapes](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_flow.md#advanced-route-shapes)
+* [Adept] [State and flows (explicit automata)](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/fundamentals/design.md#state-and-flows-explicit-automata-over-implicit-flags)
 
 **Hooks**
 
-* [Apprentice] [Hooks & priorities (pre/post processing)](guide_sdk/getting_started/quickstart/begin_flow.md#hooks--priorities-prepost-processing)
+* [Apprentice] [Hooks & priorities (pre/post processing)](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_flow.md#hooks--priorities-prepost-processing)
 
 **Travel**
 
-* [Adept] [Command-gating your agent](guide_sdk/fundamentals/design.md#command-gating-your-agent)
+* [Adept] [Command-gating your agent](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/fundamentals/design.md#command-gating-your-agent)
 
 **Events**
 
-* [Apprentice] [Route DSL & semantics](guide_sdk/getting_started/quickstart/begin_flow.md#route-dsl--semantics)
+* [Apprentice] [Route DSL & semantics](https://github.com/Summoner-Network/summoner-docs/tree/main/guide_sdk/getting_started/quickstart/begin_flow.md#route-dsl--semantics)
 
 </details>
 
