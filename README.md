@@ -783,26 +783,39 @@ This section assumes you already installed the SDK for the [`summoner-agents`](h
 
 **Activate the virtual environment.** This ensures Python installs into the right place. Run this **whenever you open a new terminal**:
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
-# POSIX (macOS/Linux/WSL2)
 source venv/bin/activate
 ```
 
+On Windows (PowerShell):
 ```powershell
-# Windows (PowerShell)
 .\venv\Scripts\Activate.ps1
 ```
 
 **Install requirements for one agent.** This is the quickest way to try a single agent. Point to that agent's **self-contained folder**:
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
 pip install -r path/to/your/agent/folder/requirements.txt
 ```
 
-**Install requirements for all agents (bulk).** From the repo root (Bash):
+On Windows (PowerShell)
+```powershell
+pip install -r .\path\to\your\agent\folder\requirements.txt
+```
 
-```bash
+**Install requirements for all agents (bulk).** From the repo root:
+
+On POSIX (macOS/Linux/WSL2):
+```bash 
 bash install_requirements.sh
+```
+
+On Windows (PowerShell)
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\install_requirements_on_windows.ps1
 ```
 
 * The script scans for agent folders and installs each `requirements.txt`.
@@ -820,13 +833,13 @@ Most agents rely on the server as their messaging backbone. **Start the server f
 
 **Activate the virtual environment.** This guarantees the server uses the SDK you installed:
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
-# POSIX (macOS/Linux/WSL2)
 source venv/bin/activate
 ```
 
+On Windows (PowerShell):
 ```powershell
-# Windows (PowerShell)
 .\venv\Scripts\Activate.ps1
 ```
 
@@ -838,8 +851,14 @@ python server.py
 
 **Use a custom server config** (only if an agent's README asks for it):
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
 python server.py --config configs/<server_config>.json
+```
+
+On Windows (PowerShell):
+```powershell
+python .\server.py --config .\configs\<server_config>.json
 ```
 
 Leave the server running in this terminal. Open another terminal (and activate the venv there too) to run agents.
@@ -853,26 +872,38 @@ Leave the server running in this terminal. Open another terminal (and activate t
 
 **Activate the virtual environment.** This makes sure the agent imports the SDK and its own dependencies:
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
-# POSIX (macOS/Linux/WSL2)
 source venv/bin/activate
 ```
 
+On Windows (PowerShell):
 ```powershell
-# Windows (PowerShell)
 .\venv\Scripts\Activate.ps1
 ```
 
 **Run with defaults.** Execute the entry point in the **self-contained agent folder**:
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
 python path/to/your/agent/folder/agent.py
 ```
 
+On Windows (PowerShell):
+```powershell
+python .\path\to\your\agent\folder\agent.py
+```
+
 **Run with a custom agent config** (when provided by that agent):
 
+On POSIX (macOS/Linux/WSL2):
 ```bash
 python path/to/your/agent/folder/agent.py --config configs/<agent_config>.json
+```
+
+On Windows (PowerShell):
+```powershell
+python .\path\to\your\agent\folder\agent.py --config .\configs\<agent_config>.json
 ```
 
 **Find the right config.** Look in the agent folder's README for flags, environment variables, or a recommended config file.
@@ -881,19 +912,33 @@ python path/to/your/agent/folder/agent.py --config configs/<agent_config>.json
 
 * **Terminal A — server**
 
-  ```bash
-  source venv/bin/activate          # POSIX
-  # .\venv\Scripts\Activate.ps1     # Windows
-  python server.py
-  ```
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate          # POSIX
+python server.py
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1     # Windows
+python .\server.py
+```
+
 * **Terminal B — agent**
 
-  ```bash
-  source venv/bin/activate          # POSIX
-  # .\venv\Scripts\Activate.ps1     # Windows
-  pip install -r path/to/your/agent/folder/requirements.txt
-  python path/to/your/agent/folder/agent.py
-  ```
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate          # POSIX
+pip install -r path/to/your/agent/folder/requirements.txt
+python path/to/your/agent/folder/agent.py
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1     # Windows
+pip install -r .\path\to\your\agent\folder\requirements.txt
+python .\path\to\your\agent\folder\agent.py
+```
 
 
 **Common errors**
