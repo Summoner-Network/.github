@@ -75,7 +75,7 @@
             🌱
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> <sup>·</sup> 
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
             <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②%20Use%20the%20SDK-0b5ed7"></a>
           </td>
           <td>Set up a venv and fetch core modules for the SDK.</td>
@@ -85,8 +85,8 @@
             🌱
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> <sup>·</sup> 
-            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a> <sup>·</sup> 
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
+            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a> 
             <a href="#-start-with-runnable-agent-examples" title="Launch example agents"><img alt="③ Run Agents" src="https://img.shields.io/badge/③%20Run%20Agents-4f9bff"></a>
           </td>
           <td>Run example agents immediately.</td>
@@ -96,8 +96,8 @@
             🧠
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> <sup>·</sup> 
-            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a> <sup>·</sup> 
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
+            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a> 
             <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③%20Start%20New%20Project-4f9bff"></a>
           </td>
           <td>Scaffold a fresh project from the SDK template.
@@ -108,7 +108,7 @@
             🏆
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> <sup>·</sup> 
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
             <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②%20Develop%20a%20Module-008f99"></a>
           </td>
           <td>Author a reusable SDK module.</td>
@@ -118,8 +118,8 @@
             🏆
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> <sup>·</sup> 
-            <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Dev. a Module" src="https://img.shields.io/badge/②-008f99"></a> <sup>·</sup> 
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
+            <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Dev. a Module" src="https://img.shields.io/badge/②-008f99"></a> 
             <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③%20Merge%20into%20SDK-00bcd4"></a>
           </td>
           <td>Merge your module into an SDK build/recipe.</td>
@@ -448,7 +448,7 @@ python -c "import summoner, sys; print('summoner OK', sys.executable)"
 .\build_sdk_on_windows.ps1 reset
 ```
 
-Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** <sup>·</sup> **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
+Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
 
 </details>
 
@@ -642,7 +642,7 @@ python -c "import summoner, sys; print('summoner OK', sys.executable)"
 .\build_sdk_on_windows.ps1 reset
 ```
 
-Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** <sup>·</sup> **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
+Read more: **[Windows install notes](https://github.com/Summoner-Network/summoner-docs/blob/main/guide_sdk/getting_started/windows_install.md)** **[SDK template](https://github.com/Summoner-Network/summoner-sdk)**
 
 </details>
 
