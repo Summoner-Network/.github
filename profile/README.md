@@ -136,7 +136,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Advanced" title="Suggested starting level: Advanced (documentation dives deeper)" src="https://img.shields.io/badge/All-6399C9">
+            🌍
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-read-the-summoner-documentation" title="Docs on SDK features and Summoner philosophy"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①%20Read%20SDK%20Docs-d6720f"></a>
