@@ -148,7 +148,7 @@
             <a href="#-read-the-summoner-documentation" title="Docs on SDK features and Summoner philosophy"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①%20Read%20SDK%20Docs-d6720f"></a>
           </td>
           <td>Read the docs and learn about Summoner.</td>
-          <td style="white-space:nowrap;vertical-align:middle;">&lt;4h</td>
+          <td style="white-space:nowrap;vertical-align:middle;">2-4h</td>
         </tr>
       </tbody>
     </table>
