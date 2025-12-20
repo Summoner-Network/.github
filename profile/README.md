@@ -34,12 +34,12 @@
 
 ## Summoner pathways
 
-**The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The **Level** badge is a suggested starting point only.
+**The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The **Level** emoji is a suggested starting point only.
 
 > [!NOTE]
-> The left column shows a **Level** badge suggesting a starting point. The middle column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
+> The left column shows a **Level** emoji suggesting a starting point. The middle column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
 >
-> **Levels:** 🌱 = Beginner | 🧠 = Advanced | 🧠🔥 = Expert | 🌍 = All levels
+> **Levels:** 🌱 = Beginner | 🧠 = Advanced | 🏆 = Expert | 🌍 = All levels
 
 
 <!-- ## Summoner pathways
@@ -106,7 +106,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🧠🔥
+            🏆
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
@@ -116,7 +116,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🧠🔥
+            🏆
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
