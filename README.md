@@ -57,6 +57,7 @@
           <th style="text-align:left;white-space:nowrap;">Level</th>
           <th style="text-align:left;white-space:nowrap;">Pathway</th>
           <th style="text-align:left;">What you will achieve</th>
+          <th style="text-align:left;white-space:nowrap;">Required time</th>
         </tr>
       </thead>
       <tbody>
@@ -69,6 +70,7 @@
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①%20Prereqs-6f42c1"></a>
           </td>
           <td>Install Python, Rust, git, and build tools.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">~1 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -79,6 +81,7 @@
             <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②%20Use%20the%20SDK-0b5ed7"></a>
           </td>
           <td>Set up a venv and fetch core modules for the SDK.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">~2 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -90,6 +93,7 @@
             <a href="#-start-with-runnable-agent-examples" title="Launch example agents"><img alt="③ Run Agents" src="https://img.shields.io/badge/③%20Run%20Agents-4f9bff"></a>
           </td>
           <td>Run example agents immediately.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">3-5 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -100,8 +104,8 @@
             <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a> 
             <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③%20Start%20New%20Project-4f9bff"></a>
           </td>
-          <td>Scaffold a fresh project from the SDK template.
-          </td>
+          <td>Scaffold a fresh project from the SDK template.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">2-3 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -112,6 +116,7 @@
             <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②%20Develop%20a%20Module-008f99"></a>
           </td>
           <td>Author a reusable SDK module.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">~3 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -123,6 +128,7 @@
             <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③%20Merge%20into%20SDK-00bcd4"></a>
           </td>
           <td>Merge your module into an SDK build/recipe.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">2-10 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -132,6 +138,7 @@
             <a href="#-launch-agents-using-the-desktop-app" title="Desktop app for facilitating agent assembly and deployment"><img alt="① Desktop UI" src="https://img.shields.io/badge/①%20Desktop%20UI-ff69b4"></a>
           </td>
           <td>Optional desktop GUI to launch a local server and agents.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">&lt;3 min</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -141,11 +148,13 @@
             <a href="#-read-the-summoner-documentation" title="Docs on SDK features and Summoner philosophy"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①%20Read%20SDK%20Docs-d6720f"></a>
           </td>
           <td>Read the docs and learn about Summoner.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">&lt;4h</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
+
 
 
 ---
