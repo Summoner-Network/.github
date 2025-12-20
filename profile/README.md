@@ -37,9 +37,9 @@
 **The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The level emoji is a suggested starting point only.
 
 > [!NOTE]
-> The leftmost column shows a **level emoji** suggesting a starting point. The second leftmost column shows the steps using **clickable badges** in the recommended order. The two rightmost columns summarize the **outcome** and the **setup time** required. Hover over badges to see full terms in the tooltip.
+> The leftmost column shows a **level emoji** (suggested starting point). The next column shows the recommended sequence as **clickable badges**. The two rightmost columns summarize the **outcome** and the **setup time**. Hover over badges for full labels.
 >
-> **Level emojis:** 🌱 = Beginner | 🧠 = Advanced | 🏆 = Expert | 🌍 = All levels
+> **Level emojis:** 🌱 Beginner | 🧠 Advanced | 🏆 Expert | 🌍 All levels
 
 
 <!-- ## Summoner pathways
@@ -64,7 +64,7 @@
         <!-- 1. Prereqs -->
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🌱
+            <span title="Beginner">🌱</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①%20Prereqs-6f42c1"></a>
@@ -74,7 +74,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🌱
+            <span title="Beginner">🌱</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
@@ -85,7 +85,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🌱
+            <span title="Beginner">🌱</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
@@ -97,7 +97,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🧠
+            <span title="Advanced">🧠</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
@@ -109,7 +109,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🏆
+            <span title="Expert">🏆</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
@@ -120,7 +120,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🏆
+            <span title="Expert">🏆</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a> 
@@ -132,7 +132,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🌱
+            <span title="Beginner">🌱</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-launch-agents-using-the-desktop-app" title="Desktop app for facilitating agent assembly and deployment"><img alt="① Desktop UI" src="https://img.shields.io/badge/①%20Desktop%20UI-ff69b4"></a>
@@ -142,7 +142,7 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            🌍
+            <span title="All levels">🌍</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
             <a href="#-read-the-summoner-documentation" title="Docs on SDK features and Summoner philosophy"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①%20Read%20SDK%20Docs-d6720f"></a>
