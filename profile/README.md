@@ -23,6 +23,12 @@
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
 
+<!-- 
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Summoner-Network/summoner-agents">
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/summoner-network/summoner-agents">
+<img alt="GitHub Release" src="https://img.shields.io/github/v/release/summoner-network/summoner-agents">
+-->
+
 > **What is Summoner?**
 > A modular runtime and SDK for networked AI agents. It lets you compose, run, and coordinate agents across machines. The Python client SDK pairs with a Rust server, and an optional desktop app provides a visual interface. Start with examples, then assemble your own SDK from modules.
 
@@ -33,7 +39,7 @@
 > [!NOTE]
 > The left column shows a **Level** badge suggesting a starting point. The middle column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
 >
-> **Levels:** <img alt="Level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963"> = Beginner | <img alt="Level: Advanced" src="https://img.shields.io/badge/Adv.-CFA438"> = Advanced | <img alt="Level: Expert" src="https://img.shields.io/badge/Exp.-CF5B38"> = Expert | <img alt="Level: All" src="https://img.shields.io/badge/All-6399C9"> = All levels
+> **Levels:** 🌱 = Beginner | 🧠 = Advanced | 🧠🔥 = Expert | 🌍 = All levels
 
 
 <!-- ## Summoner pathways
@@ -57,81 +63,74 @@
         <!-- 1. Prereqs -->
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963">
+            🌱
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①%20Prereqs-6f42c1"></a>
           </td>
           <td>Install Python, Rust, git, and build tools.</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963">
+            🌱
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
             <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules">
-              <img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
+              <img alt="② Use the SDK" src="https://img.shields.io/badge/②%20Use%20the%20SDK-0b5ed7"></a>
           </td>
           <td>Set up a venv and fetch core modules for the SDK.</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963">
+            🌱
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-start-with-runnable-agent-examples" title="Launch example agents"><img alt="③ Run Agents" src="https://img.shields.io/badge/③-Run%20Agents-4f9bff"></a>
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
+            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a>
+            <a href="#-start-with-runnable-agent-examples" title="Launch example agents"><img alt="③ Run Agents" src="https://img.shields.io/badge/③%20Run%20Agents-4f9bff"></a>
           </td>
           <td>Run example agents immediately.</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Advanced" title="Suggested starting level: Advanced (fresh SDK scaffold)" src="https://img.shields.io/badge/Adv.-CFA438">
+            🧠
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-Use%20the%20SDK-0b5ed7"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③-Start%20New%20Project-4f9bff"></a>
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
+            <a href="#-install-your-summoner-sdk" title="Create a venv and fetch core modules"><img alt="② Use the SDK" src="https://img.shields.io/badge/②-0b5ed7"></a>
+            <a href="#-create-a-clean-sdk-no-ready-made-agents" title="Scaffold from SDK template"><img alt="③ Start New Project" src="https://img.shields.io/badge/③%20Start%20New%20Project-4f9bff"></a>
           </td>
-          <td>Scaffold a fresh project from the SDK template.</td>
+          <td>Scaffold a fresh project from the SDK template.
+          </td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Expert" title="Suggested starting level: Expert (author a module)" src="https://img.shields.io/badge/Exp.-CF5B38">
+            🧠🔥
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②-Develop%20a%20Module-008f99"></a>
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
+            <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Develop a Module" src="https://img.shields.io/badge/②%20Develop%20a%20Module-008f99"></a>
           </td>
           <td>Author a reusable SDK module.</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Expert" title="Suggested starting level: Expert (merge module into SDK)" src="https://img.shields.io/badge/Exp.-CF5B38">
+            🧠🔥
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-Prereqs-6f42c1"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Dev. a Module" src="https://img.shields.io/badge/②-Dev.%20a%20Module-008f99"></a>
-            <sup>&nbsp;➜&nbsp;</sup>
-            <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③-Merge%20into%20SDK-00bcd4"></a>
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="① Prereqs" src="https://img.shields.io/badge/①-6f42c1"></a>
+            <a href="#-contribute-your-own-sdk-module" title="Author an SDK extension"><img alt="② Dev. a Module" src="https://img.shields.io/badge/②-008f99"></a>
+            <a href="#-make-sure-your-module-can-merge-into-an-sdk" title="Include your module in an SDK recipe"><img alt="③ Merge into SDK" src="https://img.shields.io/badge/③%20Merge%20into%20SDK-00bcd4"></a>
           </td>
           <td>Merge your module into an SDK build/recipe.</td>
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <img alt="Level: Beginner" title="Suggested starting level: Beginner" src="https://img.shields.io/badge/Beg.-6FC963">
+            🌱
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-launch-agents-using-the-desktop-app" title="Desktop app for facilitating agent assembly and deployment"><img alt="① Desktop UI" src="https://img.shields.io/badge/①-Desktop%20UI-ff69b4"></a>
+            <a href="#-launch-agents-using-the-desktop-app" title="Desktop app for facilitating agent assembly and deployment"><img alt="① Desktop UI" src="https://img.shields.io/badge/①%20Desktop%20UI-ff69b4"></a>
           </td>
           <td>Optional desktop GUI to launch a local server and agents.</td>
         </tr>
@@ -140,7 +139,7 @@
             <img alt="Level: Advanced" title="Suggested starting level: Advanced (documentation dives deeper)" src="https://img.shields.io/badge/All-6399C9">
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
-            <a href="#-read-the-summoner-documentation" title="Docs on SDK features and Summoner philosophy"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①-Read%20SDK%20Docs-d6720f"></a>
+            <a href="#-read-the-summoner-documentation" title="Docs on SDK features and Summoner philosophy"><img alt="① Read SDK Docs" src="https://img.shields.io/badge/①%20Read%20SDK%20Docs-d6720f"></a>
           </td>
           <td>Read the docs and learn about Summoner.</td>
         </tr>
