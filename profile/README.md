@@ -34,12 +34,12 @@
 
 ## Summoner pathways
 
-**The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The **Level** emoji is a suggested starting point only.
+**The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The level emoji is a suggested starting point only.
 
 > [!NOTE]
-> The left column shows a **Level** emoji suggesting a starting point. The middle column shows the steps using **clickable badges** in the recommended order. The right column summarizes the outcome. Hover over badges to see full terms in the tooltip.
+> The leftmost column shows a **level emoji** suggesting a starting point. The second leftmost column shows the steps using **clickable badges** in the recommended order. The two rightmost columns summarize the **outcome** and the **setup time** required. Hover over badges to see full terms in the tooltip.
 >
-> **Levels:** 🌱 = Beginner | 🧠 = Advanced | 🏆 = Expert | 🌍 = All levels
+> **Level emojis:** 🌱 = Beginner | 🧠 = Advanced | 🏆 = Expert | 🌍 = All levels
 
 
 <!-- ## Summoner pathways
