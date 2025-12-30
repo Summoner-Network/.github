@@ -115,7 +115,7 @@
             <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="①" src="https://img.shields.io/badge/①-6f42c1"></a>
             <a href="#-integrate-summoner-into-your-existing-project" title="Install the SDK into your existing project's venv (no template repo required)"><img alt="② Integrate into Project" src="https://img.shields.io/badge/②%20Integrate%20into%20Project-4b5aa7"></a>
           </td>
-          <td>Install Summoner into an existing project venv using a temporary installer clone.</td>
+          <td>Install Summoner into an existing project venv.</td>
           <td style="white-space:nowrap;vertical-align:middle;">~2-3 min</td>
         </tr>
         <tr>
