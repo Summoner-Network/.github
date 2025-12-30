@@ -109,6 +109,17 @@
         </tr>
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
+            <span title="Advanced">🧠</span>
+          </td>
+          <td style="white-space:nowrap;vertical-align:middle;">
+            <a href="#-install-essential-dependencies" title="Start here — install required tools"><img alt="①" src="https://img.shields.io/badge/①-6f42c1"></a>
+            <a href="#-integrate-summoner-into-your-existing-project" title="Install the SDK into your existing project's venv (no template repo required)"><img alt="② Integrate into Project" src="https://img.shields.io/badge/②%20Integrate%20into%20Project-4b5aa7"></a>
+          </td>
+          <td>Install Summoner into an existing project venv using a temporary installer clone.</td>
+          <td style="white-space:nowrap;vertical-align:middle;">~2-3 min</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap;vertical-align:middle;">
             <span title="Expert">🏆</span>
           </td>
           <td style="white-space:nowrap;vertical-align:middle;">
@@ -344,9 +355,25 @@ You can start from the **SDK template** (clean SDK) or from **summoner-agents** 
 
 > [!NOTE]
 > **About the server.** On native Windows you use the **Python server**. The Rust server is not available on Windows. To try Rust on Windows, use **WSL2**.
+
+<a id="use-an-sdk-with-agent-examples"></a>
+<details>
+<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A — Run agent examples with a ready-made SDK</b></summary>
+<br>
+
+**Download the SDK with agent examples.** Clone the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repository and enter the folder.
+
+```bash
+git clone https://github.com/Summoner-Network/summoner-agents.git
+cd summoner-agents
+```
+
+**Use the installation procedure for your platform.** See the sections below for platform-specific commands.
+
+</details>
 <a id="start-from-scratch-with-sdk-template"></a>
 <details>
-<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option A — Start from scratch with an SDK template</b></summary>
+<summary><img alt="Template icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B — Start from scratch with an SDK template</b></summary>
 <br>
 
 **Create your own SDK repo from the template.** Click **Use this template → Create a new repository** on the [**SDK template**](https://github.com/Summoner-Network/summoner-sdk#getting-started), then clone it and enter the folder.
@@ -357,21 +384,6 @@ cd <your-sdk-repo>
 ```
 
 **Choose modules and packages in `build.txt`.** List the modules you want your SDK to include. This step is optional and you can keep the default `build.txt` as-is. For custom builds, see the [**`build.txt` format**](#start-a-new-project-built-text) instructions in **Create a clean SDK (no ready-made agents)** below.
-
-**Use the installation procedure for your platform.** See the sections below for platform-specific commands.
-
-</details>
-<a id="use-an-sdk-with-agent-examples"></a>
-<details>
-<summary><img alt="Agents repo icon" width="16" src="https://cdn.simpleicons.org/github/0b5ed7"> <b>Option B — Run agent examples with a ready-made SDK</b></summary>
-<br>
-
-**Download the SDK with agent examples.** Clone the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repository and enter the folder.
-
-```bash
-git clone https://github.com/Summoner-Network/summoner-agents.git
-cd summoner-agents
-```
 
 **Use the installation procedure for your platform.** See the sections below for platform-specific commands.
 
@@ -514,6 +526,217 @@ Read more: **[POSIX install notes](https://github.com/Summoner-Network/summoner-
 
 
 
+---
+
+
+
+
+
+
+### <img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"> Start with runnable agent examples
+
+You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your workflow is straightforward: install the agent requirements, start the server, then run the agent.
+
+
+
+<details>
+<summary><img alt="Package" width="16" src="https://cdn.simpleicons.org/pypi/4f9bff"> <b>Install agent dependencies</b></summary>
+<br>
+
+This section assumes you already installed the SDK for the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo (see [**Run agent examples with a ready-made SDK**](#use-an-sdk-with-agent-examples) above).
+
+**Activate the virtual environment.** This ensures Python installs into the right place. Run this **whenever you open a new terminal**:
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+**Install requirements for one agent.** This is the quickest way to try a single agent. Point to that agent's **self-contained folder**:
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+pip install -r path/to/your/agent/folder/requirements.txt
+```
+
+On Windows (PowerShell)
+```powershell
+pip install -r .\path\to\your\agent\folder\requirements.txt
+```
+
+**Install requirements for all agents (bulk).** From the repo root:
+
+On POSIX (macOS/Linux/WSL2):
+```bash 
+bash install_requirements.sh
+```
+
+On Windows (PowerShell)
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\install_requirements_on_windows.ps1
+```
+
+* The script scans for agent folders and installs each `requirements.txt`.
+* On Windows, use **Git Bash** or **VS Code** with a **Bash** terminal.
+* If you later see `ModuleNotFoundError`, install that agent's requirements and try again.
+
+</details>
+
+
+<details>
+<summary><img alt="Server" width="16" src="https://cdn.simpleicons.org/gnometerminal/4f9bff"> <b>Launch the Summoner server</b></summary>
+<br>
+
+Most agents rely on the server as their messaging backbone. **Start the server first**, then launch agents in a second terminal.
+
+**Activate the virtual environment.** This guarantees the server uses the SDK you installed:
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+**Run with the default config.**
+
+```bash
+python server.py
+```
+
+**Use a custom server config** (only if an agent's README asks for it):
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+python server.py --config configs/<server_config>.json
+```
+
+On Windows (PowerShell):
+```powershell
+python .\server.py --config .\configs\<server_config>.json
+```
+
+Leave the server running in this terminal. Open another terminal (and activate the venv there too) to run agents.
+
+</details>
+
+
+<details>
+<summary><img alt="Robot" width="16" src="https://cdn.simpleicons.org/robotframework/4f9bff"> <b>Run an agent</b></summary>
+<br>
+
+**Activate the virtual environment.** This makes sure the agent imports the SDK and its own dependencies:
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+**Run with defaults.** Execute the entry point in the **self-contained agent folder**:
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+python path/to/your/agent/folder/agent.py
+```
+
+On Windows (PowerShell):
+```powershell
+python .\path\to\your\agent\folder\agent.py
+```
+
+**Run with a custom agent config** (when provided by that agent):
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+python path/to/your/agent/folder/agent.py --config configs/<agent_config>.json
+```
+
+On Windows (PowerShell):
+```powershell
+python .\path\to\your\agent\folder\agent.py --config .\configs\<agent_config>.json
+```
+
+**Find the right config.** Look in the agent folder's README for flags, environment variables, or a recommended config file.
+
+**Typical workflow (two terminals).**
+
+* **Terminal A — server**
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate          # POSIX
+python server.py
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1     # Windows
+python .\server.py
+```
+
+* **Terminal B — agent**
+
+On POSIX (macOS/Linux/WSL2):
+```bash
+source venv/bin/activate          # POSIX
+pip install -r path/to/your/agent/folder/requirements.txt
+python path/to/your/agent/folder/agent.py
+```
+
+On Windows (PowerShell):
+```powershell
+.\venv\Scripts\Activate.ps1     # Windows
+pip install -r .\path\to\your\agent\folder\requirements.txt
+python .\path\to\your\agent\folder\agent.py
+```
+
+
+**Common errors**
+
+* If you see "cannot import summoner…", make sure the virtual environment is active in this terminal. If it is not active, activate it and run the command again.
+* If you see "address already in use", stop any other server processes that may be running, or change the server port in the configuration file and try again.
+* If an agent cannot connect, make sure the server terminal is still running and that your local firewall is not blocking the connection.
+
+
+</details>
+
+
+<details>
+<summary><img alt="Folder" width="16" src="https://cdn.simpleicons.org/textpattern/4f9bff"> <b>How agent folders are discovered (Desktop app)</b></summary>
+<br>
+
+The Desktop app can import and run **any self-contained agent folder** with this minimal shape:
+
+```txt
+folder/
+  agent.py
+  requirements.txt
+  (optional) README.md, configs/, state/, utils.py
+```
+
+Keeping this structure makes your agent easy to import, run locally, and share with teammates.
+
+</details>
+
+
+
+
+
+
 
 ---
 
@@ -536,7 +759,7 @@ You can create a clean SDK that you extend as you explore. First define a **comp
 
 This section assumes you already created and cloned a repo from the [`summoner-sdk`](https://github.com/Summoner-Network/summoner-sdk) template (see [**Start from scratch with an SDK template**](#start-from-scratch-with-sdk-template) above).
 
-**To build your Summoner SDK**, you need to tell the installer (e.g., `built_sdk.sh`) which packages to include from which Summoner module. Modules are typically GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
+**To build your Summoner SDK**, you need to tell the installer (e.g., `build_sdk.sh`) which packages to include from which Summoner module. Modules are typically GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
 
 
 **Include an entire repository (all packages).** If you want to include every package under that repository's `tooling/` directory, put the repository URL on its own line in `build.txt`.
@@ -769,6 +992,7 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 
 
 
+
 ---
 
 
@@ -776,202 +1000,142 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 
 
 
-### <img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"> Start with runnable agent examples
-
-You can use the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo when you want ready-made agents you can run immediately. The SDK recipe for this repo is already set, so your workflow is straightforward: install the agent requirements, start the server, then run the agent.
 
 
+
+
+
+
+### <img alt="Integrate into Project" src="https://img.shields.io/badge/Integrate%20into%20Project-4b5aa7"> Integrate Summoner into your existing project
+
+You can install Summoner into **your project's existing venv** without requiring you to start from the SDK template repo. You clone `summoner-sdk` only as an installer, run setup from your project root, then optionally delete the installer folder.
+
+> [!NOTE]
+> This integration pathway is currently focused on Bash-based workflows (`build_sdk.sh`). The native Windows installer manages its own `venv\` and cannot currently integrate into a custom venv. Use the WSL2 pathway below for Windows.
 
 <details>
-<summary><img alt="Package" width="16" src="https://cdn.simpleicons.org/pypi/4f9bff"> <b>Install agent dependencies</b></summary>
+<summary>
+<img alt="Apple logo" width="16" src="https://cdn.simpleicons.org/apple/4b5aa7">
+<img alt="Ubuntu" width="16" src="https://cdn.simpleicons.org/ubuntu/4b5aa7"> 
+<img alt="Debian" width="16" src="https://cdn.simpleicons.org/debian/4b5aa7"> 
+<b>Integrate on macOS, Ubuntu or Debian</b></summary>
 <br>
 
-This section assumes you already installed the SDK for the [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) repo (see [**Run agent examples with a ready-made SDK**](#use-an-sdk-with-agent-examples) above).
+**1) Create or reuse your venv (from your project root).**
 
-**Activate the virtual environment.** This ensures Python installs into the right place. Run this **whenever you open a new terminal**:
-
-On POSIX (macOS/Linux/WSL2):
 ```bash
-source venv/bin/activate
-```
+python3 -m venv .venv
+source .venv/bin/activate
+````
 
-On Windows (PowerShell):
-```powershell
-.\venv\Scripts\Activate.ps1
-```
+**2) Clone the SDK installer repo (in your project root).**
 
-**Install requirements for one agent.** This is the quickest way to try a single agent. Point to that agent's **self-contained folder**:
-
-On POSIX (macOS/Linux/WSL2):
 ```bash
-pip install -r path/to/your/agent/folder/requirements.txt
+git clone https://github.com/Summoner-Network/summoner-sdk.git
 ```
 
-On Windows (PowerShell)
-```powershell
-pip install -r .\path\to\your\agent\folder\requirements.txt
+**3) (Optional) Customize the SDK recipe.**
+Edit the installer's `build.txt` before setup:
+
+```bash
+# edit: summoner-sdk/build.txt
 ```
 
-**Install requirements for all agents (bulk).** From the repo root:
+**4) Run setup from your project root and link your venv.**
+The setup script lives in `summoner-sdk/`, so the `--venv` path is interpreted relative to that folder.
 
-On POSIX (macOS/Linux/WSL2):
-```bash 
-bash install_requirements.sh
+```bash
+bash summoner-sdk/build_sdk.sh setup --venv ../.venv
+bash summoner-sdk/build_sdk.sh clean
 ```
 
-On Windows (PowerShell)
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\install_requirements_on_windows.ps1
+**Optional flags (POSIX only):**
+
+```bash
+# Use uv for venv + installs
+bash summoner-sdk/build_sdk.sh setup --uv --venv ../.venv
+
+# Select Rust server prefix (default: v1_0_0)
+bash summoner-sdk/build_sdk.sh setup --server v1_1_0 --venv ../.venv
 ```
 
-* The script scans for agent folders and installs each `requirements.txt`.
-* On Windows, use **Git Bash** or **VS Code** with a **Bash** terminal.
-* If you later see `ModuleNotFoundError`, install that agent's requirements and try again.
+**5) Optional: remove the installer repo after install.**
+This keeps your project clean while the SDK remains installed in your venv.
+
+```bash
+rm -rf summoner-sdk
+```
+
+**Verify that Python sees the SDK.**
+
+```bash
+python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
+```
 
 </details>
 
-
 <details>
-<summary><img alt="Server" width="16" src="https://cdn.simpleicons.org/gnometerminal/4f9bff"> <b>Launch the Summoner server</b></summary>
+<summary>
+<img alt="Windows logo" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=4b5aa7">
+<img alt="Ubuntu logo" width="16" src="https://cdn.simpleicons.org/ubuntu/4b5aa7">
+<b>Integrate on Windows with WSL2 (Rust server support)</b></summary>
 <br>
 
-Most agents rely on the server as their messaging backbone. **Start the server first**, then launch agents in a second terminal.
+**Enable WSL2 and install Ubuntu (PowerShell).**
 
-**Activate the virtual environment.** This guarantees the server uses the SDK you installed:
-
-On POSIX (macOS/Linux/WSL2):
-```bash
-source venv/bin/activate
-```
-
-On Windows (PowerShell):
 ```powershell
-.\venv\Scripts\Activate.ps1
+wsl --install -d Ubuntu
 ```
 
-**Run with the default config.**
+**Open the Ubuntu terminal.** Go to your project folder (inside WSL).
+
+**Create or reuse your venv (from your project root).**
 
 ```bash
-python server.py
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-**Use a custom server config** (only if an agent's README asks for it):
+**Clone the SDK installer repo (in your project root).**
 
-On POSIX (macOS/Linux/WSL2):
 ```bash
-python server.py --config configs/<server_config>.json
+git clone https://github.com/Summoner-Network/summoner-sdk.git
 ```
 
-On Windows (PowerShell):
-```powershell
-python .\server.py --config .\configs\<server_config>.json
+**Run setup from your project root and link your venv.**
+
+```bash
+bash summoner-sdk/build_sdk.sh setup --venv ../.venv
+bash summoner-sdk/build_sdk.sh clean
 ```
 
-Leave the server running in this terminal. Open another terminal (and activate the venv there too) to run agents.
+**Optional: remove the installer repo after install.**
+
+```bash
+rm -rf summoner-sdk
+```
+
+**Verify that Python sees the SDK.**
+
+```bash
+python3 -c "import summoner, sys; print('summoner OK', sys.executable)"
+```
+
+**Networking tip.** `localhost` usually works across Windows and WSL2. If it does not, use the WSL IP:
+
+```bash
+hostname -I
+```
 
 </details>
 
-
 <details>
-<summary><img alt="Robot" width="16" src="https://cdn.simpleicons.org/robotframework/4f9bff"> <b>Run an agent</b></summary>
+<summary>
+<img alt="Windows logo" width="16" src="https://img.icons8.com/?size=100&id=JSovFPeJN9IG&format=png&color=4b5aa7">
+<b>Install on Windows (native) — current limitation</b></summary>
 <br>
 
-**Activate the virtual environment.** This makes sure the agent imports the SDK and its own dependencies:
-
-On POSIX (macOS/Linux/WSL2):
-```bash
-source venv/bin/activate
-```
-
-On Windows (PowerShell):
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-**Run with defaults.** Execute the entry point in the **self-contained agent folder**:
-
-On POSIX (macOS/Linux/WSL2):
-```bash
-python path/to/your/agent/folder/agent.py
-```
-
-On Windows (PowerShell):
-```powershell
-python .\path\to\your\agent\folder\agent.py
-```
-
-**Run with a custom agent config** (when provided by that agent):
-
-On POSIX (macOS/Linux/WSL2):
-```bash
-python path/to/your/agent/folder/agent.py --config configs/<agent_config>.json
-```
-
-On Windows (PowerShell):
-```powershell
-python .\path\to\your\agent\folder\agent.py --config .\configs\<agent_config>.json
-```
-
-**Find the right config.** Look in the agent folder's README for flags, environment variables, or a recommended config file.
-
-**Typical workflow (two terminals).**
-
-* **Terminal A — server**
-
-On POSIX (macOS/Linux/WSL2):
-```bash
-source venv/bin/activate          # POSIX
-python server.py
-```
-
-On Windows (PowerShell):
-```powershell
-.\venv\Scripts\Activate.ps1     # Windows
-python .\server.py
-```
-
-* **Terminal B — agent**
-
-On POSIX (macOS/Linux/WSL2):
-```bash
-source venv/bin/activate          # POSIX
-pip install -r path/to/your/agent/folder/requirements.txt
-python path/to/your/agent/folder/agent.py
-```
-
-On Windows (PowerShell):
-```powershell
-.\venv\Scripts\Activate.ps1     # Windows
-pip install -r .\path\to\your\agent\folder\requirements.txt
-python .\path\to\your\agent\folder\agent.py
-```
-
-
-**Common errors**
-
-* If you see "cannot import summoner…", make sure the virtual environment is active in this terminal. If it is not active, activate it and run the command again.
-* If you see "address already in use", stop any other server processes that may be running, or change the server port in the configuration file and try again.
-* If an agent cannot connect, make sure the server terminal is still running and that your local firewall is not blocking the connection.
-
-
-</details>
-
-
-<details>
-<summary><img alt="Folder" width="16" src="https://cdn.simpleicons.org/textpattern/4f9bff"> <b>How agent folders are discovered (Desktop app)</b></summary>
-<br>
-
-The Desktop app can import and run **any self-contained agent folder** with this minimal shape:
-
-```txt
-folder/
-  agent.py
-  requirements.txt
-  (optional) README.md, configs/, state/, utils.py
-```
-
-Keeping this structure makes your agent easy to import, run locally, and share with teammates.
+This integration workflow is not currently available on native Windows because the PowerShell installer manages its own `venv\` and does not accept `--venv`. Use the WSL2 pathway above instead.
 
 </details>
 
