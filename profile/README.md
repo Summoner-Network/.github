@@ -37,7 +37,11 @@
 If you already have the core toolchain, installation is one command after cloning a Summoner repo:
 
 ```bash
+# On macOS / Linux / WSL2
 bash build_sdk.sh setup
+
+# On Windows (PowerShell)
+.\build_sdk_on_windows.ps1 setup
 ```
 This creates an local `venv/` and installs into it. If you already have a virtual environment, see <a href="#-integrate-summoner-into-your-existing-project"><img alt="Integrate into Project" src="https://img.shields.io/badge/Integrate%20into%20Project-4b5aa7"></a>.
 
