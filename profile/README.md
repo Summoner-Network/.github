@@ -32,7 +32,40 @@
 > **What is Summoner?**
 > A modular runtime and SDK for networked AI agents. It lets you compose, run, and coordinate agents across machines. The Python client SDK pairs with a Rust server, and an optional desktop app provides a visual interface. Start with examples, then assemble your own SDK from modules.
 
-## Summoner pathways
+## How do I install Summoner?
+
+If you already have the core toolchain, installation is one command after cloning a Summoner repo:
+
+```bash
+bash build_sdk.sh setup
+```
+This creates an local `venv/` and installs into it. If you already have a virtual environment, see <a href="#-integrate-summoner-into-your-existing-project"><img alt="Integrate into Project" src="https://img.shields.io/badge/Integrate%20into%20Project-4b5aa7"></a>.
+
+> [!NOTE]
+> On macOS and Linux, Summoner runs a Rust server. Most users need **Python + Git + Rust** available on their system.
+> The rest of this page is an index plus advanced workflows.
+
+### Quick questions
+
+* **How do I check dependencies?** → <a href="#-install-essential-dependencies"><img alt="Prereqs" src="https://img.shields.io/badge/Prereqs-6f42c1"></a>
+* **Which repo should I start with?** → <a href="#-install-your-summoner-sdk"><img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"></a>
+* **I just want to run agent templates.** → <a href="#-start-with-runnable-agent-examples"><img alt="Run Agents" src="https://img.shields.io/badge/Run%20Agents-4f9bff"></a>
+* **I want a clean SDK to build my own agent.** → <a href="#-create-a-clean-sdk-no-ready-made-agents"><img alt="Start New Project" src="https://img.shields.io/badge/Start%20New%20Project-4f9bff"></a>
+* **I already have a project. How do I install Summoner into my existing venv?** → <a href="#-integrate-summoner-into-your-existing-project"><img alt="Integrate into Project" src="https://img.shields.io/badge/Integrate%20into%20Project-4b5aa7"></a>
+* **I want to publish an extension for others to use.** → <a href="#-contribute-your-own-sdk-module"><img alt="Develop a Module" src="https://img.shields.io/badge/Develop%20a%20Module-008f99"></a>
+* **I built an extension. How do I ensure it merges cleanly into an SDK build?** → <a href="#-make-sure-your-module-can-merge-into-an-sdk"><img alt="Merge into SDK" src="https://img.shields.io/badge/Merge%20into%20SDK-00bcd4"></a>
+* **Where are the docs?** → <a href="#-read-the-summoner-documentation"><img alt="Read SDK Docs" src="https://img.shields.io/badge/Read%20SDK%20Docs-d6720f"></a>
+
+## Main repositories
+
+* [**`summoner-agents`**](https://github.com/Summoner-Network/summoner-agents): ready-to-run agents built on the Summoner SDK (recommended first run)
+* [**`summoner-core`**](https://github.com/Summoner-Network/summoner-core): the base layer of the SDK: core client/server types, protocol primitives, and shared utilities
+* [**`summoner-docs`**](https://github.com/Summoner-Network/summoner-docs): official documentation in Markdown
+
+
+
+
+<!-- ## Summoner pathways
 
 **The table below is your map through the Summoner ecosystem.** Each row is a complete pathway, from installing tools to building, running, or contributing to agent systems. The level emoji is a suggested starting point only.
 
@@ -40,14 +73,6 @@
 > The leftmost column shows a **level emoji** (suggested starting point). The next column shows the recommended sequence as **clickable badges**. The two rightmost columns summarize the **outcome** and the **setup time**. Hover over badges for full labels.
 >
 > **Level emojis:** 🌱 Beginner | 🧠 Advanced | 🏆 Expert | 🌍 All levels
-
-
-<!-- ## Summoner pathways
-
-**The table shown below serves as your map through the Summoner ecosystem.** Each row represents a complete pathway: from setting up basic tools to building, running, or contributing to agent systems.
-
-> [!NOTE]
-> The left column shows the steps involved using **clickable badges**, in the recommended order. The right column summarizes the outcome. -->
 
 <div style="display:flex;justify-content:center;">
   <div style="width:95%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
@@ -61,7 +86,6 @@
         </tr>
       </thead>
       <tbody>
-        <!-- 1. Prereqs -->
         <tr>
           <td style="white-space:nowrap;vertical-align:middle;">
             <span title="Beginner">🌱</span>
@@ -164,7 +188,7 @@
       </tbody>
     </table>
   </div>
-</div>
+</div> -->
 
 
 
@@ -351,7 +375,7 @@ Use `rustup update` in WSL when you want to upgrade Rust.
 
 ### <img alt="Use the SDK" src="https://img.shields.io/badge/Use%20the%20SDK-0b5ed7"> Install your Summoner SDK
 
-You can start from the **SDK template** (clean SDK) or from **summoner-agents** (SDK + examples). Both come from the same template. The installer script creates a virtual environment and composes the SDK. You can re-run it safely.
+You can start from the **SDK template** (clean SDK) or from [`summoner-agents`](https://github.com/Summoner-Network/summoner-agents) (SDK + examples). Both come from the same template. The installer script creates a virtual environment and composes the SDK. You can re-run it safely.
 
 > [!NOTE]
 > **About the server.** On native Windows you use the **Python server**. The Rust server is not available on Windows. To try Rust on Windows, use **WSL2**.
@@ -1008,7 +1032,7 @@ Read more: **[Design fundamentals](https://github.com/Summoner-Network/summoner-
 
 ### <img alt="Integrate into Project" src="https://img.shields.io/badge/Integrate%20into%20Project-4b5aa7"> Integrate Summoner into your existing project
 
-You can install Summoner into **your project's existing venv** without requiring you to start from the SDK template repo. You clone `summoner-sdk` only as an installer, run setup from your project root, then optionally delete the installer folder.
+You can install Summoner into **your project's existing venv** without requiring you to start from the SDK template repo. You clone [`summoner-sdk`](https://github.com/Summoner-Network/summoner-sdk) only as an installer, run setup from your project root, then optionally delete the installer folder.
 
 > [!NOTE]
 > This integration pathway is currently focused on Bash-based workflows (`build_sdk.sh`). The native Windows installer manages its own `venv\` and cannot currently integrate into a custom venv. Use the WSL2 pathway below for Windows.
