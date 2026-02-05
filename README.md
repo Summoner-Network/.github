@@ -1736,6 +1736,14 @@ cd summoner-docs
 </details>
 
 <details>
+<summary><img alt="Download" width="16" src="https://cdn.simpleicons.org/github/d6720f"> <b>Option C — Use the HTML version</b></summary>
+<br>
+
+**Visit the HTML version of the GitHub repo:** [https://summoner-network.github.io/summoner-docs/](https://summoner-network.github.io/summoner-docs/)
+
+</details>
+
+<details>
 <summary><img alt="Index" width="16" src="https://img.icons8.com/?size=100&id=2800&format=png&color=d6720f">
  <b>Mini index (keywords and links by level)</b></summary>
 <br>
