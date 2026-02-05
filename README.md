@@ -1709,7 +1709,7 @@ npm run dist:linux
 The **Summoner Docs** are a public GitHub repository. You can read them online or clone the repo and browse locally in your editor. There is no installer required.
 
 <details>
-<summary><img alt="Book" width="16" src="https://cdn.simpleicons.org/readthedocs/d6720f"> <b>Option A — Read on GitHub (fastest)</b></summary>
+<summary><img alt="Book" width="16" src="https://cdn.simpleicons.org/readthedocs/d6720f"> <b>Option A — Read on GitHub (downloadable)</b></summary>
 <br>
 
 **Open the documentation repository.** The docs are structured to guide you from core concepts to advanced usage. You can explore them directly on GitHub or clone the repo locally.
@@ -1736,10 +1736,10 @@ cd summoner-docs
 </details>
 
 <details>
-<summary><img alt="Download" width="16" src="https://cdn.simpleicons.org/github/d6720f"> <b>Option C — Use the HTML version</b></summary>
+<summary><img alt="Download" width="16" src="https://cdn.simpleicons.org/github/d6720f"> <b>Option C — Use the HTML version (fastest)</b></summary>
 <br>
 
-**Visit the HTML version of the GitHub repo:** [https://summoner-network.github.io/summoner-docs/](https://summoner-network.github.io/summoner-docs/)
+Visit the HTML version of the GitHub repo: [https://summoner-network.github.io/summoner-docs/](https://summoner-network.github.io/summoner-docs/)
 
 </details>
 
