@@ -804,7 +804,7 @@ https://github.com/Summoner-Network/summoner-agentclass.git:
 aurora
 ```
 
-**Optional quick tests.** Use `test_build.txt` for a minimal smoke test (often the starter template). You can switch between `build.txt` and `test_build.txt` by running `setup build` or `setup test_build`.
+**Optional quick tests.** Use `test_build.txt` for a minimal smoke test (often the extension template). You can switch between `build.txt` and `test_build.txt` by running `setup build` or `setup test_build`.
 
 ```txt
 https://github.com/Summoner-Network/extension-template.git
