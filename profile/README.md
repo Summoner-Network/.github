@@ -787,7 +787,7 @@ You can create a clean SDK that you extend as you explore. First define a **comp
 
 This section assumes you already created and cloned a repo from the [`summoner-sdk`](https://github.com/Summoner-Network/summoner-sdk) template (see [**Start from scratch with an SDK template**](#start-from-scratch-with-sdk-template) above).
 
-**To build your Summoner SDK**, you need to tell the installer (e.g., `build_sdk.sh`) which packages to include from which Summoner module. Modules are typically GitHub repositories created from the template repository [`starter-template`](https://github.com/Summoner-Network/starter-template). Each module provides one or more packages under its `tooling/` directory.
+**To build your Summoner SDK**, you need to tell the installer (e.g., `build_sdk.sh`) which packages to include from which Summoner module. Modules are typically GitHub repositories created from the template repository [`extension-template`](https://github.com/Summoner-Network/extension-template). Each module provides one or more packages under its `tooling/` directory.
 
 
 **Include an entire repository (all packages).** If you want to include every package under that repository's `tooling/` directory, put the repository URL on its own line in `build.txt`.
@@ -804,10 +804,10 @@ https://github.com/Summoner-Network/summoner-agentclass.git:
 aurora
 ```
 
-**Optional quick tests.** Use `test_build.txt` for a minimal smoke test (often the starter template). You can switch between `build.txt` and `test_build.txt` by running `setup build` or `setup test_build`.
+**Optional quick tests.** Use `test_build.txt` for a minimal smoke test (often the extension template). You can switch between `build.txt` and `test_build.txt` by running `setup build` or `setup test_build`.
 
 ```txt
-https://github.com/Summoner-Network/starter-template.git
+https://github.com/Summoner-Network/extension-template.git
 ```
 
 **You can change the recipe any time.** Edit `build.txt` or `test_build.txt` and re-run `setup` to rebuild your SDK. Nothing breaks if you re-run; the script is idempotent.
@@ -1186,13 +1186,13 @@ This integration workflow is not currently available on native Windows because t
 
 ### <img alt="Develop a Module" src="https://img.shields.io/badge/Develop%20a%20Module-008f99"> Contribute your own SDK module
 
-A **module** is a repository created from the [`starter-template`](https://github.com/Summoner-Network/starter-template). Your code lives under [`tooling/`](https://github.com/Summoner-Network/starter-template/tree/main/tooling) as one or more Python packages. You develop against the core SDK, then merge your package(s) into an SDK build later.
+A **module** is a repository created from the [`extension-template`](https://github.com/Summoner-Network/extension-template). Your code lives under [`tooling/`](https://github.com/Summoner-Network/extension-template/tree/main/tooling) as one or more Python packages. You develop against the core SDK, then merge your package(s) into an SDK build later.
 
 <details>
 <summary><img alt="GitHub" width="16" src="https://cdn.simpleicons.org/github/008f99"> <b>Create your module repo from the template</b></summary>
 <br>
 
-**Make your own repo.** Click **Use this template → Create a new repository** on the [`starter-template`](https://github.com/Summoner-Network/starter-template), then clone it and enter the folder.
+**Make your own repo.** Click **Use this template → Create a new repository** on the [`extension-template`](https://github.com/Summoner-Network/extension-template), then clone it and enter the folder.
 
 ```bash
 git clone https://github.com/<your-account>/<your-module-repo>.git
@@ -1800,7 +1800,7 @@ Visit the HTML version of the GitHub repo: [https://summoner-network.github.io/s
 
 ## Contributing
 
-* Use [`starter-template`](https://github.com/Summoner-Network/starter-template) to bootstrap a module.
+* Use [`extension-template`](https://github.com/Summoner-Network/extension-template) to bootstrap a module.
 * Follow repository-specific **Contributions** sections, or see our [How to contribute](https://github.com/Summoner-Network/summoner-docs/blob/main/development/contribution/index.md) guidelines in `summoner-docs`.
 * Open an issue on one of our public Github repos for design proposals or protocol questions.
 
