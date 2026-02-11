@@ -793,14 +793,14 @@ This section assumes you already created and cloned a repo from the [`summoner-s
 **Include an entire repository (all packages).** If you want to include every package under that repository's `tooling/` directory, put the repository URL on its own line in `build.txt`.
 
 ```txt
-https://github.com/Summoner-Network/summoner-agentclass.git
+https://github.com/Summoner-Network/extension-agentclass.git
 ```
 
 **Include only specific packages.** If you want to include a subset of packages from a repository, add a colon after the repository URL, then list the package folder names from `tooling/` on the following lines.
 
 
 ```txt
-https://github.com/Summoner-Network/summoner-agentclass.git:
+https://github.com/Summoner-Network/extension-agentclass.git:
 aurora
 ```
 
