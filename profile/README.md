@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://summoner.org">Website</a> •
-  <a href="https://discord.gg/9HMeXnMycE">Discord</a> •
+  <a href="https://discord.gg/NnrBJwFtEn">Discord</a> •
   <a href="https://twitter.com/SummonerNetwork">Twitter</a>
 </p>
 
